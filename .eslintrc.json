@@ -1,0 +1,30 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "no-restricted-imports": ["error", {
+      "patterns": [".*"]
+    }],
+    "quotes": ["error", "single"],
+    "import/order": ["error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent"
+        ],
+        "newlines-between": "always",
+        "pathGroups": [
+          {"pattern": "components/**", "group": "internal", "position": "after"},
+          {"pattern": "data/**", "group": "internal", "position": "after"},
+          {"pattern": "types", "group": "internal", "position": "after"},
+          {"pattern": "assets/**", "group": "internal", "position": "after"}
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ]
+  }
+}
