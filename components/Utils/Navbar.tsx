@@ -24,7 +24,7 @@ const Navbar: FC<NavbarProps> = ({ color }) => {
                 width="25"
                 className="Icon"
                 fallback=""
-                src="icons/bc.svg"
+                src="/icons/bc.svg"
               />
             </a>
           </Link>

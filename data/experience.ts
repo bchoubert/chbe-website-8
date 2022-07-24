@@ -8,8 +8,8 @@ const experience: IExperience[] = [
     id: 'AM',
     title: 'Web Developer & UI Reviewer',
     company: 'Amalia',
-    icon: { source: 'custom', icon: 'organisms/amalia-logo' },
-    image: 'images/companies/AM/brand.png',
+    icon: { source: 'custom', icon: '/organisms/amalia-logo' },
+    image: '/images/companies/AM/brand.png',
     color: '#FFD859',
     light: '#fff8e2',
     details: {
@@ -37,27 +37,27 @@ const experience: IExperience[] = [
       products: [
         {
           name: 'Amalia.io',
-          icon: { source: 'custom', icon: 'organisms/amalia-logo' },
+          icon: { source: 'custom', icon: '/organisms/amalia-logo' },
           description: 'Real-time sales performance management Saas solution',
           technologies: [
             {
-              icon: { source: 'custom', icon: 'technologies/nodejs-logo' },
+              icon: { source: 'custom', icon: '/technologies/nodejs-logo' },
               title: 'NodeJS NestJS',
             },
             {
-              icon: { source: 'custom', icon: 'technologies/react-logo' },
+              icon: { source: 'custom', icon: '/technologies/react-logo' },
               title: 'React + Redux',
             },
             {
-              icon: { source: 'custom', icon: 'technologies/d3-logo' },
+              icon: { source: 'custom', icon: '/technologies/d3-logo' },
               title: 'D3.js',
             },
             {
-              icon: { source: 'custom', icon: 'technologies/testing-library-logo' },
+              icon: { source: 'custom', icon: '/technologies/testing-library-logo' },
               title: 'Testing Library',
             },
             {
-              icon: { source: 'custom', icon: 'technologies/mathjs-full' },
+              icon: { source: 'custom', icon: '/technologies/mathjs-full' },
               title: 'MathJS',
             },
           ],
@@ -65,57 +65,57 @@ const experience: IExperience[] = [
             {
               h: 800,
               w: 1200,
-              path: 'images/companies/AM/am_1.png',
+              path: '/images/companies/AM/am_1.png',
             },
             {
               h: 630,
               w: 500,
-              path: 'images/companies/AM/am_2.png',
+              path: '/images/companies/AM/am_2.png',
             },
             {
               h: 390,
               w: 711,
-              path: 'images/companies/AM/am_3.png',
+              path: '/images/companies/AM/am_3.png',
             },
             {
               h: 634,
               w: 1128,
-              path: 'images/companies/AM/am_4.png',
+              path: '/images/companies/AM/am_4.png',
             },
             {
               h: 777,
               w: 1593,
-              path: 'images/companies/AM/am_5.png',
+              path: '/images/companies/AM/am_5.png',
             },
             {
               h: 938,
               w: 1810,
-              path: 'images/companies/AM/am_6.png',
+              path: '/images/companies/AM/am_6.png',
             },
             {
               h: 1202,
               w: 1830,
-              path: 'images/companies/AM/am_7.png',
+              path: '/images/companies/AM/am_7.png',
             },
             {
               h: 756,
               w: 981,
-              path: 'images/companies/AM/am_8.png',
+              path: '/images/companies/AM/am_8.png',
             },
             {
               h: 1002,
               w: 1508,
-              path: 'images/companies/AM/am_9.png',
+              path: '/images/companies/AM/am_9.png',
             },
             {
               h: 813,
               w: 1507,
-              path: 'images/companies/AM/am_10.png',
+              path: '/images/companies/AM/am_10.png',
             },
             {
               h: 321,
               w: 448,
-              path: 'images/companies/AM/am_11.png',
+              path: '/images/companies/AM/am_11.png',
             },
           ],
           link: 'https://www.amalia.io/',
@@ -127,8 +127,8 @@ const experience: IExperience[] = [
     id: 'SK',
     title: 'Web Developer & UI Designer',
     company: 'Sogelink',
-    icon: { source: 'custom', icon: 'organisms/sogelink-logo' },
-    image: 'images/companies/SK/brand.jpg',
+    icon: { source: 'custom', icon: '/organisms/sogelink-logo' },
+    image: '/images/companies/SK/brand.jpg',
     color: '#0062AE',
     light: '#e9f5ff',
     details: {
@@ -153,19 +153,19 @@ const experience: IExperience[] = [
       products: [
         {
           name: 'Maplink',
-          icon: { source: 'custom', icon: 'projects/maplink-logo-alt' },
+          icon: { source: 'custom', icon: '/projects/maplink-logo-alt' },
           description: 'Maplink is both a map component integrated into DICT.fr and a Network and Urban Properties Management Solution',
           technologies: [
             {
-              icon: { source: 'custom', icon: 'technologies/java-logo' },
+              icon: { source: 'custom', icon: '/technologies/java-logo' },
               title: 'Java',
             },
             {
-              icon: { source: 'custom', icon: 'technologies/spring-logo' },
+              icon: { source: 'custom', icon: '/technologies/spring-logo' },
               title: 'Spring',
             },
             {
-              icon: { source: 'custom', icon: 'technologies/angular-logo' },
+              icon: { source: 'custom', icon: '/technologies/angular-logo' },
               title: 'Angular',
             },
           ],
@@ -173,35 +173,35 @@ const experience: IExperience[] = [
             {
               h: 520,
               w: 1200,
-              path: 'images/companies/SK/ml_1.jpeg',
+              path: '/images/companies/SK/ml_1.jpeg',
             },
             {
               h: 1068,
               w: 1600,
-              path: 'images/companies/SK/ML_2.jpeg',
+              path: '/images/companies/SK/ML_2.jpeg',
             },
           ],
           link: 'https://www.sogelink.com/maplink',
         },
         {
           name: 'Geosnap',
-          icon: { source: 'custom', icon: 'projects/geosnap-logo' },
+          icon: { source: 'custom', icon: '/projects/geosnap-logo' },
           description: 'Surveyor / Topography Saas Solution : compute your topographic projects in the cloud',
           technologies: [
             {
-              icon: { source: 'custom', icon: 'technologies/java-logo' },
+              icon: { source: 'custom', icon: '/technologies/java-logo' },
               title: 'Java',
             },
             {
-              icon: { source: 'custom', icon: 'technologies/spring-logo' },
+              icon: { source: 'custom', icon: '/technologies/spring-logo' },
               title: 'Spring',
             },
             {
-              icon: { source: 'custom', icon: 'technologies/angular-logo' },
+              icon: { source: 'custom', icon: '/technologies/angular-logo' },
               title: 'Angular',
             },
             {
-              icon: { source: 'custom', icon: 'technologies/python-logo' },
+              icon: { source: 'custom', icon: '/technologies/python-logo' },
               title: 'Python',
             },
           ],
@@ -209,17 +209,17 @@ const experience: IExperience[] = [
             {
               h: 800,
               w: 1200,
-              path: 'images/companies/SK/gs_1.jpg',
+              path: '/images/companies/SK/gs_1.jpg',
             },
             {
               h: 520,
               w: 1200,
-              path: 'images/companies/SK/gs_2.jpg',
+              path: '/images/companies/SK/gs_2.jpg',
             },
             {
               h: 1267,
               w: 2048,
-              path: 'images/companies/SK/gs_3.jpeg',
+              path: '/images/companies/SK/gs_3.jpeg',
             },
           ],
           link: 'https://www.sogelink.fr/geosnap',
@@ -231,8 +231,8 @@ const experience: IExperience[] = [
     id: 'MC',
     title: 'Full-Stack Web Developer',
     company: 'Maincare Solutions',
-    icon: { source: 'custom', icon: 'organisms/maincare-logo-alt' },
-    image: 'images/companies/MC/brand.png',
+    icon: { source: 'custom', icon: '/organisms/maincare-logo-alt' },
+    image: '/images/companies/MC/brand.png',
     color: '#E20281',
     light: '#ffe4f3',
     details: {
@@ -257,19 +257,19 @@ const experience: IExperience[] = [
       products: [
         {
           name: 'IdeoMed / IdeoSanté',
-          icon: { source: 'custom', icon: 'projects/ideomed-logo' },
+          icon: { source: 'custom', icon: '/projects/ideomed-logo' },
           description: 'Complex Sass Health platform that focuses on prescriptions and patient journey',
           technologies: [
             {
-              icon: { source: 'custom', icon: 'technologies/java-logo' },
+              icon: { source: 'custom', icon: '/technologies/java-logo' },
               title: 'Java EE',
             },
             {
-              icon: { source: 'custom', icon: 'technologies/backbone-logo' },
+              icon: { source: 'custom', icon: '/technologies/backbone-logo' },
               title: 'Backbone JS',
             },
             {
-              icon: { source: 'custom', icon: 'technologies/bootstrap-logo' },
+              icon: { source: 'custom', icon: '/technologies/bootstrap-logo' },
               title: 'Bootstrap',
             },
           ],
@@ -277,32 +277,32 @@ const experience: IExperience[] = [
             {
               h: 800,
               w: 1200,
-              path: 'images/companies/MC/im.png',
+              path: '/images/companies/MC/im.png',
             },
             {
               h: 711,
               w: 950,
-              path: 'images/companies/MC/im_1.png',
+              path: '/images/companies/MC/im_1.png',
             },
             {
               h: 711,
               w: 950,
-              path: 'images/companies/MC/im_2.png',
+              path: '/images/companies/MC/im_2.png',
             },
             {
               h: 711,
               w: 950,
-              path: 'images/companies/MC/im_3.png',
+              path: '/images/companies/MC/im_3.png',
             },
             {
               h: 380,
               w: 686,
-              path: 'images/companies/MC/im_4.png',
+              path: '/images/companies/MC/im_4.png',
             },
             {
               h: 382,
               w: 686,
-              path: 'images/companies/MC/im_5.png',
+              path: '/images/companies/MC/im_5.png',
             },
           ],
         },
@@ -313,8 +313,8 @@ const experience: IExperience[] = [
     id: 'VC',
     title: 'Web Developer',
     company: 'VDS Consulting',
-    icon: { source: 'custom', icon: 'organisms/vdsconsulting-logo' },
-    image: 'images/companies/VC/brand.png',
+    icon: { source: 'custom', icon: '/organisms/vdsconsulting-logo' },
+    image: '/images/companies/VC/brand.png',
     color: '#EDCD40',
     light: '#fcf7e1',
     details: {
@@ -334,23 +334,23 @@ const experience: IExperience[] = [
       products: [
         {
           name: 'Brussels Aquariums e-commerce website',
-          icon: { source: 'custom', icon: 'projects/brusselsaquariums-logo' },
+          icon: { source: 'custom', icon: '/projects/brusselsaquariums-logo' },
           description: 'Full customized e-commerce solution for 10,000+ references',
           technologies: [
             {
-              icon: { source: 'custom', icon: 'technologies/symfony-logo-alt' },
+              icon: { source: 'custom', icon: '/technologies/symfony-logo-alt' },
               title: 'Symfony',
             },
             {
-              icon: { source: 'custom', icon: 'technologies/sass-logo' },
+              icon: { source: 'custom', icon: '/technologies/sass-logo' },
               title: 'Sass',
             },
             {
-              icon: { source: 'custom', icon: 'technologies/facebook-api-logo' },
+              icon: { source: 'custom', icon: '/technologies/facebook-api-logo' },
               title: 'Facebook Pages API',
             },
             {
-              icon: { source: 'custom', icon: 'technologies/paypal-logo' },
+              icon: { source: 'custom', icon: '/technologies/paypal-logo' },
               title: 'PayPal API',
             },
           ],
@@ -358,25 +358,25 @@ const experience: IExperience[] = [
             {
               h: 964,
               w: 1569,
-              path: 'images/companies/VC/nba.jpg',
+              path: '/images/companies/VC/nba.jpg',
             },
           ],
         },
         {
           name: 'F@ctorio',
-          icon: { source: 'custom', icon: 'projects/factorio-logo' },
+          icon: { source: 'custom', icon: '/projects/factorio-logo' },
           description: 'Factoring / Invoicing tool for IT firms',
           technologies: [
             {
-              icon: { source: 'custom', icon: 'technologies/nodejs-logo' },
+              icon: { source: 'custom', icon: '/technologies/nodejs-logo' },
               title: 'NodeJS Express',
             },
             {
-              icon: { source: 'custom', icon: 'technologies/mongodb-logo' },
+              icon: { source: 'custom', icon: '/technologies/mongodb-logo' },
               title: 'MongoDB',
             },
             {
-              icon: { source: 'custom', icon: 'technologies/pug-logo' },
+              icon: { source: 'custom', icon: '/technologies/pug-logo' },
               title: 'Pug',
             },
           ],
@@ -384,34 +384,34 @@ const experience: IExperience[] = [
             {
               h: 964,
               w: 1569,
-              path: 'images/companies/VC/fio.png',
+              path: '/images/companies/VC/fio.png',
             },
             {
               h: 964,
               w: 1569,
-              path: 'images/companies/VC/fio_2.png',
+              path: '/images/companies/VC/fio_2.png',
             },
           ],
         },
         {
           name: 'Find an Umbrella',
-          icon: { source: 'custom', icon: 'projects/findanumbrella-logo' },
+          icon: { source: 'custom', icon: '/projects/findanumbrella-logo' },
           description: 'Umbrella company finder service',
           technologies: [
             {
-              icon: { source: 'custom', icon: 'technologies/java-logo' },
+              icon: { source: 'custom', icon: '/technologies/java-logo' },
               title: 'Java',
             },
             {
-              icon: { source: 'custom', icon: 'technologies/spring-logo' },
+              icon: { source: 'custom', icon: '/technologies/spring-logo' },
               title: 'Spring',
             },
             {
-              icon: { source: 'custom', icon: 'technologies/less-type' },
+              icon: { source: 'custom', icon: '/technologies/less-type' },
               title: 'Less',
             },
             {
-              icon: { source: 'custom', icon: 'technologies/leaflet-logo' },
+              icon: { source: 'custom', icon: '/technologies/leaflet-logo' },
               title: 'Leaflet',
             },
           ],
@@ -419,21 +419,21 @@ const experience: IExperience[] = [
             {
               h: 800,
               w: 1600,
-              path: 'images/companies/VC/fau.png',
+              path: '/images/companies/VC/fau.png',
             },
           ],
         },
         {
           name: 'CV-Broker',
-          icon: { source: 'custom', icon: 'projects/cvbroker-logo' },
+          icon: { source: 'custom', icon: '/projects/cvbroker-logo' },
           description: 'Complete applicant management website for recruiters and companies',
           technologies: [
             {
-              icon: { source: 'custom', icon: 'technologies/symfony-logo-alt' },
+              icon: { source: 'custom', icon: '/technologies/symfony-logo-alt' },
               title: 'Symfony',
             },
             {
-              icon: { source: 'custom', icon: 'technologies/livecycle-logo' },
+              icon: { source: 'custom', icon: '/technologies/livecycle-logo' },
               title: 'Adobe LiveCycle',
             },
           ],
@@ -441,25 +441,25 @@ const experience: IExperience[] = [
             {
               h: 960,
               w: 1920,
-              path: 'images/companies/VC/cvb.png',
+              path: '/images/companies/VC/cvb.png',
             },
           ],
         },
         {
           name: 'My Landlord Club',
-          icon: { source: 'custom', icon: 'projects/mylandlordclub-logo' },
+          icon: { source: 'custom', icon: '/projects/mylandlordclub-logo' },
           description: 'Real-estate crowd-funding',
           technologies: [],
           images: [
             {
               h: 560,
               w: 1200,
-              path: 'images/companies/VC/mlc.jpg',
+              path: '/images/companies/VC/mlc.jpg',
             },
             {
               h: 674,
               w: 384,
-              path: 'images/companies/VC/mlc_2.png',
+              path: '/images/companies/VC/mlc_2.png',
             },
           ],
         },
@@ -470,8 +470,8 @@ const experience: IExperience[] = [
     id: 'BG',
     title: 'Lead Web Developer',
     company: 'Brayton Global',
-    icon: { source: 'custom', icon: 'organisms/braytonglobal-logo-alt' },
-    image: 'images/companies/BG/brand.png',
+    icon: { source: 'custom', icon: '/organisms/braytonglobal-logo-alt' },
+    image: '/images/companies/BG/brand.png',
     color: '#DD7523',
     light: '#faeade',
     details: {
@@ -496,76 +496,76 @@ const experience: IExperience[] = [
       products: [
         {
           name: 'SkillMatrix',
-          icon: { source: 'custom', icon: 'projects/skillmatrix-logo' },
+          icon: { source: 'custom', icon: '/projects/skillmatrix-logo' },
           description: 'Complex Applicant Tracking System (ATS) with custom workflows and automatic categorization, for in-house purposes.',
           technologies: [
             {
-              icon: { source: 'custom', icon: 'technologies/symfony-logo-alt' },
+              icon: { source: 'custom', icon: '/technologies/symfony-logo-alt' },
               title: 'Symfony',
             },
             {
-              icon: { source: 'custom', icon: 'technologies/sass-logo' },
+              icon: { source: 'custom', icon: '/technologies/sass-logo' },
               title: 'Sass',
             },
           ]
         },
         {
           name: 'Vemasys',
-          icon: { source: 'custom', icon: 'projects/vemasys-logo' },
+          icon: { source: 'custom', icon: '/projects/vemasys-logo' },
           description: 'Vessel Management System, Saas ERP that aims to revolutionize goods transportation. Fleet Management, Invoicing, Maintenance, Security... 1800+ vessels are using Vemasys daily.',
           images: [
             {
               h: 901,
               w: 1600,
-              path: 'images/companies/BG/vms_1.png'
+              path: '/images/companies/BG/vms_1.png'
             },
             {
               h: 884,
               w: 1572,
-              path: 'images/companies/BG/vms_2.png'
+              path: '/images/companies/BG/vms_2.png'
             },
             {
               h: 666,
               w: 1278,
-              path: 'images/companies/BG/vms_3.png'
+              path: '/images/companies/BG/vms_3.png'
             },
             {
               h: 1082,
               w: 2048,
-              path: 'images/companies/BG/vms_4.png'
+              path: '/images/companies/BG/vms_4.png'
             },
             {
               h: 1078,
               w: 2048,
-              path: 'images/companies/BG/vms_5.png'
+              path: '/images/companies/BG/vms_5.png'
             },
             {
               h: 989,
               w: 2000,
-              path: 'images/companies/BG/vms_6.png'
+              path: '/images/companies/BG/vms_6.png'
             },
             {
               h: 1005,
               w: 2000,
-              path: 'images/companies/BG/vms_7.png'
+              path: '/images/companies/BG/vms_7.png'
             },
           ],
           technologies: [
             {
-              icon: { source: 'custom', icon: 'technologies/symfony-logo-alt' },
+              icon: { source: 'custom', icon: '/technologies/symfony-logo-alt' },
               title: 'Symfony',
             },
             {
-              icon: { source: 'custom', icon: 'technologies/sass-logo' },
+              icon: { source: 'custom', icon: '/technologies/sass-logo' },
               title: 'Sass',
             },
             {
-              icon: { source: 'custom', icon: 'technologies/leaflet-logo' },
+              icon: { source: 'custom', icon: '/technologies/leaflet-logo' },
               title: 'Leaflet'
             },
 
             {
-              icon: { source: 'custom', icon: 'technologies/bootstrap-logo' },
+              icon: { source: 'custom', icon: '/technologies/bootstrap-logo' },
               title: 'Bootstrap'
             },
           ]

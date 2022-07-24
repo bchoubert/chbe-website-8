@@ -1,16 +1,15 @@
-import Link from 'next/link';
-import { FC, memo } from 'react';
+import Link from "next/link";
+import { FC, memo } from "react";
 
-import { mobileThreshold } from 'assets';
+import { mobileThreshold } from "assets";
 
-import Card from 'components/Utils/Card';
+import Card from "components/Utils/Card";
 
-import { IExperience } from 'types';
-
+import { IExperience } from "types";
 
 const EEexperience: FC<IExperience> = (exp) => (
   <>
-    <Link href={`/experience.${exp.id}`} passHref>
+    <Link href={`/experience/${exp.id}`} passHref>
       <a className="Link">
         <Card
           image={exp.image}
@@ -22,17 +21,17 @@ const EEexperience: FC<IExperience> = (exp) => (
       </a>
     </Link>
     <style jsx>{`
-    .Link {
-      width: calc(33.3% - .7rem);
-      display: block;
-      text-decoration: none;
-      color: inherit;
-    }
-    @media screen and (max-width: ${mobileThreshold}px) {
       .Link {
-        width: 100%;
+        width: calc(33.3% - 0.7rem);
+        display: block;
+        text-decoration: none;
+        color: inherit;
       }
-    }
+      @media screen and (max-width: ${mobileThreshold}px) {
+        .Link {
+          width: 100%;
+        }
+      }
     `}</style>
   </>
 );

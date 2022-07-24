@@ -89,7 +89,7 @@ const Icon: FC<IconProps> = ({
           width={15 * (multiplicator || 1)}
           className="Icon"
           fallback=""
-          src={`icons/${icon.icon}.svg`}
+          src={`/icons/${icon.icon}.svg`}
         />
       ),
     [multiplicator, icon]

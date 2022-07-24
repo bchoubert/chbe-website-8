@@ -1,56 +1,56 @@
 const projects = [
   {
-    key: 'CV',
-    title: 'Crypto Viewer',
-    description: 'Mobile App to track crypto-currencies & your assets',
-    top: '/resources/img/projects/CV/top.jpg',
+    key: "CV",
+    title: "Crypto Viewer",
+    description: "Mobile App to track crypto-currencies & your assets",
+    top: "/resources/img/projects/CV/top.jpg",
     fullDescription: `<span>
       Crypto-Viewer is a utility app to track your favourite crypto-currencies. It's fast, secure, customizable...<br/>
       By adding your current assets, you can track your wallet value at everytime. You have also access to a pratcical set of tools to watch for current and past values of a crypto-currency.
     </span>`,
     wip: false,
-    icon: 'icon icon-crypto-viewer-logo',
-    color: '#1543E4',
-    lighten: '#6d8bf2',
-    darken: '#0c2887',
-    mobile: '/resources/img/projects/CV/mobile.png',
+    icon: "/icon icon-crypto-viewer-logo",
+    color: "#1543E4",
+    lighten: "#6d8bf2",
+    darken: "#0c2887",
+    mobile: "/resources/img/projects/CV/mobile.png",
     mobileProps: { height: 1140, width: 540 },
-    tags: ['Crypto_Currencies', 'Mobile_App', 'UI'],
+    tags: ["Crypto_Currencies", "Mobile_App", "UI"],
     dribbbleProject: 1948460,
     links: [
       {
-        icon: 'icon icon-github-logo',
-        link: 'https://github.com/bchoubert/crypto-viewer',
-        title: 'GitHub'
+        icon: "/icon icon-github-logo",
+        link: "https://github.com/bchoubert/crypto-viewer",
+        title: "GitHub",
       },
       {
-        icon: 'icon icon-playstore-logo',
-        link: 'https://play.google.com/store/apps/details?id=com.bchoubert.cryptoviewer',
-        title: 'Play Store'
+        icon: "/icon icon-playstore-logo",
+        link: "https://play.google.com/store/apps/details?id=com.bchoubert.cryptoviewer",
+        title: "Play Store",
       },
       {
-        icon: 'icon icon-dribbble-logo',
-        link: 'https://dribbble.com/bchoubert/projects/1948460-Crypto-Viewer-App',
-        title: 'Dribbble Project'
-      }
+        icon: "/icon icon-dribbble-logo",
+        link: "https://dribbble.com/bchoubert/projects/1948460-Crypto-Viewer-App",
+        title: "Dribbble Project",
+      },
     ],
     technologies: [
       {
-        icon: 'icon icon-react-native-logo',
-        title: 'React Native'
+        icon: "/icon icon-react-native-logo",
+        title: "React Native",
       },
       {
-        icon: 'icon icon-expo-logo',
-        title: 'Expo'
+        icon: "/icon icon-expo-logo",
+        title: "Expo",
       },
       {
-        icon: 'icon icon-typescript-logo-alt',
-        title: 'TypeScript'
-      }
+        icon: "/icon icon-typescript-logo-alt",
+        title: "TypeScript",
+      },
     ],
     details: [
       {
-        title: 'Presentation',
+        title: "Presentation",
         content: `<div class="content center-content my">
           <i class="icon icon-crypto-viewer-logo" style="font-size: 5rem"></i>
           <span class="center-content my">Crypto-Viewer is a light-weight crypto tracker.</span>
@@ -70,10 +70,10 @@ const projects = [
         </div>
         <div class="flex-container my">
           <amp-img width="1280" height="853" layout="responsive" class="fl1 w-100" src="/resources/img/projects/CV/pres-2.jpg" lightbox></amp-img>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Branding',
+        title: "Branding",
         content: `<div class="flex-container my">
           <span class="fl1 center-content my">
             <i class="icon icon-circle sub" style="font-size: 5rem"></i><br/>
@@ -89,10 +89,10 @@ const projects = [
             <i class="icon icon-crypto-viewer-logo" style="font-size: 5rem"></i><br/>
             <span>Crypto-Viewer</span>
           </span>            
-        </div>`
+        </div>`,
       },
       {
-        title: 'Key Functionalities',
+        title: "Key Functionalities",
         content: `<div class="content">
           The user can visualize different cryptos, and see details about them:
           <ul>
@@ -103,16 +103,16 @@ const projects = [
           </ul><br/>
           Personalize the app: Select the date format (day/month or month/day) and select the currency (euro, dollat, bitcoin).<br/><br/>
           Add some crypto to their wallet: track their assets by adding your currencies
-        </div>`
+        </div>`,
       },
       {
-        title: 'Wireframing',
+        title: "Wireframing",
         content: `<div class="flex-container">
           <amp-img width="1511" height="1614" layout="responsive" class="fl1 w-100" src="/resources/img/projects/CV/wireframes.png" lightbox></amp-img>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Colors',
+        title: "Colors",
         content: `<div class="content">
           <div class="indicator-parent my">
             <i class="indicator" style="background-color: #7200E3"></i>
@@ -129,10 +129,10 @@ const projects = [
             <span>Gray: Power, Protection, Security
               <span class="ssub d-block">#B4B4B4</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Fonts',
+        title: "Fonts",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator"><i class="icon icon-roboto"></i></span>
@@ -149,10 +149,10 @@ const projects = [
             <span>Crypto-Currencis Font
               <span class="ssub d-block">428 crypto icons from 'crypto-currencies-font'</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Loaders',
+        title: "Loaders",
         content: `<div class="content">
           <div class="indicator-parent my">
             <amp-img width="69" height="69" src="/resources/img/projects/CV/loader-1.png" style="height: 2rem"></amp-img>
@@ -166,22 +166,22 @@ const projects = [
             <span class="mx">Coloured loaders
               <span class="ssub d-block">Graph loader, cloured in the official crypto color</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Final Logo',
+        title: "Final Logo",
         content: `<div class="flex-container">
           <amp-img layout="responsive" width="1367" height="974" class="fl1 w-100" src="/resources/img/projects/CV/final_logo.png"></amp-img>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Screenshots',
+        title: "Screenshots",
         content: `<div class="flex-container">
           <amp-img class="fl1 w-100" layout="responsive" width="1513" height="1793" src="/resources/img/projects/CV/screenshots.png" lightbox></amp-img>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Technologies',
+        title: "Technologies",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator"><i class="icon icon-react-native-logo"></i></span>
@@ -203,10 +203,10 @@ const projects = [
             <span class="indicator"><i class="icon icon-moment-logo"></i></span>
             <span>Moment JS<span class="ssub d-block">A versatile library to manage datetimes</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Services',
+        title: "Services",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator"><i class="icon icon-exchange-alt"></i></span>
@@ -220,25 +220,25 @@ const projects = [
             <span class="indicator"><i class="icon icon-cog"></i></span>
             <span>Utils Service<span class="ssub d-block">A bunch of utility functions to manage dates, colors, labels...<br/>The goal: centralize common operations.</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'APIs',
+        title: "APIs",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator"><i class="icon icon-coinbase-type"></i></span>
             <span>Coinbase & Coinbase Pro APIs<span class="ssub d-block">A market reference for crypto-currencies</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Types',
+        title: "Types",
         content: `<div class="content">
           This App is developed with strong variable typing strategy in mind. This provides an easier maintenance and understandability.
-        </div>`
+        </div>`,
       },
       {
-        title: 'Props',
+        title: "Props",
         content: `<div class="content">
           App Component is in charge of loading data from storage, including preferences and user's wallet. It will then pass the quote to every child component.<br/><br/>          
           CryptoList receives the changeTab function property. It needs it to load the CryptoDetails view when the user clicks a crypto.<br/><br/>
@@ -246,78 +246,78 @@ const projects = [
           It receives also the wallet (loaded from the storage) and the changeWallet function proprety that is called when the user modifies its wallet.<br/><br/>
           CryptoDetails receives the crypto to view, and the dateFormat loaded from the storage.<br/><br/>          
           Settings receives the changeQuote and changeDateFormat function properties to modify user's settings, and the selected dateFormat loaded from the storage.
-        </div>`
+        </div>`,
       },
       {
-        title: 'Font Loading',
+        title: "Font Loading",
         content: `<div class="content">
           Fonts are loaded asynchronously using the expo-font package. In the same time, preferences and wallet are loaded from the storage to optimize load time.
-        </div>`
-      }
-    ]
+        </div>`,
+      },
+    ],
   },
   {
-    key: 'AD',
-    title: 'Air-Data',
-    top: '/resources/img/projects/AD/top.jpg',
-    description: 'Airlines Data Viewer with 800+ companies and 10,000+ routes',
+    key: "AD",
+    title: "Air-Data",
+    top: "/resources/img/projects/AD/top.jpg",
+    description: "Airlines Data Viewer with 800+ companies and 10,000+ routes",
     fullDescription: `<span>
       Air-Data is a one-of-a-kind project.<br/>
       By computing data from different databases accross OpenAPI and Open-Source data, it records more than 10,000 routes and 800 companies from 2015.<br/>
       Air-Data is a convenient way to have a global look and understanding of worldwide air-related data, all along with every airport, airline, and operated flights for each airline.
     </span>`,
     wip: false,
-    icon: 'icon icon-air-data-logo',
-    color: '#FF4500',
-    lighten: '#ff8f66',
-    darken: '#992900',
-    mobile: '/resources/img/projects/AD/mobile.png',
+    icon: "/icon icon-air-data-logo",
+    color: "#FF4500",
+    lighten: "#ff8f66",
+    darken: "#992900",
+    mobile: "/resources/img/projects/AD/mobile.png",
     mobileProps: { width: 540, height: 1140 },
-    tags: ['Map', 'Analysis', 'Tile_Layers'],
+    tags: ["Map", "Analysis", "Tile_Layers"],
     dribbbleProject: 2015636,
     links: [
       {
-        icon: 'icon icon-codesandbox-logo',
-        link: 'https://codesandbox.io/s/k044n51lk5',
-        title: 'CodeSandbox'
+        icon: "/icon icon-codesandbox-logo",
+        link: "https://codesandbox.io/s/k044n51lk5",
+        title: "CodeSandbox",
       },
       {
-        icon: 'icon icon-github-logo',
-        link: 'https://github.com/bchoubert/air-data',
-        title: 'GitHub'
+        icon: "/icon icon-github-logo",
+        link: "https://github.com/bchoubert/air-data",
+        title: "GitHub",
       },
       {
-        icon: 'icon icon-globe',
-        link: 'https://k044n51lk5.csb.app/',
-        title: 'Live version'
+        icon: "/icon icon-globe",
+        link: "https://k044n51lk5.csb.app/",
+        title: "Live version",
       },
       {
-        icon: 'icon icon-dribbble-logo',
-        link: 'https://dribbble.com/bchoubert/projects/2015636-Air-Data',
-        title: 'Dribbble Project'
-      }
+        icon: "/icon icon-dribbble-logo",
+        link: "https://dribbble.com/bchoubert/projects/2015636-Air-Data",
+        title: "Dribbble Project",
+      },
     ],
     technologies: [
       {
-        icon: 'icon icon-firebase-logo-alt',
-        title: 'Firebase Real-Time Database'
+        icon: "/icon icon-firebase-logo-alt",
+        title: "Firebase Real-Time Database",
       },
       {
-        icon: 'icon icon-vuejs-logo',
-        title: 'VueJS'
+        icon: "/icon icon-vuejs-logo",
+        title: "VueJS",
       },
       {
-        icon: 'icon icon-leaflet-logo',
-        title: 'Leaflet'
+        icon: "/icon icon-leaflet-logo",
+        title: "Leaflet",
       },
       {
-        icon: 'icon icon-qgis-logo',
-        title: 'QGis'
-      }
+        icon: "/icon icon-qgis-logo",
+        title: "QGis",
+      },
     ],
     details: [
       {
-        title: 'Presentation',
+        title: "Presentation",
         content: `<div class="content center-content">
           <i class="icon icon-air-data-logo" style="color: #FF4500; font-size: 5rem"></i>
           <h2 style="text-align: center">Air-Data</h2>
@@ -325,17 +325,17 @@ const projects = [
           <div class="flex-container my">
             <amp-img class="fl1 w-100" width="1280" height="853" layout="responsive" src="/resources/img/projects/AD/pres.jpg" lightbox></amp-img>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Branding',
+        title: "Branding",
         content: `<div class="content center-content">
           <i class="icon icon-air-data-logo" style="font-size: 5rem"></i>
           <span>Plane take-off<span class="ssub d-block">Font-Awesome icon, slightly modified</span></span>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Key Functionalities',
+        title: "Key Functionalities",
         content: `<div class="content">
           The user can browse through airlines:
           <ul>
@@ -343,16 +343,16 @@ const projects = [
             <li>When clicking an ariline, details and operating routes appear</li>
             <li>The user can see all international airports</li>
           </ul>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Wireframing',
+        title: "Wireframing",
         content: `<div class="flex-container">
           <amp-img class="fl1 w-100" width="1786" height="1075" layout="responsive" src="/resources/img/projects/AD/wireframes.png" lightbox></amp-img>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Colors',
+        title: "Colors",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator" style="background-color: #FF4500"></span>
@@ -362,10 +362,10 @@ const projects = [
             <span class="indicator" style="background-color: #2C3E50"></span>
             <span>Gray: Neutral, Formal<span class="ssub d-block">#2C3E50</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Fonts',
+        title: "Fonts",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator"><i class="icon icon-raleway"></i></span>
@@ -375,22 +375,22 @@ const projects = [
             <span class="indicator"><i class="icon icon-fa-flag"></i></span>
             <span>Font Awesome NPM Package</span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Final Logo',
+        title: "Final Logo",
         content: `<div class="content center-content my">
           <i class="icon icon-air-data-logo" style="color: #FF4500; font-size: 5rem"></i>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Screenshots',
+        title: "Screenshots",
         content: `<div class="flex-container">
           <amp-img class="fl1 w-100" width="1861" height="960" layout="responsive" src="/resources/img/projects/AD/screenshots.png" lightbox></amp-img>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Map Layers',
+        title: "Map Layers",
         content: `<div class="content">
           <div class="flex-container">
             <amp-img width="1948" height="1448" layout="responsive" class="fl1 w-100" src="/resources/img/projects/AD/layers.png" lightbox></amp-img>
@@ -416,17 +416,17 @@ const projects = [
             <h3 class="my" style="text-align: left"><i class="icon icon-plane"></i> Routes<span class="sub"> | Clustered Markers Layer</span></h3>
             <span>Airlines, which are DAT files from SKYbrary, need to be inserted into a Firebase Real-Time database, from which they can be fetched when needed.</span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Map Custom Control',
+        title: "Map Custom Control",
         content: `<div class="flex-container">
           <amp-img width="199" height="556" style="display: inline-block; flex: 0 0 4rem" src="/resources/img/projects/AD/custom-control.png"></amp-img>
           <span class="fl1 mx my">A custom control, that permits to reset the position and zoom of the map, needs to be added using JavaScript.</span>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Technologies',
+        title: "Technologies",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator"><i class="icon icon-vuejs-logo"></i></span>
@@ -449,10 +449,10 @@ const projects = [
             <span>Leaflet + Leaflet Marker Cluster<span class="ssub d-block">Leaflet is a JS library for interactive maps<br/>
               Leaflet Marker Cluster is an official addin to Leaflet and permits to group airlines into the same marker on lower zoom levels.</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Airline Logos',
+        title: "Airline Logos",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator"><i class="icon icon-hand-pointer"></i></span>
@@ -470,10 +470,10 @@ const projects = [
             <span class="indicator"><i class="icon icon-eye"></i></span>
             <span>4. Contrast<span class="ssub d-block">Remove or replace low-contrast colours<span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Database',
+        title: "Database",
         content: `<div class="content">
           <span>
             This database uses prefixes to know where the data comes from:
@@ -516,68 +516,68 @@ const projects = [
                 Tokyo will be drawn above Europe, even if that's not the case in real life!</span>
             </div>
           </span>
-        </div>`
-      }
-    ]
+        </div>`,
+      },
+    ],
   },
   {
-    key: 'BCF',
-    title: 'BC-Font',
-    description: 'The Developer Font with 1,200+ icons',
-    top: '/resources/img/projects/BCF/top.jpg',
+    key: "BCF",
+    title: "BC-Font",
+    description: "The Developer Font with 1,200+ icons",
+    top: "/resources/img/projects/BCF/top.jpg",
     fullDescription: `<span>
       BC-Font is an easy-to-use, high-quality and more globally a must-have font for IT workers, specially developers.<br/>
       With more than 1,200 icons separated into 27 categories, this product is available for every use: Desktop font, Web, Print, Design...<br/>
       This font comes with a handy website that permits you to find the ideal icons for your project.
     </span>`,
     wip: false,
-    icon: 'icon icon-bcfont-logo',
-    color: '#EA2834',
-    lighten: '#F3858C',
-    darken: '#9D0F18',
-    mobile: '/resources/img/projects/BCF/mobile.png',
+    icon: "/icon icon-bcfont-logo",
+    color: "#EA2834",
+    lighten: "#F3858C",
+    darken: "#9D0F18",
+    mobile: "/resources/img/projects/BCF/mobile.png",
     mobileProps: { width: 540, height: 1140 },
-    tags: ['Icon_Font', 'Automatic_Build'],
+    tags: ["Icon_Font", "Automatic_Build"],
     dribbbleProject: 1948450,
     links: [
       {
-        icon: 'icon icon-npm-logo',
-        link: 'https://www.npmjs.com/package/bc-font',
-        title: 'Npm Package'
+        icon: "/icon icon-npm-logo",
+        link: "https://www.npmjs.com/package/bc-font",
+        title: "Npm Package",
       },
       {
-        icon: 'icon icon-github-logo',
-        link: 'https://github.com/bchoubert/bc-font',
-        title: 'GitHub'
+        icon: "/icon icon-github-logo",
+        link: "https://github.com/bchoubert/bc-font",
+        title: "GitHub",
       },
       {
-        icon: 'icon icon-globe',
-        link: 'https://bchoubert.github.io/bc-font-website/',
-        title: 'Live version'
+        icon: "/icon icon-globe",
+        link: "https://bchoubert.github.io/bc-font-website/",
+        title: "Live version",
       },
       {
-        icon: 'icon icon-dribbble-logo',
-        link: 'https://dribbble.com/bchoubert/projects/1948450-BC-Font',
-        title: 'Dribbble Project'
-      }
+        icon: "/icon icon-dribbble-logo",
+        link: "https://dribbble.com/bchoubert/projects/1948450-BC-Font",
+        title: "Dribbble Project",
+      },
     ],
     technologies: [
       {
-        icon: 'icon icon-gimp-logo',
-        title: 'Gimp'
+        icon: "/icon icon-gimp-logo",
+        title: "Gimp",
       },
       {
-        icon: 'icon icon-webpack-logo',
-        title: 'Webpack'
+        icon: "/icon icon-webpack-logo",
+        title: "Webpack",
       },
       {
-        icon: 'icon icon-inkscape-logo',
-        title: 'Inkscape'
-      }
+        icon: "/icon icon-inkscape-logo",
+        title: "Inkscape",
+      },
     ],
     details: [
       {
-        title: 'Presentation',
+        title: "Presentation",
         content: `<div class="content center-content my">
           <i class="icon icon-bcfont-logo" style="font-size: 5rem"></i>
           <span class="my">The font for IT Professionals</span>
@@ -606,10 +606,10 @@ const projects = [
         </div>
         <div class="flex-container my">
           <amp-img class="w-100 fl1" layout="responsive" width="1280" height="853" src="/resources/img/projects/BCF/pres-3.jpg" lightbox></amp-img>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Branding',
+        title: "Branding",
         content: `<div class="flex-container my">
           <span class="fl1 center-content">
             <i class="icon icon-bcf-base sub" style="font-size: 5rem"></i><br/>
@@ -625,10 +625,10 @@ const projects = [
             <i class="icon icon-bcf-final" style="font-size: 7rem"></i><br/>
             <span>BC-Font</span>
           </span>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Key Functonalities',
+        title: "Key Functonalities",
         content: `<div class="content">
           The user can browse through icon categories:
           <ul>
@@ -644,16 +644,16 @@ const projects = [
             <li>The syntaxically coloured HTML code with a "To clipboard" button</li>
             <li>Associated icons (alternatives to this icon) that opens the selected alternative icon when clicked</li>
           </ul>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Wireframing',
+        title: "Wireframing",
         content: `<div class="flex-container">
           <amp-img class="fl1 w-100" layout="responsive" width="1853" height="2834" src="/resources/img/projects/BCF/wireframes.png" lightbox></amp-img>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Colors',
+        title: "Colors",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator" style="background-color: #EB2834"></span>
@@ -667,10 +667,10 @@ const projects = [
             <span class="indicator" style="background-color: #E0E0E0"></span>
             <span>Gray: Neutral, Formal<span class="ssub d-block">#E0E0E0</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Fonts',
+        title: "Fonts",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator"><i class="icon icon-roboto"></i></span>
@@ -680,10 +680,10 @@ const projects = [
             <span class="indicator"><i class="icon icon-bcfont-logo"></i></span>
             <span>BC-Font icons<span class="ssub d-block">BC-Font package</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Badges',
+        title: "Badges",
         content: `<div class="content center-content">
           <div class="my">
             <amp-img width="120" height="50" src="/resources/img/projects/BCF/badge.png" style="height: 2rem"></amp-img>
@@ -691,10 +691,10 @@ const projects = [
           <div class="my">
             <span>"New" badge for newest icons</span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Final logo',
+        title: "Final logo",
         content: `<div class="flex-container">
           <div class="fl1 center-content">
             <i class="icon icon-bcfont-full" style="font-size: 5rem; color: #EB2834"></i>
@@ -704,23 +704,23 @@ const projects = [
             <i class="icon icon-bcfont-logo" style="font-size: 5rem; color: #EB2834"></i>
             <span class="my">Simplified Logo</span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Screenshots',
+        title: "Screenshots",
         content: `<div class="flex-container">
           <amp-img width="1810" height="2689" layout="responsive" class="fl1 w-100" src="/resources/img/projects/BCF/screenshots.png" lightbox></amp-img>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Font',
+        title: "Font",
         content: `<div class="content">
           <span class="my d-block">The BC-Font consists of 1,005 Unicode characters separated into 27 categories <span class="sub">(as of 1.8 version)</span> :</span>
           <amp-img class="w-100 my fl1" width="1879" height="9324" layout="responsive" src="/resources/img/projects/BCF/font.png" lightbox></amp-img>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Technologies',
+        title: "Technologies",
         content: `<div class="indicator-parent my">
           <span class="indicator"><i class="icon icon-webpack-logo"></i></span>
           <span>Webpack
@@ -734,10 +734,10 @@ const projects = [
               </ul>
             </span>
           </span>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Icon Categories',
+        title: "Icon Categories",
         content: `<div class="content">
           Icons are sorted into categories that user can use to filter icon visualization on the website, along with examples <span class="sub">(as of 1.8 version)</span>:
           <ul>
@@ -770,10 +770,10 @@ const projects = [
             <li>Social Networks<span class="ssub d-block">Flickr, Facebook, Whereby</span></li>
             <li>Training Websites<span class="ssub d-block">CodeAcademy, LiveMentor, Udacity</span></li>
           </ul>        
-        </div>`
+        </div>`,
       },
       {
-        title: 'Font Build',
+        title: "Font Build",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator"><i class="icon icon-bullseye-pointer"></i></span>
@@ -799,71 +799,71 @@ const projects = [
             <span class="indicator"><i class="icon icon-retweet-alt"></i></span>
             <span>6. Update the icon map<span class="ssub d-block">Show the icon on the website, along with color and other characteristics</span></span>
           </div>
-        </div>`
-      }
-    ]
+        </div>`,
+      },
+    ],
   },
   {
-    key: 'VV',
-    title: 'Velo\'v',
-    top: '/resources/img/projects/VV/top.jpg',
-    description: 'Deep analysis of French renting bike company',
+    key: "VV",
+    title: "Velo'v",
+    top: "/resources/img/projects/VV/top.jpg",
+    description: "Deep analysis of French renting bike company",
     fullDescription: `<span>
       This website presents both an advanced real-time analysis and a business intelligence analysis of the Velo'v bike-sharing network.<br/>
       Using your phone, you can locate easily the nearest station to take your bike from, or the nearest station to let your bike.<br/>
       You can see all the stations status and district stats at a glance, as well as the high-fidelity results of the Business Intelligence analysis.
     </span>`,
     wip: false,
-    icon: 'icon icon-velov-logo-alt',
-    color: '#BF1410',
-    lighten: '#ef4945',
-    darken: '#610a08',
-    mobile: '/resources/img/projects/VV/mobile.png',
+    icon: "/icon icon-velov-logo-alt",
+    color: "#BF1410",
+    lighten: "#ef4945",
+    darken: "#610a08",
+    mobile: "/resources/img/projects/VV/mobile.png",
     mobileProps: { width: 540, height: 1140 },
-    tags: ['Business_Intelligence', 'Map', 'Real-Time'],
+    tags: ["Business_Intelligence", "Map", "Real-Time"],
     dribbbleProject: 1984459,
     links: [
       {
-        icon: 'icon icon-github-logo',
-        link: 'https://github.com/bchoubert/bi-velov/',
-        title: 'GitHub'
+        icon: "/icon icon-github-logo",
+        link: "https://github.com/bchoubert/bi-velov/",
+        title: "GitHub",
       },
       {
-        icon: 'icon icon-globe',
-        link: 'https://bchoubert.github.io/bi-velov/',
-        title: 'Live version'
+        icon: "/icon icon-globe",
+        link: "https://bchoubert.github.io/bi-velov/",
+        title: "Live version",
       },
       {
-        icon: 'icon icon-dribbble-logo',
-        link: 'https://dribbble.com/bchoubert/projects/1984459-Velo-v-Business-Intelligence',
-        title: 'Dribbble Project'
-      }
+        icon: "/icon icon-dribbble-logo",
+        link: "https://dribbble.com/bchoubert/projects/1984459-Velo-v-Business-Intelligence",
+        title: "Dribbble Project",
+      },
     ],
     technologies: [
       {
-        icon: 'icon icon-jquery-logo',
-        title: 'jQuery'
+        icon: "/icon icon-jquery-logo",
+        title: "jQuery",
       },
       {
-        icon: 'icon icon-chartjs-logo',
-        title: 'ChartJS'
+        icon: "/icon icon-chartjs-logo",
+        title: "ChartJS",
       },
       {
-        icon: 'icon icon-leaflet-logo',
-        title: 'Leaflet'
+        icon: "/icon icon-leaflet-logo",
+        title: "Leaflet",
       },
       {
-        icon: 'icon icon-talend-logo',
-        title: 'Talend ETL'
+        icon: "/icon icon-talend-logo",
+        title: "Talend ETL",
       },
       {
-        icon: 'icon icon-qliksense-logo',
-        title: 'Qlik Sense'
-      }
+        icon: "/icon icon-qliksense-logo",
+        title: "Qlik Sense",
+      },
     ],
     details: [
       {
-        title: 'Presentation',
+        title: "Presentation",
         content: `<div class="content center-content">
           <i class="icon icon-velov-logo-alt" style="font-size: 15rem"></i>
           <h3 style="text-align: center" class="my">BI - Velo'v</h3>
@@ -889,10 +889,10 @@ const projects = [
         </div>
         <div class="flex-container my">
           <amp-img width="1280" height="853" layout="responsive" class="fl1 w-100" src="/resources/img/projects/VV/pres-4.jpg" lightbox></amp-img>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Branding',
+        title: "Branding",
         content: `<div class="flex-container my">
           <div class="fl1 center-content my">
             <i class="icon icon-velov-logo-alt" style="font-size: 5rem"></i>
@@ -902,10 +902,10 @@ const projects = [
             <i class="icon icon-velov-logo" style="font-size: 5rem"></i>
             <span>Official Simplified Velo'v Logo</span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Key Functionalities',
+        title: "Key Functionalities",
         content: `<div class="content">
           The user can browse trough velov stations in real-time:
           <ul>
@@ -916,16 +916,16 @@ const projects = [
             <li>He can also see advanced stats on the global network</li>
           </ul><br/>            
           The user can also see results of the Business Intelligence analysis done in 2016. 
-        </div>`
+        </div>`,
       },
       {
-        title: 'Wireframing',
+        title: "Wireframing",
         content: `<div class="flex-container">
           <amp-img class="fl1 w-100" width="1738" height="4552" layout="responsive" src="/resources/img/projects/VV/wireframes.png" lightbox></amp-img>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Colors',
+        title: "Colors",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator" style="background-color: #E11F26"></span>
@@ -935,10 +935,10 @@ const projects = [
             <span class="indicator" style="background-color: #E0E0E0"></span>
             <span>Gray: Neutral, Formal<span class="ssub d-block">#E0E0E0</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Graphics',
+        title: "Graphics",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator"><i class="icon icon-bike" style="color: #E11F26"></i></span>
@@ -961,10 +961,10 @@ const projects = [
           <div class="indicator indicator-big indicator-white"><amp-img width="60" height="60" src="/resources/img/projects/VV/graph-7.png"></amp-img></div>
           <div class="indicator indicator-big indicator-white"><amp-img width="60" height="60" src="/resources/img/projects/VV/graph-8.png"></amp-img></div>
           <div class="indicator indicator-big indicator-white"><amp-img width="60" height="60" src="/resources/img/projects/VV/graph-9.png"></amp-img></div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Fonts',
+        title: "Fonts",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator"><i class="icon icon-roboto"></i></span>
@@ -978,10 +978,10 @@ const projects = [
             <span class="indicator"><i class="icon icon-material"></i></span>
             <span>Icon Font<span class="ssub d-block">Material Icons Font - Google Fonts</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Station Status',
+        title: "Station Status",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator" style="background-color: #00AA32; color: white"><i class="icon icon-velov-logo-alt"></i></span>
@@ -999,16 +999,16 @@ const projects = [
             <span class="indicator" style="background-color: #FF0000; color: white"><i class="icon icon-velov-logo-alt"></i></span>
             <span>Closed Station</span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Screenshots',
+        title: "Screenshots",
         content: `<div class="flex-container">
           <amp-img class="fl1 w-100" width="1715" height="17903" layout="responsive" src="/resources/img/projects/VV/screenshots.png" lightbox></amp-img>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Map Layers',
+        title: "Map Layers",
         content: `<div class="content">
           <div class="flex-container my">
             <amp-img width="1856" height="1176" layout="responsive" class="fl1 w-100" src="/resources/img/projects/VV/map.png" lightbox></amp-img>
@@ -1021,27 +1021,27 @@ const projects = [
           <span>Districts' bounds are stored in a JavaScript variable, then draw on the map.</span>
           <h3 class="my" style="text-align: left"><i class="icon icon-biking"></i> Bike Stations<span class="sub"> | Marker Pane</span></h3>
           <span>Bike Stations are retrieved from the JCDecaux API, owner of the Velo'v network.</span>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Map Custom Controls',
+        title: "Map Custom Controls",
         content: `<div class="flex-container">
           <amp-img width="191" height="753" src="/resources/img/projects/VV/controls.png" style="flex: 0 0 4rem; max-height: 7rem"></amp-img>
           <span class="center-content fl1 mx my">
             A custom control, that permits to reset the position and zoom of the map, needs to be added using JavaScript.<br/><br/>              
             Another control was added and permits to show the legend on hover.
           </span>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Map Legend',
+        title: "Map Legend",
         content: `<div class="content center-content">
           <amp-img width="333" height="311" src="/resources/img/projects/VV/legend.png"></amp-img>
           <span class="my">Legend appears on hover on the information control.</span>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Technologies',
+        title: "Technologies",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator"><i class="icon icon-jquery-logo"></i></span>
@@ -1059,10 +1059,10 @@ const projects = [
             <span class="indicator"><i class="icon icon-mdbootstrap-logo"></i></span>
             <span>MDBootstrap<span class="ssub d-block">Most popular framework for building responsive websites</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'APIs',
+        title: "APIs",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator"><i class="icon icon-jcdecaux"></i></span>
@@ -1072,10 +1072,10 @@ const projects = [
             <span class="indicator"><i class="icon icon-openweather-logo"></i></span>
             <span>Open Weather API<span class="ssub d-block">Real-Time weather</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'JC Decaux API',
+        title: "JC Decaux API",
         content: `<div class="content">
           The JC Decaux API returns in real-time the status of all stations. For each station, it joins some attributes :
           <ul>
@@ -1089,16 +1089,16 @@ const projects = [
             <li>available bike stands</li>
             <li>bike stands (available bikes + available bike stands + out of order bike stands)</li>
           </ul>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Geolocation',
+        title: "Geolocation",
         content: `<div class="content">
           The user is geolocalized at each visit. Everytime, the map is zoomed to its position, and the closest station's details are opened automatically.
-        </div>`
+        </div>`,
       },
       {
-        title: 'BI Process',
+        title: "BI Process",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator"><i class="icon icon-download"></i></span>
@@ -1128,10 +1128,10 @@ const projects = [
             <span class="indicator"><i class="icon icon-chartjs-logo"></i></span>
             <span>Chart Integration<span class="ssub d-block">ChartJS</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Data Sources',
+        title: "Data Sources",
         content: `<div class="content">
           <span>Two APIs were fetched with a granularity of 5 minutes.</span>
           <div class="indicator-parent my">
@@ -1150,10 +1150,10 @@ const projects = [
             <span class="indicator"><i class="icon icon-users"></i></span>
             <span>Static Data<span class="ssub d-block">Population by districts</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Data Transformation',
+        title: "Data Transformation",
         content: `<div class="content">
           Transformation scripts permits to manipulate data before loading it into QlikSense :
           <ul>
@@ -1164,10 +1164,10 @@ const projects = [
             <li>timestamp on hour<span class="sub"> | adds the human-readable hour</span></li>
             <li>week number<span class="sub"> | adds the week number and day labels</span></li>
           </ul>
-        </div>`
+        </div>`,
       },
       {
-        title: 'KPIs',
+        title: "KPIs",
         content: `<div class="content">
           This analysis permits to answer to these KPIs, useful to indicate the network health:
           <ol>
@@ -1196,54 +1196,54 @@ const projects = [
             <li>Are there any correlation between temperature and utilization?</li>
             <li>Are there any correlation between humidity and utilization?</li>
           </ol>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Charts',
+        title: "Charts",
         content: `<div class="content">
           Charts are built using QlikSense. After this, they are transformed into JSON data, then used to build interactive charts.
           This permits to have more engaging, beautiful and interactive charts through the entire website.
         </div>
         <div class="flex-container my">
           <amp-img width="870" height="754" layout="responsive" class="fl1 w-100" src="/resources/img/projects/VV/charts.png" lightbox></amp-img>
-        </div>`
-      }
-    ]
+        </div>`,
+      },
+    ],
   },
   {
-    key: 'ZB',
-    title: 'Zest Bank',
-    description: 'Refreshing Online Bank Concept',
-    top: '/resources/img/projects/ZB/top.jpg',
+    key: "ZB",
+    title: "Zest Bank",
+    description: "Refreshing Online Bank Concept",
+    top: "/resources/img/projects/ZB/top.jpg",
     fullDescription: `<span>
       ZestBank is a branding concept of the modern bank, according to me.<br/>
       Managing your services, cards and funds online or via the app, and choose your ZestCard from the three plans.
     </span>`,
     wip: false,
-    icon: 'icon icon-zestbank-logo',
-    color: '#F87C00',
-    lighten: '#ffaf5f',
-    darken: '#924900',
-    mobile: '/resources/img/projects/ZB/mobile.png',
+    icon: "/icon icon-zestbank-logo",
+    color: "#F87C00",
+    lighten: "#ffaf5f",
+    darken: "#924900",
+    mobile: "/resources/img/projects/ZB/mobile.png",
     mobileProps: { width: 540, height: 1140 },
     dribbbleProject: 1923106,
-    tags: ['Branding', 'UI'],
+    tags: ["Branding", "UI"],
     links: [
       {
-        icon: 'icon icon-dribbble-logo',
-        link: 'https://dribbble.com/bchoubert/projects/1923106-Zest-Bank-Concept',
-        title: 'Dribbble Project'
-      }
+        icon: "/icon icon-dribbble-logo",
+        link: "https://dribbble.com/bchoubert/projects/1923106-Zest-Bank-Concept",
+        title: "Dribbble Project",
+      },
     ],
     technologies: [
       {
-        icon: 'icon icon-xd-logo',
-        title: 'Adobe XD'
-      }
+        icon: "/icon icon-xd-logo",
+        title: "Adobe XD",
+      },
     ],
     details: [
       {
-        title: 'Presentation',
+        title: "Presentation",
         content: `<div class="content">
           <div class="content center-content">
             <i class="icon icon-zestbank-full" style="font-size: 10rem; color: #F87C00"></i>
@@ -1254,10 +1254,10 @@ const projects = [
           <div class="flex-container my">
             <amp-img width="884" height="589" layout="responsive" class="fl1 w-100" src="/resources/img/projects/ZB/pres-2.png"></amp-img>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Branding',
+        title: "Branding",
         content: `<div class="flex-container">
           <amp-img width="1776" height="3346" layout="responsive" class="fl1 w-100" src="/resources/img/projects/ZB/branding.png"></amp-img>
         </div>
@@ -1274,10 +1274,10 @@ const projects = [
             <i class="icon icon-zestbank-logo-alt" style="font-size: 10rem"></i>
             <span>Simplified Logo</span>
           </span>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Colors',
+        title: "Colors",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator" style="background-color: #FBF30C"></span>
@@ -1291,10 +1291,10 @@ const projects = [
             <span class="indicator" style="background-color: #F87C00"></span>
             <span>Orange: Optimistic, Creativity, Express Freedom<span class="ssub d-block">#F87C00</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Fonts',
+        title: "Fonts",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator"><i class="icon icon-nunito"></i></span>
@@ -1304,17 +1304,17 @@ const projects = [
             <span class="indicator"><i class="icon icon-fa-flag"></i></span>
             <span>Icon Font<span class="ssub d-block">Font Awesome (Pro License)</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Final Logo',
+        title: "Final Logo",
         content: `<div class="content center-content">
           <i class="icon icon-zestbank-full" style="font-size: 10rem; color: #F87C00"></i>
           <span>Final Logo</span>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Shots',
+        title: "Shots",
         content: `<div class="content">
           <div class="flex-container my">
             <amp-img width="1828" height="1371" layout="responsive" class="w-100 fl1" src="/resources/img/projects/ZB/shot-1.png"></amp-img>
@@ -1328,71 +1328,71 @@ const projects = [
           <div class="flex-container my">
             <amp-img width="881" height="661" layout="responsive" class="fl1 w-100" src="/resources/img/projects/ZB/shot-4.png"></amp-img>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Mobile App Concepts',
+        title: "Mobile App Concepts",
         content: `<div class="flex-container my">
           <amp-img width="881" height="661" layout="responsive" class="fl1 w-100" src="/resources/img/projects/ZB/mobile-1.png"></amp-img>
         </div>
         <div class="flex-container my">
           <amp-img width="881" height="661" layout="responsive" class="fl1 w-100" src="/resources/img/projects/ZB/mobile-2.png"></amp-img>
-        </div>`
-      }
-    ]
+        </div>`,
+      },
+    ],
   },
   {
-    key: 'NDG',
-    title: 'Nescafe Dolce Gusto Webstore',
-    description: 'E-commerce website to order your coffee pods & machines',
-    top: '/resources/img/projects/NDG/top.jpg',
+    key: "NDG",
+    title: "Nescafe Dolce Gusto Webstore",
+    description: "E-commerce website to order your coffee pods & machines",
+    top: "/resources/img/projects/NDG/top.jpg",
     fullDescription: `<span>
       Reinventing the e-commerce coffee experience.<br/>
       This website offers tons of cofee varieties as well as coffee machines.<br/>
       It presents also the Nescafe-style coffee grinding.
     </span>`,
     wip: false,
-    icon: 'icon icon-dolcegusto-logo',
-    color: '#653800',
-    lighten: '#cb7100',
-    darken: '#321c00',
-    mobile: '/resources/img/projects/NDG/mobile.png',
+    icon: "/icon icon-dolcegusto-logo",
+    color: "#653800",
+    lighten: "#cb7100",
+    darken: "#321c00",
+    mobile: "/resources/img/projects/NDG/mobile.png",
     mobileProps: { width: 540, height: 1140 },
-    tags: ['E-commerce', 'UI', 'API'],
+    tags: ["E-commerce", "UI", "API"],
     dribbbleProject: 1988820,
     links: [
       {
-        icon: 'icon icon-github-logo',
-        link: 'https://github.com/bchoubert/dolce-gusto-webstore',
-        title: 'GitHub'
+        icon: "/icon icon-github-logo",
+        link: "https://github.com/bchoubert/dolce-gusto-webstore",
+        title: "GitHub",
       },
       {
-        icon: 'icon icon-dribbble-logo',
-        link: 'https://dribbble.com/bchoubert/projects/1988820-Nescafe-Dolce-Gusto-Webstore',
-        title: 'Dribbble Project'
-      }
+        icon: "/icon icon-dribbble-logo",
+        link: "https://dribbble.com/bchoubert/projects/1988820-Nescafe-Dolce-Gusto-Webstore",
+        title: "Dribbble Project",
+      },
     ],
     technologies: [
       {
-        icon: 'icon icon-django-logo',
-        title: 'Django'
+        icon: "/icon icon-django-logo",
+        title: "Django",
       },
       {
-        icon: 'icon icon-sqlite-logo',
-        title: 'SQLite'
+        icon: "/icon icon-sqlite-logo",
+        title: "SQLite",
       },
       {
-        icon: 'icon icon-react-logo',
-        title: 'React'
+        icon: "/icon icon-react-logo",
+        title: "React",
       },
       {
-        icon: 'icon icon-materialui-logo',
-        title: 'Material UI'
-      }
+        icon: "/icon icon-materialui-logo",
+        title: "Material UI",
+      },
     ],
     details: [
       {
-        title: 'Presentation',
+        title: "Presentation",
         content: `<div class="content center-content my">
             <i class="icon icon-dolcegusto-logo" style="font-size: 8rem; color: #663700"></i>
         </div>
@@ -1405,10 +1405,10 @@ const projects = [
         </div>
         <div class="flex-container my">
           <amp-img width="1280" height="720" layout="responsive" class="w-100 fl1" src="/resources/img/projects/NDG/pres-2.jpg"></amp-img>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Branding',
+        title: "Branding",
         content: `<div class="content my center-content">
           <i class="icon icon-dolcegusto-full" style="font-size: 10rem"></i>
           <span>Official Nescafé Dolce Gusto Logo</span>
@@ -1422,10 +1422,10 @@ const projects = [
             <i class="icon icon-dolcegusto-logo" style="font-size: 10rem"></i>
             <span>Super-simplified logo</span>
           </span>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Key Functionalities',
+        title: "Key Functionalities",
         content: `<div class="content">
           The user can browse trough products:
           <ul>
@@ -1435,16 +1435,16 @@ const projects = [
           </ul><br/>            
           Administrators can manage and add product, as well as categories.<br/>
           They can also view and edit orders.
-        </div>`
+        </div>`,
       },
       {
-        title: 'Wireframing',
+        title: "Wireframing",
         content: `<div class="flex-container">
           <amp-img width="1760" height="2389" layout="responsive" class="fl1 w-100" src="/resources/img/projects/NDG/wireframes.png"></amp-img>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Logo Animation',
+        title: "Logo Animation",
         content: `<div class="content">
           <span>Thanks to CSS properties that can be applied to SVG paths, the splash screen animation has a "dash-array" animation : 
             the logo build itself at each load of the splashscreen page.</span>
@@ -1455,10 +1455,10 @@ const projects = [
             <amp-img height="150" width="180" class="fl1" style="margin-right: .5rem" src="/resources/img/projects/NDG/anim-4.png"></amp-img>
             <amp-img height="150" width="180" class="fl1" src="/resources/img/projects/NDG/anim-5.png"></amp-img>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Colors',
+        title: "Colors",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator" style="background-color: #663700"></span>
@@ -1472,10 +1472,10 @@ const projects = [
             <span class="indicator" style="background-color: #E0E0E0"></span>
             <span>Gray: Neutral, Formal<span class="ssub d-block">#E0E0E0</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Fonts',
+        title: "Fonts",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator"><i class="icon icon-roboto"></i></span>
@@ -1489,22 +1489,22 @@ const projects = [
             <span class="indicator"><i class="icon icon-materialui-logo"></i></span>
             <span>Website icons<span class="ssub d-block">MaterialUI Icons</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Final Logo',
+        title: "Final Logo",
         content: `<div class="center-content">
           <i class="icon icon-dolcegusto-full" style="color: #663700; font-size: 5rem"></i>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Screenshots',
+        title: "Screenshots",
         content: `<div class="flex-container">
           <amp-img width="1668" height="7782" layout="responsive" class="fl1 w-100" src="/resources/img/projects/NDG/screenshots.png"></amp-img>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Technologies',
+        title: "Technologies",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator"><i class="icon icon-react-logo"></i></span>
@@ -1526,10 +1526,10 @@ const projects = [
             <span class="indicator"><i class="icon icon-sass-logo"></i></span>
             <span>Sass<span class="ssub d-block">Powerful and stable CSS</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Endpoints',
+        title: "Endpoints",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator"><i class="icon icon-bars"></i></span>
@@ -1551,10 +1551,10 @@ const projects = [
             <span class="indicator"><i class="icon icon-shopping-cart"></i></span>
             <span>/order<span class="ssub d-block">Order the cart</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Services',
+        title: "Services",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator"><i class="icon icon-shopping-cart"></i></span>
@@ -1568,10 +1568,10 @@ const projects = [
             <span class="indicator"><i class="icon icon-exchange-alt"></i></span>
             <span>Network<span class="ssub d-block">Proxy to Back-End endpoint</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Database',
+        title: "Database",
         content: `<div class="content">
           This relational database contains 5 tables. Here is the list, with each table attributes (in addition of the id attribute) :
           <ul>
@@ -1620,22 +1620,22 @@ const projects = [
               </ul>
             </li>
           </ul>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Custom Icons',
+        title: "Custom Icons",
         content: `<div class="flex-container">
           <amp-img width="1515" height="705" layout="responsive" class="fl1 w-100" src="/resources/img/projects/NDG/icons.png"></amp-img>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Item Examples',
+        title: "Item Examples",
         content: `<div class="flex-container">
           <amp-img width="1849" height="3974" layout="responsive" class="fl1 w-100" src="/resources/img/projects/NDG/examples.png"></amp-img>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Pod Design',
+        title: "Pod Design",
         content: `<div class="content">
           <span class="my d-block">
             Coffee pods are not images, but a component on its own!
@@ -1644,67 +1644,69 @@ const projects = [
           <div class="flex-container">
             <amp-img width="1501" height="1536" layout="responsive" class="fl1 w-100" src="/resources/img/projects/NDG/pods.png"></amp-img>
           </div>
-        </div>`
-      }
-    ]
+        </div>`,
+      },
+    ],
   },
   {
-    key: 'LO',
-    title: 'LogTrack',
-    description: 'Complex Logistics ERP: GPS Tracking, invoices, recruitment, maintenance...',
-    top: '/resources/img/projects/LO/top.jpg',
+    key: "LO",
+    title: "LogTrack",
+    description:
+      "Complex Logistics ERP: GPS Tracking, invoices, recruitment, maintenance...",
+    top: "/resources/img/projects/LO/top.jpg",
     fullDescription: `<span>
       Your everyday logistics partner. LogTrack is an ERP and provides a set of pioneering functionalities for all related workers:<br/>
       Driver, Manager, Dispatcher, Insurer, Accountant, Mechanic...<br/>
       Built with the most modern technologies, LogTrack is a powerful, versatile and user-centered product.
     </span>`,
     wip: true,
-    icon: 'icon icon-logtrack-logo',
-    color: '#113885',
-    lighten: '#1d5edf',
-    darken: '#05122b',
-    mobile: '/resources/img/projects/LO/mobile.png',
+    icon: "/icon icon-logtrack-logo",
+    color: "#113885",
+    lighten: "#1d5edf",
+    darken: "#05122b",
+    mobile: "/resources/img/projects/LO/mobile.png",
     mobileProps: { width: 405, height: 855 },
-    tags: ['ERP', 'Logistics', 'UI'],
+    tags: ["ERP", "Logistics", "UI"],
     dribbbleProject: 2016530,
     links: [
       {
-        icon: 'icon icon-github-logo',
-        link: 'https://github.com/bchoubert/logistics',
-        title: 'GitHub'
+        icon: "/icon icon-github-logo",
+        link: "https://github.com/bchoubert/logistics",
+        title: "GitHub",
       },
       {
-        icon: 'icon icon-globe',
-        link: 'https://logtrack.app',
-        title: 'Live Version'
+        icon: "/icon icon-globe",
+        link: "https://logtrack.app",
+        title: "Live Version",
       },
       {
-        icon: 'icon icon-dribbble-logo',
-        link: 'https://dribbble.com/bchoubert/projects/2016530-LogTrack',
-        title: 'Dribbble Project'
-      }
+        icon: "/icon icon-dribbble-logo",
+        link: "https://dribbble.com/bchoubert/projects/2016530-LogTrack",
+        title: "Dribbble Project",
+      },
     ],
     technologies: [
       {
-        icon: 'icon icon-firebase-logo-alt',
-        title: 'Firebase Cloud Firestore + Real-Time + Auth + Storage + Functions'
+        icon: "/icon icon-firebase-logo-alt",
+        title:
+          "Firebase Cloud Firestore + Real-Time + Auth + Storage + Functions",
       },
       {
-        icon: 'icon icon-react-logo',
-        title: 'React'
+        icon: "/icon icon-react-logo",
+        title: "React",
       },
       {
-        icon: 'icon icon-openlayers-logo',
-        title: 'OpenLayers'
+        icon: "/icon icon-openlayers-logo",
+        title: "OpenLayers",
       },
       {
-        icon: 'icon icon-sass-logo',
-        title: 'Sass'
-      }
+        icon: "/icon icon-sass-logo",
+        title: "Sass",
+      },
     ],
     details: [
       {
-        title: 'Presentation',
+        title: "Presentation",
         content: `<div class="content center-content my">
           <i class="icon icon-logtrack-full" style="font-size: 15rem; color: #E4E4E4"></i>
         </div>
@@ -1723,10 +1725,10 @@ const projects = [
             <span class="indicator" style="color: #FF7777"><i class="icon icon-exclamation-triangle"></i></span>
             <span>This is a WIP project. This structurized document may be outdated, and mentions only partially developed or only planned functionalities.</span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Original Branding',
+        title: "Original Branding",
         content: `<div class="content center-content my">
           <i class="icon icon-logistics-full" style="color: #E4E4E4; font-size: 12rem"></i>
           <span class="my">Project full-size Logo</span>
@@ -1734,10 +1736,10 @@ const projects = [
         <div class="content center-content my">
           <i class="icon icon-logistics-logo" style="color: #E4E4E4; font-size: 8rem"></i>
           <span class="my">Simplified Logo</span>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Re-Branding',
+        title: "Re-Branding",
         content: `<div class="content center-content my">
           <i class="icon icon-logtrack-full" style="color: #E4E4E4; font-size: 30rem"></i>
           <span class="my">Project full-size Logo</span>
@@ -1751,10 +1753,10 @@ const projects = [
             <i class="icon icon-logtrack-full-alt" style="color: #E4E4E4; font-size: 20rem"></i>
             <span class="my">Full-size website Logo</span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Colors',
+        title: "Colors",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator" style="background-color: #113885"></span>
@@ -1777,10 +1779,10 @@ const projects = [
         </div>
         <div class="flex-container">
             <amp-img width="1920" height="979" layout="responsive" class="fl1 w-100" src="/resources/img/projects/LO/dominant-color-result.png"></amp-img>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Fonts',
+        title: "Fonts",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator"><i class="icon icon-nunito"></i></span>
@@ -1798,10 +1800,10 @@ const projects = [
             <span class="indicator"><i class="icon icon-transportation"></i></span>
             <span>Custom Font<span class="d-block ssub">Transportation Font</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Custom Font',
+        title: "Custom Font",
         content: `<div class="flex-container">
           <div class="fl1 1mx my">
             A custom font, the 'transportation-font', is built independently from this project.<br/>
@@ -1814,10 +1816,10 @@ const projects = [
           <div class="flex-container">
             <amp-img width="1000" height="1000" layout="responsive" class="fl1 w-100" src="/resources/img/projects/LO/transportation-examples.png"></amp-img>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Equipment Models',
+        title: "Equipment Models",
         content: `<div class="content">
           <span class="d-block my">
             A preview of all equipment models created initially is available to manage equipments.<br/>
@@ -1826,10 +1828,10 @@ const projects = [
           <div class="flex-container">
             <amp-img width="1585" height="1899" layout="responsive" class="fl1 w-100" src="/resources/img/projects/LO/trucks.png"></amp-img>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Key Functionalities',
+        title: "Key Functionalities",
         content: `<div class="content">
           The app contains specific vocabulary:<br/>
           'Equipment' stands for every tool used directly or indirectly by your company, such as trucks, trailers, garage gates, compressor...<br/>
@@ -1841,10 +1843,10 @@ const projects = [
           The authenticated user can access to a simplified dashboard, search trough all users and companies, 
           chat with other users, modify his profile and settings, manage his active role, request a new role, and create a company.<br/><br/>
           If the user has a role selected, his dashboard is enhanced and company details appear both on top of it and on its menu.
-        </div>`
+        </div>`,
       },
       {
-        title: 'Role-based Functionalities',
+        title: "Role-based Functionalities",
         content: `Logistics functionalities are based on the user's active role.<br/>
           A role is a current working position at a company. For example, I can have three roles: Driver at Company1, Manager at Company1, and Manager at Company2.<br/>
           Although, I can only have one active role at a time, even if sone roles are linked to the same company.<br/><br/>
@@ -1917,10 +1919,10 @@ const projects = [
         </div>          
         <div class="flex-container my w-100">
           <amp-img width="1509" height="112" layout="responsive" class="fl1 w-100" src="/resources/img/projects/LO/maintenance.png"></amp-img>
-        </div>`
+        </div>`,
       },
       {
-        title: 'User\'s settings and profile',
+        title: "User's settings and profile",
         content: `<div class="content">
           Every user has his own settings that are stored independently of the company's settings:
         </div>
@@ -1932,10 +1934,10 @@ const projects = [
         </div>
         <div class="flex-container my">
           <amp-img width="1920" height="979" layout="responsive" class="fl1 w-100" src="/resources/img/projects/LO/profile.png"></amp-img>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Support',
+        title: "Support",
         content: `<div class="content">
           <div class="indicator-parent">
             <span class="indicator"><i class="icon icon-comment"></i></span>
@@ -1954,20 +1956,20 @@ const projects = [
               </span>
             </span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Company Creation',
+        title: "Company Creation",
         content: `<div class="content">
           When creating a company, apart from its name and logo, you will have to choose between three plans.<br/>
           Although at this moment only the "Standard" plan can be chosen, it can give users some ideas on future pricing of the app.
         </div>
         <div class="flex-container my">
           <amp-img width="998" height="1254" layout="responsive" class="w-100 fl1" src="/resources/img/projects/LO/company-creation.png"></amp-img>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Invoice & Contract Systems',
+        title: "Invoice & Contract Systems",
         content: `<div class="content">
           Every manager of a company can create a contract.<br/>
           For this, he has to choose the partner company, and to select which company is the exec company (the one that will execute the contract),<br/>
@@ -2013,10 +2015,10 @@ const projects = [
         </div>
         <div class="content my">
           Invoices can be attached to a contract while it has the status 'EXECUTION or FINISHED'.
-        </div>`
+        </div>`,
       },
       {
-        title: 'Navigation',
+        title: "Navigation",
         content: `<div class="content">
           The sidebar menu gives an easy access to every relevant page of the app.<br/>
           Depending on the current active role of the user, it is enriched with relevant links.<br/>
@@ -2035,10 +2037,10 @@ const projects = [
               <span>Collapsed version</span>
             </div>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Dashboard',
+        title: "Dashboard",
         content: `<div class="content">
           Depending of the current active role, the dashboard is enhanced with relevant data.<br/>
           By default, the dashboard of a manager looks like this:
@@ -2048,10 +2050,10 @@ const projects = [
           We can retrieve some data, like the active role, the number of warehouses, employees and equipments with direct links to management pages.<br/>
           Some links are also present to have a fast access to the profile, the chat, alerts, requested roles, and logtracks of employees.<br/>
           Optionally, the user may want to have the weather on his dashboard.
-        </div>`
+        </div>`,
       },
       {
-        title: 'LogTrack',
+        title: "LogTrack",
         content: `<div class="content">
           As previously defined, a LogTrack is an activity of an employee. It can be a punctual event, like refueling, or a longer activity, like several driving hours.<br/><br/>
           Each employee is responsible of his own logbook. LogTrack are categorized:
@@ -2111,10 +2113,10 @@ const projects = [
           <div class="flex-container my" style="max-height: 160px">
             <amp-img width="602" height="160" class="fl1 w-100" style="max-height: 160px; max-width: 602px; margin-left: 0" src="/resources/img/projects/LO/lt-problems.png"></amp-img>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Technologies',
+        title: "Technologies",
         content: `<div class="content">
           <div class="indicator-parent my">
             <span class="indicator"><i class="icon icon-react-logo"></i></span>
@@ -2135,10 +2137,10 @@ const projects = [
             <span class="indicator"><i class="icon icon-sass-logo"></i></span>
             <span>Sass<span class="d-block ssub">CSS, more flexible and powerful</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'APIs',
+        title: "APIs",
         content: `<div class="content">
           <div class="indicator-parent">
             <span class="indicator"><i class="icon icon-openweather-logo"></i></span>
@@ -2146,10 +2148,10 @@ const projects = [
               To limit API calls, the weather is cached into Firestore (Firebase database) and is fetched only through the API if the user's location has not been fetched yet,<br/>
               or if the weather is out-of-date.</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Routing',
+        title: "Routing",
         content: `<div class="content">
           <div class="indicator-parent">
             <span class="indicator"><i class="icon icon-react-logo"></i></span>
@@ -2163,10 +2165,10 @@ const projects = [
               </span>
             </span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Real-Time data',
+        title: "Real-Time data",
         content: `<div class="content">
           <div class="indicator-parent">
             <span class="indicator"><i class="icon icon-firebase-logo-alt"></i></span>
@@ -2176,20 +2178,20 @@ const projects = [
               For the moment, real-time data is not integrated into Logistics, but I aim to provide real-time alerts and chat messages,<br/>
               instead of the current version that fetch an endpoint provided by Firebase Functions every 5 to 10 seconds. This migration is currently being designed.</span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Map',
+        title: "Map",
         content: `<div class="content">
           <div class="indicator-parent">
             <span class="indicator"><i class="icon icon-openlayers-logo"></i></span>
             <span>A map component that uses OpenWeather is part of the app. Used in several screens, it needs to be intialized via reference.<br/>
             It provides numerous functions to manage the center, zoom and heading of the map, as well as map features (markers, lines, shapes drawn on top of it, along with their popups)</span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Services',
+        title: "Services",
         content: `<div class="content">
           One service is already developed by collection. It provides useful data to create, read, update and delete (if applicable) documents, plus custom fetch functions.<br/>
           In addition, these services contains right management details for every action the user can do.<br/><br/>
@@ -2268,10 +2270,10 @@ const projects = [
             <span class="indicator"><i class="icon icon-openweather-logo"></i></span>
             <span>WeatherService<span class="ssub d-block">Used to interact with OpenWeather API endpoints to get the weather at user's location.</span></span>
           </div>
-        </div>`
+        </div>`,
       },
       {
-        title: 'Firebase Security',
+        title: "Firebase Security",
         content: `<div class="content">
           Each functionality provided by Firebase has a full security layer I need to develop.<br/>
           It provides a way to differentiate all possible actions on every collection: get one document, list several documents, create a document, update a document or delete it.<br/>
@@ -2284,10 +2286,10 @@ const projects = [
               or if the active role is a manager for the target company, or if the related user is the creator of the target company.</li>
             <li>...</li>
           </ul>
-        </div>`
-      }
-    ]
-  }
+        </div>`,
+      },
+    ],
+  },
 ];
 
 export default projects;
