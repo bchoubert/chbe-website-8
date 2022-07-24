@@ -47,7 +47,7 @@ export interface IExperience extends IBusinessCommon {
 }
 
 export interface IWork extends IBusinessCommon {
- shortDescription: string;
+  shortDescription: string;
 }
 
 export interface INetwork {
@@ -62,7 +62,6 @@ export interface INetwork {
 export interface IProfile {
   title: string;
   headline: string;
-  year: string;
 }
 
 

@@ -1,10 +1,10 @@
-import { FC, memo } from 'react';
+import { FC, memo } from "react";
 
-import { styles } from 'assets';
+import { styles } from "assets";
 
-import IconWithText from 'components/Utils/IconWithText';
+import IconWithText from "components/Utils/IconWithText";
 
-import { IIcon } from 'types';
+import { IIcon } from "types";
 
 interface CardProps {
   image: string;
@@ -14,16 +14,10 @@ interface CardProps {
   caption: string;
 }
 
-const Card: FC<CardProps> = ({
-  image,
-  color,
-  icon,
-  title,
-  caption,
-}) => (
+const Card: FC<CardProps> = ({ image, color, icon, title, caption }) => (
   <>
     <div className="Card">
-      <div className="Image-wrapper" style={{ backgroundColor: color }}>
+      <div className="Image-wrapper">
         <amp-img
           width="1200"
           height="800"
@@ -32,11 +26,7 @@ const Card: FC<CardProps> = ({
           layout="responsive"
         />
       </div>
-      <IconWithText
-        icon={icon}
-        title={title}
-        caption={caption}
-      />
+      <IconWithText icon={icon} title={title} caption={caption} />
     </div>
     <style jsx>{`
       .Card {
@@ -48,6 +38,7 @@ const Card: FC<CardProps> = ({
         position: relative;
         ${styles.br}
         overflow: hidden;
+        background-color: ${color};
       }
       .Image-child {
         width: 100%;

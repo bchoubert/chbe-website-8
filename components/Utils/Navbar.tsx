@@ -1,14 +1,17 @@
-import Link from 'next/link';
-import { FC, memo } from 'react';
+import Link from "next/link";
+import { FC, memo } from "react";
 
-import { colors, mobileThreshold } from 'assets';
+import { colors, mobileThreshold } from "assets";
 
-import ENetwork from 'components/Business/ENetwork';
+import ENetwork from "components/Business/ENetwork";
 
-import networks from 'data/networks';
+import networks from "data/networks";
 
+interface NavbarProps {
+  color?: string;
+}
 
-const Navbar: FC = () => {
+const Navbar: FC<NavbarProps> = ({ color }) => {
   return (
     <>
       <nav className="Navbar">
@@ -26,11 +29,8 @@ const Navbar: FC = () => {
             </a>
           </Link>
           <div className="networks">
-            {networks.map(n => (
-              <ENetwork
-                key={n.id}
-                {...n}
-              />
+            {networks.map((n) => (
+              <ENetwork key={n.id} {...n} />
             ))}
           </div>
         </div>
@@ -40,7 +40,7 @@ const Navbar: FC = () => {
           width: calc(100% - 3rem);
           padding: 0 1.5rem;
           height: 4rem;
-          background-color: ${colors.grey['0']};
+          background-color: ${color || colors.grey["0"]};
           position: fixed;
           display: flex;
           align-items: center;
@@ -48,7 +48,6 @@ const Navbar: FC = () => {
           top: 0;
           left: 0;
           z-index: 10;
-          border-bottom: 10px solid ${colors.grey['200']};
         }
         .logo {
           align-self: center;

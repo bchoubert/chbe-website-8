@@ -1,8 +1,8 @@
-import { FC, memo, ReactNode } from 'react';
+import { FC, memo, ReactNode } from "react";
 
-import Icon from 'components/Utils/Icon';
+import Icon from "components/Utils/Icon";
 
-import { IIcon } from 'types';
+import { IIcon } from "types";
 
 interface IconWithTextPropps {
   icon: IIcon;
@@ -30,7 +30,7 @@ const IconWithText: FC<IconWithTextPropps> = ({
     </div>
     <style jsx>{`
       .title {
-        margin-top: .5rem;
+        margin-top: 0.5rem;
         font-size: ${size || 1}rem;
         font-weight: bold;
       }

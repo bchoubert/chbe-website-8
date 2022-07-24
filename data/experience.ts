@@ -14,7 +14,8 @@ const experience: IExperience[] = [
     light: '#fff8e2',
     details: {
       company: {
-        description: '<b>Amalia</b> is on a mission to inspire, enable, and reward <b>peak business performance</b>. It helps companies simplify compensation management.<br/><br/>Amalia was listed as in the best 20 startups in Europe in 2022.',
+        description: `<b>Amalia</b> is on a mission to inspire, enable, and reward <b>peak business performance</b>.${''
+          }It helps companies simplify compensation management.<br/><br/>Amalia was listed as in the <b>best 20 startups in Europe in 2022</b>.`,
         links: [
           {
             title: 'Website',
@@ -29,7 +30,9 @@ const experience: IExperience[] = [
         ],
       },
       role: {
-        description: 'As a <b>Full-Stack Developer</b> & <b>UI Reviewer</b>, I was in charge of new feature development, participated in UI/UX reviews, designed complex technical solutions and mockups.<br/><br/>I was also missioned to be the <b>Tests Referral</b>, I increased code quality by providing standards and new test solutions. and animated workshops around new testing technologies.',
+        description: `As a <b>Web Developer</b> & <b>UI Reviewer</b>, I was in charge of new feature development, participated in UI/UX reviews,${''
+          } designed complex technical solutions and mockups.<br/><br/>I was also missioned to be the <b>Tests Referral</b>, ${''
+          } I increased code quality by providing standards and new test solutions. and animated workshops around new testing technologies.`,
       },
       products: [
         {
@@ -78,6 +81,41 @@ const experience: IExperience[] = [
               h: 634,
               w: 1128,
               path: 'images/companies/AM/am_4.png',
+            },
+            {
+              h: 777,
+              w: 1593,
+              path: 'images/companies/AM/am_5.png',
+            },
+            {
+              h: 938,
+              w: 1810,
+              path: 'images/companies/AM/am_6.png',
+            },
+            {
+              h: 1202,
+              w: 1830,
+              path: 'images/companies/AM/am_7.png',
+            },
+            {
+              h: 756,
+              w: 981,
+              path: 'images/companies/AM/am_8.png',
+            },
+            {
+              h: 1002,
+              w: 1508,
+              path: 'images/companies/AM/am_9.png',
+            },
+            {
+              h: 813,
+              w: 1507,
+              path: 'images/companies/AM/am_10.png',
+            },
+            {
+              h: 321,
+              w: 448,
+              path: 'images/companies/AM/am_11.png',
             },
           ],
           link: 'https://www.amalia.io/',
