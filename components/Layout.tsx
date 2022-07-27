@@ -19,7 +19,7 @@ const Layout: FC<LayoutProps> = ({ children, color }) => {
       <Head>
         <title>{profile.title}</title>
 
-        <link rel="icon" type="image/png" href="favicon.png" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />

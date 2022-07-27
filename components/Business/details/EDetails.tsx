@@ -31,6 +31,17 @@ const EDetailsCompany: FC<EDetailsPart> = ({ details, common }) => (
           </a>
         </Link>
       ))}
+      {(details.company?.customers || []).length > 0 ? (
+        <PartWithTitle title="Main Customers" color={common.color} isSubtitle>
+          {details.company.customers.map((customer) => (
+            <Link passHref href={customer.link} key={customer.title}>
+              <a target="_blank">
+                <Pill {...customer} />
+              </a>
+            </Link>
+          ))}
+        </PartWithTitle>
+      ) : null}
     </>
   </PartWithTitle>
 );
@@ -79,8 +90,8 @@ const EDetailsProducts: FC<EDetailsPart> = ({ details, common }) => (
               key={`img_${i}`}
               className="d_picture_content"
               style={{
-                width: (img.w * 200) / img.h,
-                height: 200,
+                width: (img.w * 150) / img.h,
+                height: 150,
               }}
             >
               <amp-img

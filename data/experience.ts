@@ -28,6 +28,37 @@ const experience: IExperience[] = [
             link: 'https://www.linkedin.com/company/amalia-io-fr/',
           },
         ],
+        customers: [
+          {
+            title: 'Mirakl',
+            icon: { source: 'custom', icon: '/organisms/mirakl-logo' },
+            link: 'https://www.mirakl.com/'
+          },
+          {
+            title: 'Swile',
+            icon: { source: 'custom', icon: '/organisms/swile-logo' },
+            link: 'https://www.swile.co/en'
+          },
+          {
+            title: 'OpenClassrooms',
+            icon: { source: 'custom', icon: '/organisms/openclassrooms-logo' },
+            link: 'https://openclassrooms.com/en/'
+          },
+          {
+            title: 'Yousign',
+            icon: { source: 'custom', icon: '/organisms/yousign-logo' },
+            link: 'https://yousign.com/'
+          },
+          {
+            title: 'Getronics',
+            icon: { source: 'custom', icon: '/organisms/getronics-logo' },
+            link: 'https://www.getronics.com/'
+          },
+          {
+            title: 'SudOuest',
+            link: 'https://www.sudouest.fr/'
+          }
+        ]
       },
       role: {
         description: `As a <b>Web Developer</b> & <b>UI Reviewer</b>, I was in charge of new feature development, participated in UI/UX reviews,${''
@@ -146,6 +177,43 @@ const experience: IExperience[] = [
             link: 'https://www.linkedin.com/company/groupe-sogelink/',
           },
         ],
+        customers: [
+          {
+            title: 'Colas',
+            icon: { source: 'custom', icon: '/organisms/colas-logo' },
+            link: 'https://www.colas.com/en'
+          },
+          {
+            title: 'Bouygues',
+            icon: { source: 'custom', icon: '/organisms/bouygues-logo' },
+            link: 'https://www.bouygues-es.com/'
+          },
+          {
+            title: 'Eiffage',
+            icon: { source: 'custom', icon: '/organisms/eiffage-logo' },
+            link: 'https://www.eiffage.com/'
+          },
+          {
+            title: 'Vinci',
+            icon: { source: 'custom', icon: '/organisms/vinci-logo' },
+            link: 'https://www.vinci.com/',
+          },
+          {
+            title: 'SNCF',
+            icon: { source: 'custom', icon: '/organisms/sncf-logo' },
+            link: 'https://www.sncf.com/en'
+          },
+          {
+            title: 'Métropole de Lille',
+            icon: { source: 'custom', icon: '/organisms/lille-logo' },
+            link: 'https://www.lillemetropole.fr/',
+          },
+          {
+            title: 'Métropole de Toulouse',
+            icon: { source: 'custom', icon: '/organisms/toulouse-logo' },
+            link: 'https://www.toulouse-metropole.fr/',
+          }
+        ]
       },
       role: {
         description: 'As a <b>UI Designer</b> & <b>R&D Full-Stack Web Developer</b>, I designed and developed may components and webpages, as well as developed POC related to 2D and 3D on the web.',
@@ -237,7 +305,7 @@ const experience: IExperience[] = [
     light: '#ffe4f3',
     details: {
       company: {
-        description: '<b>Maicare Solutions</b> is a <b>health software creator company</b> that brings innovative solutions to 80% of French hospitals.',
+        description: '<b>Maicare Solutions</b> is a <b>health software creator company</b> that brings innovative solutions to hospitals and health professionals.',
         links: [
           {
             title: 'Website',
@@ -250,6 +318,12 @@ const experience: IExperience[] = [
             link: 'https://www.linkedin.com/company/maincare/',
           },
         ],
+        customers: [
+          {
+            title: '80% of French hospitals',
+            link: 'https://www.maincare.com/qui-sommes-nous/le-groupe-maincare-10-23.html'
+          }
+        ]
       },
       role: {
         description: 'I was a <b>Web Developer</b>, my goals were to develop a new prescription tool for general practitioners and maintain existing modules of the app.',

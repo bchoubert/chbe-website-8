@@ -7,9 +7,12 @@ export type IIcon = {
   icon: IconDefinition | string;
 };
 
-export interface ILink {
+interface IIconWithTitle {
   icon?: IIcon;
   title: string;
+}
+
+export interface ILink extends IIconWithTitle {
   link: string;
 }
 
@@ -26,10 +29,8 @@ export interface IDateSpan {
   yEnd: string;
 }
 
-export interface ITechnology {
-  icon?: IIcon;
-  title: string;
-}
+export interface ITechnology extends IIconWithTitle { }
+export interface ICustomer extends ILink { }
 
 // BUSINESS
 export interface IBusinessCommon {
@@ -64,7 +65,6 @@ export interface IProfile {
   headline: string;
 }
 
-
 // SUB DETAILS
 export enum ISubDetailsType {
   text = 'text',
@@ -86,6 +86,7 @@ export interface IDetailsCompany {
   company?: {
     description: string;
     links?: ILink[];
+    customers?: ICustomer[];
   };
 }
 

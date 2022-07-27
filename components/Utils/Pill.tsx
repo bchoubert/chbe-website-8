@@ -30,12 +30,13 @@ const Pill: FC<IPillProps> = ({ light, textColor, title, icon }) => (
         display: inline-block;
         ${styles.br}
         background-color: ${light || colors.grey["200"]};
-        color: ${textColor};
+        color: ${textColor || "#666666"};
       }
       .Pill-wrapper {
         display: flex;
         flex-direction: row;
         align-items: center;
+        gap: 0.3rem;
       }
       .Pill-wrapper--opacity {
         opacity: 0.65;
