@@ -70,6 +70,11 @@ const experience: IExperience[] = [
           name: 'Amalia.io',
           icon: { source: 'custom', icon: '/organisms/amalia-logo' },
           description: 'Real-time sales performance management Saas solution',
+          longDescription: `Sales Representatives have a variable salary (<b>compensation</b>) depending on how many new contracts they permitted to sign for their company.${''
+            } It depends on the contract type, if it\'s a new contract or a renewal, upsell... Nowadays, companies must build their compensation plan to be <b>very attractive</b>,${''
+            } to encourage a better productivity, but must be aware to <b>limit their expenses</b> on these plans. ${''
+            }This problematic causes compensation plans to be <b>more and more complex</b>, implementing rampups, accelerators, adjustments, hold & release, KPIs, on-Target earning...<br/><br/>${''
+            }Amalia provides solutions to <b>design and analyze compensation plans</b>, and tools to manage data sources, overwrites, employee directory, goals, KPIs, comments, validation workflows...`,
           technologies: [
             {
               icon: { source: 'custom', icon: '/technologies/nodejs-logo' },

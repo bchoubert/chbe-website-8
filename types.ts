@@ -102,6 +102,7 @@ export interface IDetailsProducts {
     name: string;
     icon: IIcon;
     description: string;
+    longDescription?: string;
     images?: IImage[];
     link?: string;
     technologies?: ITechnology[];

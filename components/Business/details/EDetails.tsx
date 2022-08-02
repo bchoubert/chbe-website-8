@@ -74,6 +74,12 @@ const EDetailsProducts: FC<EDetailsPart> = ({ details, common }) => (
             ) : null
           }
         />
+        {p.longDescription ? (
+          <div
+            className="d_longDescription"
+            dangerouslySetInnerHTML={{ __html: p.longDescription }}
+          />
+        ) : null}
         <div className="d_tech">
           {(p.technologies || []).map((tech, i) => (
             <Pill
@@ -145,6 +151,10 @@ const EDetails: FC<EDetailsProps> = ({ work, experience }) => {
           color: #ffffff;
           font-weight: normal;
           margin-bottom: 0.5rem;
+        }
+        .EDetails .d_longDescription {
+          margin: 0.5rem 0 1rem 2rem;
+          font-size: 90%;
         }
         .EDetails .d_link {
           display: inline-block;
