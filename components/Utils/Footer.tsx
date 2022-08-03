@@ -2,8 +2,6 @@ import { FC, memo } from "react";
 
 import { colors } from "assets";
 
-import profile from "data/profile";
-
 const Footer: FC = () => (
   <>
     <div className="Footer">

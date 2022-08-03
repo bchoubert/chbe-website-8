@@ -1,7 +1,7 @@
 import FullCard from "components/Utils/FullCard";
 import IconWithText from "components/Utils/IconWithText";
 import { FC, memo } from "react";
-import { IExperience } from "types";
+import { IExperience } from "types/business.types";
 
 interface EExperienceHeadlineProps {
   object: IExperience;

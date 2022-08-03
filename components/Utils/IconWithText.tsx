@@ -2,7 +2,7 @@ import { FC, memo, ReactNode } from "react";
 
 import Icon from "components/Utils/Icon";
 
-import { IIcon } from "types";
+import { IIcon } from "types/common.types";
 
 interface IconWithTextPropps {
   icon: IIcon;

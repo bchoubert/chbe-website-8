@@ -4,11 +4,10 @@ import Layout from "components/Layout";
 
 import experience from "data/experience";
 
-import { IExperience } from "types";
 import { mobileThreshold } from "assets";
-import FullCard from "components/Utils/FullCard";
 import EDetails from "components/Business/details/EDetails";
 import EExperienceHeadline from "components/Business/experience/EExperienceHeadline";
+import { IExperience } from "types/business.types";
 
 export const config = {
   amp: true,
@@ -24,7 +23,7 @@ const EIdDetails: FC<EExperienceDetailsProps> = ({ object }) => {
       <Layout color={object.light}>
         <EExperienceHeadline object={object} />
         <div className="wrapper">
-          <EDetails experience={object} />
+          <EDetails object={object} />
         </div>
       </Layout>
       <style jsx>{`

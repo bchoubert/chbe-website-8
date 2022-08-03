@@ -1,13 +1,11 @@
 import { FC, memo, useMemo } from "react";
-
 import {
-  IBusinessCommon,
   ISubDetail,
   ISubDetails,
   ISubDetailsImage,
   ISubDetailsText,
   ISubDetailsType,
-} from "types";
+} from "types/details.types";
 
 interface ESubDetailsProps {
   subDetails: ISubDetails;

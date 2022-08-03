@@ -14,7 +14,7 @@ import experience from "data/experience";
 import profile from "data/profile";
 import work from "data/work";
 
-import { ISection } from "types";
+import { ISection } from "types/common.types";
 
 export const config = {
   amp: true,

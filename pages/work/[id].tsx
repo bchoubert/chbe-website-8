@@ -4,11 +4,10 @@ import Layout from "components/Layout";
 
 import work from "data/work";
 
-import { IWork } from "types";
 import { mobileThreshold } from "assets";
-import FullCard from "components/Utils/FullCard";
 import EDetails from "components/Business/details/EDetails";
 import EWorkHeadline from "components/Business/work/EWorkHeadline";
+import { IWork } from "types/business.types";
 
 export const config = {
   amp: true,
@@ -24,7 +23,7 @@ const EIdDetails: FC<EWorkDetailsProps> = ({ object }) => {
       <Layout color={object.light}>
         <EWorkHeadline object={object} />
         <div className="wrapper">
-          <EDetails work={object} />
+          <EDetails object={object} />
         </div>
       </Layout>
       <style jsx>{`

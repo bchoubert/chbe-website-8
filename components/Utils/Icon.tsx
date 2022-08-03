@@ -4,7 +4,7 @@ import { FC, memo, ReactNode, useMemo } from "react";
 
 import { colors, styles } from "assets";
 
-import { IIcon } from "types";
+import { IIcon } from "types/common.types";
 
 interface IconProps {
   icon: IIcon;

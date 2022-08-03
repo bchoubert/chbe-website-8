@@ -4,8 +4,7 @@ import { FC, memo } from "react";
 import { mobileThreshold } from "assets";
 
 import Card from "components/Utils/Card";
-
-import { IWork } from "types";
+import { IWork } from "types/business.types";
 
 const EWork: FC<IWork> = (work) => (
   <>

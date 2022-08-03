@@ -1,7 +1,7 @@
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faBrain, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import { IExperience } from 'types/business.types';
 
-import { IExperience } from 'types';
 
 const experience: IExperience[] = [
   {

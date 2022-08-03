@@ -1,132 +1,18 @@
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
-import Link from "next/link";
 import { FC, memo, useMemo } from "react";
 
-import { styles } from "assets";
-
 import ESubDetails from "components/Business/ESubDetails";
-import Icon from "components/Utils/Icon";
-import IconWithText from "components/Utils/IconWithText";
-import PartWithTitle from "components/Utils/PartWithTitle";
-import Pill from "components/Utils/Pill";
 
-import { IBusinessCommon, IDetails, IExperience, IIcon, IWork } from "types";
-
-// PARTS
-interface EDetailsPart {
-  details: IDetails;
-  work?: IWork;
-  experience?: IExperience;
-  common: IBusinessCommon;
-}
-
-const EDetailsCompany: FC<EDetailsPart> = ({ details, common }) => (
-  <PartWithTitle title="Company" color={common.color}>
-    <>
-      <div dangerouslySetInnerHTML={{ __html: details.company.description }} />
-      {(details.company.links || []).map((l) => (
-        <Link passHref href={l.link} key={l.title}>
-          <a target="_blank">
-            <Pill {...l} textColor={common.color} />
-          </a>
-        </Link>
-      ))}
-      {(details.company?.customers || []).length > 0 ? (
-        <PartWithTitle title="Main Customers" color={common.color} isSubtitle>
-          {details.company.customers.map((customer) => (
-            <Link passHref href={customer.link} key={customer.title}>
-              <a target="_blank">
-                <Pill {...customer} />
-              </a>
-            </Link>
-          ))}
-        </PartWithTitle>
-      ) : null}
-    </>
-  </PartWithTitle>
-);
-
-const EDetailsRole: FC<EDetailsPart> = ({ details, common }) => (
-  <PartWithTitle title="My role" color={common.color}>
-    <div dangerouslySetInnerHTML={{ __html: details.role.description }} />
-  </PartWithTitle>
-);
-
-const EDetailsProducts: FC<EDetailsPart> = ({ details, common }) => (
-  <PartWithTitle title="Products" color={common.color}>
-    {details.products.map((p) => (
-      <div key={p.name}>
-        <IconWithText
-          icon={p.icon}
-          title={p.name}
-          caption={p.description}
-          rightContent={
-            p.link ? (
-              <Link passHref href={p.link}>
-                <a
-                  className="d_link_icon"
-                  style={{ color: common.color }}
-                  target="_blank"
-                >
-                  <Icon icon={{ source: "fa", icon: faExternalLinkAlt }} />
-                </a>
-              </Link>
-            ) : null
-          }
-        />
-        {p.longDescription ? (
-          <div
-            className="d_longDescription"
-            dangerouslySetInnerHTML={{ __html: p.longDescription }}
-          />
-        ) : null}
-        <div className="d_tech">
-          {(p.technologies || []).map((tech, i) => (
-            <Pill
-              key={`p_${i}`}
-              icon={tech.icon}
-              light={common.light}
-              title={tech.title}
-            />
-          ))}
-        </div>
-        <div className="d_pictures">
-          {(p.images || []).map((img, i) => (
-            <div
-              key={`img_${i}`}
-              className="d_picture_content"
-              style={{
-                width: (img.w * 150) / img.h,
-                height: 150,
-              }}
-            >
-              <amp-img
-                className="d_picture"
-                height={img.h}
-                width={img.w}
-                src={img.path}
-                lightbox
-                layout="fill"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-    ))}
-  </PartWithTitle>
-);
+import { IBusinessCommon } from "types/business.types";
+import EDetailsCompany from "./EDetailsCompany";
+import EDetailsRole from "./EDetailsRole";
+import EDetailsProducts from "./EDetailsProducts";
 
 interface EDetailsProps {
-  work?: IWork;
-  experience?: IExperience;
+  object: IBusinessCommon;
 }
 
-const EDetails: FC<EDetailsProps> = ({ work, experience }) => {
-  const common: IBusinessCommon = useMemo(
-    () => work || experience,
-    [work, experience]
-  );
-  const details = useMemo(() => common.details, [common]);
+const EDetails: FC<EDetailsProps> = ({ object }) => {
+  const details = useMemo(() => object.details, [object]);
 
   if (!details) {
     return null;
@@ -136,58 +22,15 @@ const EDetails: FC<EDetailsProps> = ({ work, experience }) => {
     <>
       <div className="EDetails">
         {details.company && (
-          <EDetailsCompany details={details} common={common} />
+          <EDetailsCompany details={details} common={object} />
         )}
-        {details.role && <EDetailsRole details={details} common={common} />}
+        {details.role && <EDetailsRole details={details} common={object} />}
         {details.products && (
-          <EDetailsProducts details={details} common={common} />
+          <EDetailsProducts details={details} common={object} />
         )}
         {details.sub && <ESubDetails subDetails={details} />}
       </div>
-      <style jsx global>{`
-        .EDetails .d_title {
-          display: inline-block;
-          padding: 0 0.3em;
-          color: #ffffff;
-          font-weight: normal;
-          margin-bottom: 0.5rem;
-        }
-        .EDetails .d_longDescription {
-          margin: 0.5rem 0 1rem 2rem;
-          font-size: 90%;
-        }
-        .EDetails .d_link {
-          display: inline-block;
-          margin: 0.5rem 1rem 0 0;
-          text-decoration: none;
-        }
-        .EDetails .d_tech {
-          font-size: 85%;
-          margin-left: 1.5rem;
-        }
-        .EDetails .d_pictures {
-          display: flex;
-          flex-direction: row;
-          flex-flow: wrap;
-          margin-left: 1.5rem;
-        }
-        .EDetails .d_picture_content {
-          position: relative;
-          display: inline-block;
-        }
-        .EDetails .d_picture {
-          margin: 0.5rem;
-          cursor: pointer;
-          ${styles.br}
-        }
-        .EDetails .d_link_icon {
-          height: 100%;
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex: 0 0 3rem;
-        }
+      <style jsx>{`
         .EDetails {
           margin-top: 2rem;
           width: 100%;

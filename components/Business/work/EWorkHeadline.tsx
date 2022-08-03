@@ -1,7 +1,7 @@
 import FullCard from "components/Utils/FullCard";
 import IconWithText from "components/Utils/IconWithText";
 import { FC, memo } from "react";
-import { IWork } from "types";
+import { IWork } from "types/business.types";
 
 interface EWorkHeadlineProps {
   object: IWork;

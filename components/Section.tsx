@@ -2,7 +2,7 @@ import { FC, memo } from "react";
 
 import IconWithText from "components/Utils/IconWithText";
 
-import { ISection } from "types";
+import { ISection } from "types/common.types";
 
 const Section: FC<ISection> = ({ icon, title, caption, content }) => (
   <>

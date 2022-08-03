@@ -4,7 +4,7 @@ import { styles } from "assets";
 
 import IconWithText from "components/Utils/IconWithText";
 
-import { IIcon } from "types";
+import { IIcon } from "types/common.types";
 
 interface CardProps {
   image: string;

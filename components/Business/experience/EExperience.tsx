@@ -4,8 +4,7 @@ import { FC, memo } from "react";
 import { mobileThreshold } from "assets";
 
 import Card from "components/Utils/Card";
-
-import { IExperience } from "types";
+import { IExperience } from "types/business.types";
 
 const EEexperience: FC<IExperience> = (exp) => (
   <>

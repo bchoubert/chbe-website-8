@@ -1,4 +1,4 @@
-import { IWork } from 'types';
+import { IWork } from "types/business.types";
 
 const work: IWork[] = [
   {

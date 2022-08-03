@@ -4,7 +4,7 @@ import { colors, styles } from "assets";
 
 import Icon from "components/Utils/Icon";
 
-import { IIcon } from "types";
+import { IIcon } from "types/common.types";
 
 interface IPillProps {
   light?: string;
