@@ -1,4 +1,5 @@
-import { IDetails, IIcon } from "./common.types";
+import { IIcon } from "./common.types";
+import { IDetails } from "./details.types";
 
 export interface IBusinessCommon {
   id: string;

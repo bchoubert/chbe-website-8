@@ -51,7 +51,13 @@ const work: IWork[] = [
     icon: { source: 'custom', icon: '/organisms/velov-logo' },
     color: '#BF1418',
     light: '#fde9e9',
-    details: {},
+    details: {
+      illustration: {
+        h: 768,
+        w: 768,
+        path: '/images/projects/VV/illustration.jpg'
+      },
+    },
   },
   {
     id: 'AD',

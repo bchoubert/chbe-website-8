@@ -13,6 +13,7 @@ export type ISubDetail = ISubDetailsImage | ISubDetailsText;
 
 export type ISubDetails = {
   sub?: ISubDetail[];
+  illustration?: IImage;
 };
 
 /////////////

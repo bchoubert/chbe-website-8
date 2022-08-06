@@ -7,7 +7,12 @@ import { ISection } from "types/common.types";
 const Section: FC<ISection> = ({ icon, title, caption, content }) => (
   <>
     <div className="root">
-      <IconWithText icon={icon} title={title} caption={caption} size={1.4} />
+      <IconWithText
+        icon={icon}
+        title={title}
+        caption={caption}
+        options={{ size: 1.4 }}
+      />
       <div className="content">{content}</div>
     </div>
     <style jsx>{`

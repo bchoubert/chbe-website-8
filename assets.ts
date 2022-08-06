@@ -13,3 +13,5 @@ export const styles = {
 };
 
 export const mobileThreshold = 1000;
+
+export const imageBorderRadius = '1rem';

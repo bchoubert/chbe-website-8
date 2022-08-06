@@ -168,6 +168,11 @@ const experience: IExperience[] = [
     color: '#0062AE',
     light: '#e9f5ff',
     details: {
+      illustration: {
+        h: 853,
+        w: 853,
+        path: '/images/companies/SK/illustration.jpg'
+      },
       company: {
         description: '<b>Sogelink</b> supports all players in the <b>infrastructure and construction</b> ecosystem with <b>software, cloud and mobile solutions</b>.',
         links: [
@@ -309,6 +314,11 @@ const experience: IExperience[] = [
     color: '#E20281',
     light: '#ffe4f3',
     details: {
+      illustration: {
+        h: 640,
+        w: 640,
+        path: '/images/companies/MC/illustration.jpg'
+      },
       company: {
         description: '<b>Maicare Solutions</b> is a <b>health software creator company</b> that brings innovative solutions to hospitals and health professionals.',
         links: [

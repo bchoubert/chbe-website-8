@@ -4,26 +4,30 @@ import Icon from "components/Utils/Icon";
 
 import { IIcon } from "types/common.types";
 
-interface IconWithTextPropps {
+interface IconWithTextPropsOptions {
+  isInline?: boolean;
+  isWhiteBackground?: boolean;
+  size?: number;
+}
+
+interface IconWithTextProps {
   icon: IIcon;
   title: string;
   caption?: string;
-  size?: number;
   rightContent?: ReactNode;
-  isInline?: boolean;
+  options?: IconWithTextPropsOptions;
 }
 
-const IconWithText: FC<IconWithTextPropps> = ({
+const IconWithText: FC<IconWithTextProps> = ({
   icon,
   title,
   caption,
-  size,
   rightContent,
-  isInline,
+  options,
 }) => (
   <>
     <div className="root">
-      <Icon icon={icon} wrapped multiplicator={size || 1} />
+      <Icon icon={icon} wrapped multiplicator={options?.size || 1} />
       <div>
         <h2 className="title">{title}</h2>
         {caption && <span className="caption">{caption}</span>}
@@ -32,14 +36,21 @@ const IconWithText: FC<IconWithTextPropps> = ({
     </div>
     <style jsx>{`
       .title {
-        margin-top: ${isInline ? 0 : 0.5}rem;
-        font-size: ${size || 1}rem;
+        margin-top: ${options?.isInline ? 0 : 0.5}rem;
+        font-size: ${options?.size || 1}rem;
         font-weight: bold;
       }
       .root {
-        display: flex;
+        display: inline-flex;
         flex-direction: row;
         align-items: center;
+        padding-right: 0.5rem;
+        ${options?.isWhiteBackground
+          ? `
+        font-weight: normal;
+        background-color: #ffffff;
+        `
+          : ""}
       }
     `}</style>
   </>

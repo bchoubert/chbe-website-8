@@ -11,15 +11,18 @@ const EWorkHeadline: FC<EWorkHeadlineProps> = ({ object }) => {
   return (
     <FullCard image={object.image} color={object.light}>
       <div>
-        <h2>
+        <h3 className="workTitle">
           <IconWithText
             title={object.title}
-            isInline
             icon={object.icon}
-            size={1.3}
+            options={{
+              isInline: true,
+              isWhiteBackground: true,
+              size: 1.3,
+            }}
           />
-        </h2>
-        <h3 className="shortDescription">{object.shortDescription}</h3>
+        </h3>
+        <h4 className="shortDescription">{object.shortDescription}</h4>
       </div>
     </FullCard>
   );

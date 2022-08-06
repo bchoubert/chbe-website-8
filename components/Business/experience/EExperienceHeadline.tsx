@@ -9,24 +9,19 @@ interface EExperienceHeadlineProps {
 
 const EExperienceHeadline: FC<EExperienceHeadlineProps> = ({ object }) => {
   return (
-    <>
-      <FullCard image={object.image} color={object.light}>
-        <div>
-          <h2>{object.title}</h2>
-          <h3 className="company">
-            <IconWithText icon={object.icon} title={object.company} isInline />
-          </h3>
-        </div>
-      </FullCard>
-      <style jsx>{`
-        .company {
-          font-weight: normal;
-          background-color: #ffffff;
-          display: inline-block;
-          padding-right: 0.5rem;
-        }
-      `}</style>
-    </>
+    <FullCard image={object.image} color={object.light}>
+      <div>
+        <h2>{object.title}</h2>
+        <IconWithText
+          icon={object.icon}
+          title={object.company}
+          options={{
+            isInline: true,
+            isWhiteBackground: true,
+          }}
+        />
+      </div>
+    </FullCard>
   );
 };
 
