@@ -27,17 +27,28 @@ const IconWithText: FC<IconWithTextProps> = ({
 }) => (
   <>
     <div className="root">
-      <Icon
-        icon={icon}
-        options={{ wrapped: true, multiplicator: options?.size || 1 }}
-      />
-      <div>
-        <h2 className="title">{title}</h2>
-        {caption && <span className="caption">{caption}</span>}
+      <div className="content">
+        <Icon
+          icon={icon}
+          options={{ wrapped: true, multiplicator: options?.size || 1 }}
+        />
+        <div>
+          <h2 className="title">{title}</h2>
+          {caption && <span className="caption">{caption}</span>}
+        </div>
+        {rightContent}
       </div>
-      {rightContent}
     </div>
     <style jsx>{`
+      .root {
+        display: inline-block;
+        ${options?.isWhiteBackground
+          ? `
+        font-weight: normal;
+        background-color: #ffffff;
+        `
+          : ""}
+      }
       .title {
         margin-top: ${options?.isInline ? 0 : 0.5}rem;
         font-size: ${options?.size || 1}rem;
@@ -46,17 +57,11 @@ const IconWithText: FC<IconWithTextProps> = ({
       .caption {
         white-space: nowrap;
       }
-      .root {
+      .content {
         display: flex;
         flex-direction: row;
         align-items: center;
         padding-right: 0.5rem;
-        ${options?.isWhiteBackground
-          ? `
-        font-weight: normal;
-        background-color: #ffffff;
-        `
-          : ""}
       }
     `}</style>
   </>

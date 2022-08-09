@@ -26,6 +26,7 @@ const decorators = {
         .wrapped {
           height: ${2 * (multiplicator || 1)}em;
           width: ${2 * (multiplicator || 1)}em;
+          flex: 0 0 ${2 * (multiplicator || 1)}em;
           display: grid;
           place-items: center;
         }
@@ -42,6 +43,7 @@ const decorators = {
           transform-origin: 50% 50%;
           height: ${2 * (multiplicator || 1)}em;
           width: ${2 * (multiplicator || 1)}em;
+          flex: 0 0 ${2 * (multiplicator || 1)}em;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -53,6 +55,7 @@ const decorators = {
           transform-origin: 50% 50%;
           height: ${2 * (multiplicator || 1)}em;
           width: ${2 * (multiplicator || 1)}em;
+          flex: 0 0 ${2 * (multiplicator || 1)}em;
           display: flex;
           justify-content: center;
           align-items: center;
