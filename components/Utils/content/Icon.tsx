@@ -6,12 +6,16 @@ import { colors, styles } from "assets";
 
 import { IIcon } from "types/common.types";
 
-interface IconProps {
-  icon: IIcon;
+interface IconPropsOptions {
   wrapped?: boolean;
   rotated?: boolean;
   multiplicator?: number;
+}
+
+interface IconProps {
+  icon: IIcon;
   color?: string;
+  options?: IconPropsOptions;
 }
 
 const decorators = {
@@ -59,19 +63,13 @@ const decorators = {
   ),
 };
 
-const Icon: FC<IconProps> = ({
-  icon,
-  wrapped,
-  rotated,
-  multiplicator,
-  color,
-}) => {
+const Icon: FC<IconProps> = ({ icon, options, color }) => {
   const content = useMemo(
     () =>
       icon.source === "fa" ? (
         <span
           style={{
-            fontSize: `${multiplicator || 1}rem`,
+            fontSize: `${options?.multiplicator || 1}rem`,
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
@@ -85,26 +83,33 @@ const Icon: FC<IconProps> = ({
       ) : (
         <amp-img
           alt=""
-          height={15 * (multiplicator || 1)}
-          width={15 * (multiplicator || 1)}
+          height={15 * (options?.multiplicator || 1)}
+          width={15 * (options?.multiplicator || 1)}
           className="Icon"
           fallback=""
           src={`/icons/${icon.icon}.svg`}
         />
       ),
-    [multiplicator, icon]
+    [options?.multiplicator, icon]
   );
 
   const decorated = useMemo(() => {
     let initialContent = content;
-    if (rotated) {
-      initialContent = decorators.rotated(initialContent, multiplicator, color);
+    if (options?.rotated) {
+      initialContent = decorators.rotated(
+        initialContent,
+        options?.multiplicator,
+        color
+      );
     }
-    if (wrapped) {
-      initialContent = decorators.wrapped(initialContent, multiplicator);
+    if (options?.wrapped) {
+      initialContent = decorators.wrapped(
+        initialContent,
+        options?.multiplicator
+      );
     }
     return initialContent;
-  }, [content, wrapped, rotated, color, multiplicator]);
+  }, [content, options, color]);
 
   return decorated;
 };

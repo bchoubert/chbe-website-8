@@ -1,6 +1,6 @@
 import { imageBorderRadius, mobileThreshold } from "assets";
-import PartWithTitle from "components/Utils/PartWithTitle";
-import Pill from "components/Utils/Pill";
+import PartWithTitle from "components/Utils/layout/PartWithTitle";
+import Pill from "components/Utils/content/Pill";
 import Link from "next/link";
 import React, { FC, memo } from "react";
 import { EDetailsPart } from "types/business.types";

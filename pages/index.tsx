@@ -5,10 +5,10 @@ import { mobileThreshold } from "assets";
 
 import EExperience from "components/Business/experience/EExperience";
 import EWork from "components/Business/work/EWork";
-import Layout from "components/Layout";
-import ProfileImage from "components/ProfileImage";
-import Section from "components/Section";
-import Semipage from "components/Semipage";
+import Layout from "components/Utils/layout/Layout";
+import ProfileImage from "components/Utils/content/ProfileImage";
+import Section from "components/Utils/layout/Section";
+import Semipage from "components/Utils/layout/Semipage";
 
 import experience from "data/experience";
 import profile from "data/profile";

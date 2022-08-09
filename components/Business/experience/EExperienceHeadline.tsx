@@ -1,5 +1,5 @@
-import FullCard from "components/Utils/FullCard";
-import IconWithText from "components/Utils/IconWithText";
+import FullCard from "components/Utils/layout/FullCard";
+import IconWithText from "components/Utils/content/IconWithText";
 import { FC, memo } from "react";
 import { IExperience } from "types/business.types";
 

@@ -1,6 +1,6 @@
 import { FC, memo } from "react";
 
-import Layout from "components/Layout";
+import Layout from "components/Utils/layout/Layout";
 
 import work from "data/work";
 

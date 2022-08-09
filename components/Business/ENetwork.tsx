@@ -3,7 +3,7 @@ import { FC, memo } from "react";
 
 import { colors } from "assets";
 
-import Icon from "components/Utils/Icon";
+import Icon from "components/Utils/content/Icon";
 import { INetwork } from "types/business.types";
 
 const ENetwork: FC<INetwork> = ({ link, newTab, name, icon }) => (

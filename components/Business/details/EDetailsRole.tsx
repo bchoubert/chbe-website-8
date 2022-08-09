@@ -1,4 +1,4 @@
-import PartWithTitle from "components/Utils/PartWithTitle";
+import PartWithTitle from "components/Utils/layout/PartWithTitle";
 import { FC, memo } from "react";
 import { EDetailsPart } from "types/business.types";
 

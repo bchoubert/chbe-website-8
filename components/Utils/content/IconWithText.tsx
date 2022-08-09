@@ -1,6 +1,6 @@
 import { FC, memo, ReactNode } from "react";
 
-import Icon from "components/Utils/Icon";
+import Icon from "components/Utils/content/Icon";
 
 import { IIcon } from "types/common.types";
 
@@ -27,7 +27,10 @@ const IconWithText: FC<IconWithTextProps> = ({
 }) => (
   <>
     <div className="root">
-      <Icon icon={icon} wrapped multiplicator={options?.size || 1} />
+      <Icon
+        icon={icon}
+        options={{ wrapped: true, multiplicator: options?.size || 1 }}
+      />
       <div>
         <h2 className="title">{title}</h2>
         {caption && <span className="caption">{caption}</span>}
@@ -40,8 +43,11 @@ const IconWithText: FC<IconWithTextProps> = ({
         font-size: ${options?.size || 1}rem;
         font-weight: bold;
       }
+      .caption {
+        white-space: nowrap;
+      }
       .root {
-        display: inline-flex;
+        display: flex;
         flex-direction: row;
         align-items: center;
         padding-right: 0.5rem;

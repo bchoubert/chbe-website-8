@@ -2,7 +2,7 @@ import { FC, memo } from "react";
 
 import { styles } from "assets";
 
-import IconWithText from "components/Utils/IconWithText";
+import IconWithText from "components/Utils/content/IconWithText";
 
 import { IIcon } from "types/common.types";
 

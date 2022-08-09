@@ -3,7 +3,7 @@ import { FC, memo } from "react";
 
 import { mobileThreshold } from "assets";
 
-import Card from "components/Utils/Card";
+import Card from "components/Utils/layout/Card";
 import { IExperience } from "types/business.types";
 
 const EEexperience: FC<IExperience> = (exp) => (

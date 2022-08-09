@@ -2,7 +2,7 @@ import { FC, memo } from "react";
 
 import { colors, styles } from "assets";
 
-import Icon from "components/Utils/Icon";
+import Icon from "components/Utils/content/Icon";
 
 import { IIcon } from "types/common.types";
 

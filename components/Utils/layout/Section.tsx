@@ -1,6 +1,6 @@
 import { FC, memo } from "react";
 
-import IconWithText from "components/Utils/IconWithText";
+import IconWithText from "components/Utils/content/IconWithText";
 
 import { ISection } from "types/common.types";
 

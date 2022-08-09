@@ -3,8 +3,8 @@ import { FC, memo, ReactNode } from "react";
 
 import { colors, styles } from "assets";
 
-import Footer from "components/Utils/Footer";
-import Navbar from "components/Utils/Navbar";
+import Footer from "components/Utils/layout/Footer";
+import Navbar from "components/Utils/layout/Navbar";
 
 import profile from "data/profile";
 

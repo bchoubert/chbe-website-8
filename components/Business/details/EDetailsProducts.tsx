@@ -1,9 +1,9 @@
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { styles } from "assets";
-import Icon from "components/Utils/Icon";
-import IconWithText from "components/Utils/IconWithText";
-import PartWithTitle from "components/Utils/PartWithTitle";
-import Pill from "components/Utils/Pill";
+import Icon from "components/Utils/content/Icon";
+import IconWithText from "components/Utils/content/IconWithText";
+import PartWithTitle from "components/Utils/layout/PartWithTitle";
+import Pill from "components/Utils/content/Pill";
 import Link from "next/link";
 import { FC, memo } from "react";
 import { EDetailsPart } from "types/business.types";
