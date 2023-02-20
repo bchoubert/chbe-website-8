@@ -17,7 +17,6 @@ const EWorkHeadline: FC<EWorkHeadlineProps> = ({ object }) => {
             icon={object.icon}
             options={{
               isInline: true,
-              isWhiteBackground: true,
               size: 1.3,
             }}
           />

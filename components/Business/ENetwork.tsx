@@ -14,7 +14,7 @@ const ENetwork: FC<INetwork> = ({ link, newTab, name, icon }) => (
         title={name}
         className="network"
       >
-        <Icon wrapped icon={icon} multiplicator={1.2} />
+        <Icon icon={icon} options={{ multiplicator: 1.2, wrapped: true }} />
       </a>
     </Link>
     <style jsx>{`

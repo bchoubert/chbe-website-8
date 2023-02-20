@@ -3,11 +3,12 @@ import { FC, memo, useMemo } from "react";
 import ESubDetails from "components/Business/details/subDetails/ESubDetails";
 
 import { IBusinessCommon } from "types/business.types";
-import EDetailsCompany from "./EDetailsCompany";
+import EDetailsCompanyOrProject from "./EDetailsCompanyOrProject";
 import EDetailsRole from "./EDetailsRole";
 import EDetailsProducts from "./EDetailsProducts";
 import ESubDetailsImage from "./subDetails/ESubDetailsImage";
 import { imageBorderRadius, mobileThreshold } from "assets";
+import EDetailsRealisations from "./EDetailsRealisations";
 
 interface EDetailsProps {
   object: IBusinessCommon;
@@ -27,10 +28,13 @@ const EDetails: FC<EDetailsProps> = ({ object }) => {
           className={details.illustration ? "EDetails--withIllustration" : ""}
         >
           <div>
-            {details.company && (
-              <EDetailsCompany details={details} common={object} />
+            {(details.company || details.project) && (
+              <EDetailsCompanyOrProject details={details} common={object} />
             )}
             {details.role && <EDetailsRole details={details} common={object} />}
+            {details.realisations && (
+              <EDetailsRealisations details={details} common={object} />
+            )}
           </div>
           {details.illustration && (
             <div className="EDetails-illustraton">

@@ -21,9 +21,25 @@ export type ISubDetails = {
 export interface IDetailsCompany {
   company?: {
     description: string;
+    accomplishments?: string[];
     links?: ILink[];
     customers?: ICustomer[];
   };
+}
+
+export interface IDetailsProject {
+  project?: {
+    description: string;
+    accomplishments?: string[];
+    links?: ILink[];
+    technologies?: ITechnology[];
+    images?: IImage[];
+  };
+}
+
+export interface IDetailsRoleRealisation {
+  title: string;
+  description: string;
 }
 
 export interface IDetailsRole {
@@ -31,6 +47,7 @@ export interface IDetailsRole {
     description: string;
     more?: string;
   }
+  realisations?: IDetailsRoleRealisation[];
 }
 
 export interface IDetailsProducts {
@@ -52,4 +69,4 @@ export interface IDetailsMissions {
   }[];
 }
 
-export type IDetails = IDetailsCompany & IDetailsRole & IDetailsProducts & IDetailsMissions & ISubDetails;
+export type IDetails = IDetailsCompany & IDetailsProject & IDetailsRole & IDetailsProducts & IDetailsMissions & ISubDetails;

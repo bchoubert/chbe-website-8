@@ -1,3 +1,5 @@
+import { faDribbble, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { IWork } from "types/business.types";
 
 const work: IWork[] = [
@@ -10,7 +12,92 @@ const work: IWork[] = [
     color: '#113885',
     light: '#e7eefc',
     details: {
-
+      illustration: {
+        h: 536,
+        w: 536,
+        path: '/images/projects/LO/illustration.jpg'
+      },
+      project: {
+        description: `Your everyday logistics partner. LogTrack is an ERP and provides a set of pioneering functionalities for all related workers:<br/>${''
+          } Driver, Manager, Dispatcher, Insurer, Accountant, Mechanic...<br/>${''
+          } Built with the most modern technologies, LogTrack is a powerful, versatile and user-centered product.`,
+        links: [
+          {
+            title: 'GitHub',
+            icon: { source: 'fa', icon: faGithub },
+            link: 'https://github.com/bchoubert/logistics',
+          },
+          {
+            title: 'Website',
+            icon: { source: 'fa', icon: faGlobe },
+            link: 'https://logtrack.app/',
+          },
+          {
+            title: 'Dribbble',
+            icon: { source: 'fa', icon: faDribbble },
+            link: 'https://dribbble.com/bchoubert/projects/2016530-LogTrack',
+          },
+        ],
+        technologies: [
+          {
+            icon: { source: 'custom', icon: '/technologies/nodejs-logo' },
+            title: 'NodeJS NestJS',
+          },
+          {
+            icon: { source: 'custom', icon: '/technologies/react-logo' },
+            title: 'React',
+          },
+          {
+            icon: { source: 'custom', icon: '/technologies/openlayers-logo' },
+            title: 'OpenLayers',
+          },
+          {
+            icon: { source: 'custom', icon: '/technologies/sass-logo' },
+            title: 'Sass',
+          },
+          {
+            icon: { source: 'custom', icon: '/technologies/firebase-logo' },
+            title: 'Firebase Cloud',
+          },
+        ],
+        images: [
+          {
+            h: 1254,
+            w: 998,
+            path: '/images/projects/LO/1.png',
+          },
+          {
+            h: 979,
+            w: 1920,
+            path: '/images/projects/LO/2.png',
+          },
+          {
+            h: 1920,
+            w: 979,
+            path: '/images/projects/LO/3.png',
+          },
+          {
+            h: 2475,
+            w: 3300,
+            path: '/images/projects/LO/4.png',
+          },
+          {
+            h: 2475,
+            w: 3300,
+            path: '/images/projects/LO/5.png',
+          },
+          {
+            h: 979,
+            w: 1920,
+            path: '/images/projects/LO/6.png',
+          },
+          {
+            h: 1281,
+            w: 1920,
+            path: '/images/projects/LO/7.jpg',
+          },
+        ]
+      }
     },
   },
   {

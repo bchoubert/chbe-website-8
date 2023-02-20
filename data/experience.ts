@@ -11,11 +11,18 @@ const experience: IExperience[] = [
     icon: { source: 'custom', icon: '/organisms/amalia-logo' },
     image: '/images/companies/AM/brand.png',
     color: '#FFD859',
-    light: '#fff8e2',
+    light: '#FFF8E2',
     details: {
       company: {
         description: `<b>Amalia</b> is on a mission to inspire, enable, and reward <b>peak business performance</b>.${''
-          }It helps companies simplify compensation management.<br/><br/>Amalia was listed as in the <b>best 20 startups in Europe in 2022</b>.`,
+          } It helps companies simplify compensation & performance management along 3 axis: ${''
+          } <ul><li>ICM (<b>Incentive Compensation</b> Management, how to align sales rep behavior to the company's goals),</li> ${''
+          } <li>SPM (<b>Sales Performance</b> Management, tool that analyze and automatize sales rep processes),</li>${''
+          } <li>EPM (<b>Enterprise Performance</b> Management, tool to plan, buget, forecast and report the business performance).</li></ul>`,
+        accomplishments: [
+          'Amalia certifies $100+ millions in sales commissions annually.',
+          'Amalia was listed as in the <b>best 20 startups in Europe in 2022</b> and is part of the famous <b>Future40</b> by StationF.',
+        ],
         links: [
           {
             title: 'Website',
@@ -62,16 +69,36 @@ const experience: IExperience[] = [
       },
       role: {
         description: `As a <b>Web Developer</b> & <b>UI Reviewer</b>, I was in charge of new feature development, participated in UI/UX reviews,${''
-          } designed complex technical solutions and mockups.<br/><br/>I was also missioned to be the <b>Tests Referral</b>, ${''
-          } I increased code quality by providing standards and new test solutions. and animated workshops around new testing technologies.`,
+          } designed complex technical solutions and mockups.<br/><br/>${''
+          }I was in charge of both <b>validating/enriching ticket specifications</b>, helping development team I was part of for a faster development, and <b>checking the realisations</b>.<br/><br/>${''
+          }I was also missioned to be the <b>Tests Referral</b>, ${''
+          } I increased code quality by providing standards and new test solutions. I implemented Testing Library tests, and animated workshops to train the whole team and around new testing technologies.`,
       },
+      realisations: [
+        {
+          title: 'Downloads',
+          description: 'A Google Cloud Run module that starts on HTTP-requests, that auto-scales and that permits to download very large files.',
+        },
+        {
+          title: 'Tests',
+          description: 'Implementing new testing solutions using RTL and Cypress, do tech trainings and write documentations.',
+        },
+        {
+          title: 'Design System',
+          description: 'Implement a well-documented, well tested design system, with Storybook.'
+        },
+        {
+          title: 'Tracing',
+          description: 'Develop a tool to let salesReps understand the full calculation of their commission.'
+        }
+      ],
       products: [
         {
           name: 'Amalia.io',
           icon: { source: 'custom', icon: '/organisms/amalia-logo' },
           description: 'Real-time sales performance management Saas solution',
           longDescription: `Sales Representatives have a variable salary (<b>compensation</b>) depending on how many new contracts they permitted to sign for their company.${''
-            } It depends on the contract type, if it\'s a new contract or a renewal, upsell... Nowadays, companies must build their compensation plan to be <b>very attractive</b>,${''
+            } It depends on the contract type, if it\'s a new contract or a renewal, upsell, their team achievements... Nowadays, companies must build their compensation plan to be <b>very attractive</b>,${''
             } to encourage a better productivity, but must be aware to <b>limit their expenses</b> on these plans. ${''
             }This problematic causes compensation plans to be <b>more and more complex</b>, implementing rampups, accelerators, adjustments, hold & release, KPIs, on-Target earning...<br/><br/>${''
             }Amalia provides solutions to <b>design and analyze compensation plans</b>, and tools to manage data sources, overwrites, employee directory, goals, KPIs, comments, validation workflows...`,
@@ -98,6 +125,11 @@ const experience: IExperience[] = [
             },
           ],
           images: [
+            {
+              h: 800,
+              w: 1200,
+              path: '/images/companies/AM/brand.png',
+            },
             {
               h: 800,
               w: 1200,

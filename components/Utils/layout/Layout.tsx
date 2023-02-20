@@ -89,7 +89,7 @@ const Layout: FC<LayoutProps> = ({ children, color }) => {
         }
         .caption {
           position: relative;
-          top: -0.4rem;
+          top: -0.2em;
           font-size: 80%;
           color: ${colors.grey["600"]};
         }

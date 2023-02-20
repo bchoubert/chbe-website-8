@@ -2,8 +2,9 @@ import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { ReactNode } from 'react';
 
 export type IIcon = {
-  source: 'fa' | 'custom';
+  source: 'fa' | 'custom' | 'component';
   icon: IconDefinition | string;
+  iconColor?: string;
 };
 
 interface IIconWithTitle {

@@ -30,7 +30,7 @@ const IconWithText: FC<IconWithTextProps> = ({
       <div className="content">
         <Icon
           icon={icon}
-          options={{ wrapped: true, multiplicator: options?.size || 1 }}
+          options={{ wrapped: true, multiplicator: options?.size }}
         />
         <div>
           <h2 className="title">{title}</h2>
@@ -56,6 +56,8 @@ const IconWithText: FC<IconWithTextProps> = ({
       }
       .caption {
         white-space: nowrap;
+        position: relative;
+        top: -0.5em;
       }
       .content {
         display: flex;

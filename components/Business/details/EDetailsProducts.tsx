@@ -7,13 +7,14 @@ import Pill from "components/Utils/content/Pill";
 import Link from "next/link";
 import { FC, memo } from "react";
 import { EDetailsPart } from "types/business.types";
+import IconCardH from "components/Utils/content/IconCardH";
 
 const EDetailsProducts: FC<EDetailsPart> = ({ details, common }) => (
   <div className="EDetailsProducts">
-    <PartWithTitle title="Products" color={common.color}>
+    <PartWithTitle title="Products" options={{ color: common.color }}>
       {details.products.map((p) => (
         <div key={p.name}>
-          <IconWithText
+          <IconCardH
             icon={p.icon}
             title={p.name}
             caption={p.description}
@@ -30,6 +31,7 @@ const EDetailsProducts: FC<EDetailsPart> = ({ details, common }) => (
                 </Link>
               ) : null
             }
+            color={common.light}
           />
           {p.longDescription ? (
             <div
@@ -105,7 +107,7 @@ const EDetailsProducts: FC<EDetailsPart> = ({ details, common }) => (
       }
       .EDetailsProducts .d_link {
         display: inline-block;
-        margin: 0.5rem 1rem 0 0;
+        margin: 0.5rem 1rem 0 1rem;
         text-decoration: none;
       }
     `}</style>

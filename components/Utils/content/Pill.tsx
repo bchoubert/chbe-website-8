@@ -9,18 +9,19 @@ import { IIcon } from "types/common.types";
 interface IPillProps {
   light?: string;
   textColor?: string;
+  iconColor?: string;
   title: string;
   icon?: IIcon;
 }
 
-const Pill: FC<IPillProps> = ({ light, textColor, title, icon }) => (
+const Pill: FC<IPillProps> = ({ light, textColor, iconColor, title, icon }) => (
   <>
     <div className="Pill">
       <div
         className={`Pill-wrapper ${textColor ? "" : "Pill-wrapper--opacity"}`}
       >
-        {icon && <Icon icon={icon} />}
-        {title}
+        {icon && <Icon icon={icon} options={{ color: iconColor }} />}
+        <div dangerouslySetInnerHTML={{ __html: title }} />
       </div>
     </div>
     <style jsx>{`

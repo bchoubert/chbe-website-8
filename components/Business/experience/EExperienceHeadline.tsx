@@ -17,7 +17,7 @@ const EExperienceHeadline: FC<EExperienceHeadlineProps> = ({ object }) => {
           title={object.company}
           options={{
             isInline: true,
-            isWhiteBackground: true,
+            size: 1.3,
           }}
         />
       </div>
