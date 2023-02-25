@@ -28,6 +28,8 @@ const FullCard: FC<FullCardProps> = ({ image, color, children }) => (
         flex-direction: row;
         ${styles.br}
         background-color: ${color};
+        padding-bottom: 5rem;
+        overflow: hidden;
       }
       .Content-wrapper {
         width: 50%;
@@ -40,7 +42,6 @@ const FullCard: FC<FullCardProps> = ({ image, color, children }) => (
         width: 50%;
         padding-bottom: 33.3%;
         position: relative;
-        overflow: hidden;
       }
       .Image-child {
         width: 100%;

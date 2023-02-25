@@ -9,6 +9,7 @@ import EDetailsProducts from "./EDetailsProducts";
 import ESubDetailsImage from "./subDetails/ESubDetailsImage";
 import { imageBorderRadius, mobileThreshold } from "assets";
 import EDetailsRealisations from "./EDetailsRealisationsFeatures";
+import EWorkImages from "../work/EWorkImages";
 
 interface EDetailsProps {
   object: IBusinessCommon;
@@ -48,6 +49,7 @@ const EDetails: FC<EDetailsProps> = ({ object }) => {
             </div>
           )}
         </div>
+        <EWorkImages details={details} common={object} />
         {details.products && (
           <EDetailsProducts details={details} common={object} />
         )}
