@@ -1,5 +1,5 @@
 import { faDribbble, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faGlobe, faWrench } from "@fortawesome/free-solid-svg-icons";
 import { IWork } from "types/business.types";
 
 const work: IWork[] = [
@@ -17,6 +17,13 @@ const work: IWork[] = [
         w: 536,
         path: '/images/projects/LO/illustration.jpg'
       },
+      features: [
+        {
+          title: 'Mechanic / Maintenance',
+          icon: faWrench,
+          description: 'A full maintenance interface with 500+ available models.'
+        }
+      ],
       project: {
         description: `Your everyday logistics partner. LogTrack is an ERP and provides a set of pioneering functionalities for all related workers:<br/>${''
           } Driver, Manager, Dispatcher, Insurer, Accountant, Mechanic...<br/>${''
@@ -59,6 +66,10 @@ const work: IWork[] = [
             icon: { source: 'custom', icon: '/technologies/firebase-logo' },
             title: 'Firebase Cloud',
           },
+          {
+            icon: { source: 'custom', icon: '/technologies/nx-logo' },
+            title: 'NX',
+          },
         ],
         images: [
           {
@@ -67,9 +78,9 @@ const work: IWork[] = [
             path: '/images/projects/LO/1.png',
           },
           {
-            h: 979,
-            w: 1920,
-            path: '/images/projects/LO/2.png',
+            h: 699,
+            w: 1242,
+            path: '/images/projects/LO/2.jpg',
           },
           {
             h: 1920,
@@ -95,6 +106,21 @@ const work: IWork[] = [
             h: 1281,
             w: 1920,
             path: '/images/projects/LO/7.jpg',
+          },
+          {
+            h: 979,
+            w: 1920,
+            path: '/images/projects/LO/8.png',
+          },
+          {
+            h: 828,
+            w: 1242,
+            path: '/images/projects/LO/9.jpg',
+          },
+          {
+            h: 457,
+            w: 627,
+            path: '/images/projects/LO/10.jpg',
           },
         ]
       }

@@ -1,3 +1,4 @@
+import { IconDefinition } from "@fortawesome/free-brands-svg-icons";
 import { ICustomer, IIcon, IImage, ILink, ITechnology } from "./common.types";
 
 export enum ISubDetailsType {
@@ -37,8 +38,9 @@ export interface IDetailsProject {
   };
 }
 
-export interface IDetailsRoleRealisation {
+export interface IDetailsRoleRealisationOrFeature {
   title: string;
+  icon: IconDefinition;
   description: string;
 }
 
@@ -47,7 +49,8 @@ export interface IDetailsRole {
     description: string;
     more?: string;
   }
-  realisations?: IDetailsRoleRealisation[];
+  realisations?: IDetailsRoleRealisationOrFeature[];
+  features?: IDetailsRoleRealisationOrFeature[];
 }
 
 export interface IDetailsProducts {

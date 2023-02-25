@@ -1,5 +1,5 @@
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faBrain, faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import { faArrowsToEye, faBrain, faBug, faCheckSquare, faClock, faCogs, faComments, faCube, faDatabase, faDownload, faExternalLinkAlt, faHospital, faLayerGroup, faMagnifyingGlassChart, faMap, faPaintBrush, faPaintRoller, faPalette, faRuler, faSquareCheck } from '@fortawesome/free-solid-svg-icons';
 import { IExperience } from 'types/business.types';
 
 
@@ -21,6 +21,7 @@ const experience: IExperience[] = [
           } <li>EPM (<b>Enterprise Performance</b> Management, tool to plan, buget, forecast and report the business performance).</li></ul>`,
         accomplishments: [
           'Amalia certifies $100+ millions in sales commissions annually.',
+          'Amalia raised 4 million euros.',
           'Amalia was listed as in the <b>best 20 startups in Europe in 2022</b> and is part of the famous <b>Future40</b> by StationF.',
         ],
         links: [
@@ -64,6 +65,10 @@ const experience: IExperience[] = [
           {
             title: 'SudOuest',
             link: 'https://www.sudouest.fr/'
+          },
+          {
+            title: 'Qonto',
+            link: 'https://qonto.com/en'
           }
         ]
       },
@@ -76,19 +81,28 @@ const experience: IExperience[] = [
       },
       realisations: [
         {
+          title: 'Data connectors',
+          icon: faDatabase,
+          description: 'Develop and maintain data connectors, from oauth2 authentications to cron scripts that launch data syncrhonisation.',
+        },
+        {
           title: 'Downloads',
+          icon: faDownload,
           description: 'A Google Cloud Run module that starts on HTTP-requests, that auto-scales and that permits to download very large files.',
         },
         {
           title: 'Tests',
-          description: 'Implementing new testing solutions using RTL and Cypress, do tech trainings and write documentations.',
+          icon: faBug,
+          description: 'Implementing new testing solutions using RTL and Cypress, do tech trainings and write documentations. Increase code quality and coverage by 16%, for better maintenance and less regression.',
         },
         {
           title: 'Design System',
-          description: 'Implement a well-documented, well tested design system, with Storybook.'
+          icon: faRuler,
+          description: 'Implement a well-documented, well tested design system, with Storybook. Mentor and train team members, providing materials, guidelines and meetings.'
         },
         {
           title: 'Tracing',
+          icon: faArrowsToEye,
           description: 'Develop a tool to let salesReps understand the full calculation of their commission.'
         }
       ],
@@ -207,6 +221,9 @@ const experience: IExperience[] = [
       },
       company: {
         description: '<b>Sogelink</b> supports all players in the <b>infrastructure and construction</b> ecosystem with <b>software, cloud and mobile solutions</b>.',
+        accomplishments: [
+          'Sogelink provides solutions for more than 37k customers.'
+        ],
         links: [
           {
             title: 'Website',
@@ -260,11 +277,44 @@ const experience: IExperience[] = [
       role: {
         description: 'As a <b>UI Designer</b> & <b>R&D Full-Stack Web Developer</b>, I designed and developed may components and webpages, as well as developed POC related to 2D and 3D on the web.',
       },
+      realisations: [
+        {
+          title: 'Reusable components',
+          icon: faPaintRoller,
+          description: 'Design and develop highly-reusable, maintainable and performant components, meeting with the design team and other product teams.',
+        },
+        {
+          title: 'Forms',
+          icon: faCheckSquare,
+          description: 'Design and develop form components for a better UX.',
+        },
+        {
+          title: 'Icons',
+          icon: faPalette,
+          description: 'Design new business and technical monochrome and bi-tone icons for a land surveyor application.',
+        },
+        {
+          title: 'GeoServer API',
+          icon: faLayerGroup,
+          description: 'Use the GeoServer API to update PCRS and Geometry Layers in real-time.'
+        },
+        {
+          title: '2D / 3D file viewers',
+          icon: faCube,
+          description: 'Develop POCs related to 2D and 3D files visualization in web browsers (DAE, DXF, DWG).'
+        },
+        {
+          title: 'Scatter plots',
+          icon: faMagnifyingGlassChart,
+          description: 'Optimize 3D scatter plots filter and transformation algorithms.'
+        }
+      ],
       products: [
         {
           name: 'Maplink',
           icon: { source: 'custom', icon: '/projects/maplink-logo-alt' },
           description: 'Maplink is both a map component integrated into DICT.fr and a Network and Urban Properties Management Solution',
+          longDescription: 'Based on <b>GeoServer</b>, MapLink is a product used internally, externally, and as part of another product DICT.fr. DICT.fr offers <b>construction work declaration</b>, which is mandatory in France. Used externally or internally, Maplink permits companies to <b>manage their networks</b>, update them as build was done.',
           technologies: [
             {
               icon: { source: 'custom', icon: '/technologies/java-logo' },
@@ -297,6 +347,7 @@ const experience: IExperience[] = [
           name: 'Geosnap',
           icon: { source: 'custom', icon: '/projects/geosnap-logo' },
           description: 'Surveyor / Topography Saas Solution : compute your topographic projects in the cloud',
+          longDescription: 'Geosnap provides land surveyors with a solution where construction workers can take photos of their advancement, send them to the platform to <b>build a scatter plot and 3D model</b>, then let the land surveyor to finalize the plans and update the networks. Along with productivity, Geosnap gives land surveyors <b>project management, cloud data filtering and consolidation, cloud 3D model build</b>...',
           technologies: [
             {
               icon: { source: 'custom', icon: '/technologies/java-logo' },
@@ -368,6 +419,7 @@ const experience: IExperience[] = [
         customers: [
           {
             title: '80% of French hospitals',
+            icon: { source: 'fa', icon: faHospital },
             link: 'https://www.maincare.com/qui-sommes-nous/le-groupe-maincare-10-23.html'
           }
         ]
@@ -375,11 +427,29 @@ const experience: IExperience[] = [
       role: {
         description: 'I was a <b>Web Developer</b>, my goals were to develop a new prescription tool for general practitioners and maintain existing modules of the app.',
       },
+      realisations: [
+        {
+          title: 'Future Venues',
+          icon: faClock,
+          description: 'Work on patient path and develop a module about planned future venues.'
+        },
+        {
+          title: 'Form UX',
+          icon: faSquareCheck,
+          description: 'Debate about form UX design with a surgeon, taking into account equipment, …'
+        },
+        {
+          title: 'Component design & development',
+          icon: faPaintBrush,
+          description: 'Design and Develop new functionalities, Participate in specifications meetings, Providing documentation about new components I develop and integrated.'
+        }
+      ],
       products: [
         {
           name: 'IdeoMed / IdeoSanté',
           icon: { source: 'custom', icon: '/projects/ideomed-logo' },
           description: 'Complex Sass Health platform that focuses on prescriptions and patient journey',
+          longDescription: 'With its own component library, IdeoMed is a complete solution for medication, prescription, staff, budget, document sharing for hospitals and doctors.',
           technologies: [
             {
               icon: { source: 'custom', icon: '/technologies/java-logo' },
@@ -452,6 +522,13 @@ const experience: IExperience[] = [
       role: {
         description: 'As a <b>Full-Stack Developer</b> and <b>Brand / UI Designer</b>, my missions went from specifications with customers to design and implement projects architecture, delivery, writing user\'s guide, and of course, Ops, setting up servers and writing developer\'s guide, and design and implement components and websites.',
       },
+      realisations: [
+        {
+          title: 'Custom solution for custom needs',
+          icon: faComments,
+          description: 'Meet with customers, Write Specifications, Design layouts and views.'
+        }
+      ],
       products: [
         {
           name: 'Brussels Aquariums e-commerce website',
@@ -548,6 +625,7 @@ const experience: IExperience[] = [
           name: 'CV-Broker',
           icon: { source: 'custom', icon: '/projects/cvbroker-logo' },
           description: 'Complete applicant management website for recruiters and companies',
+          longDescription: 'Independant & automatic CV creation module, calling official European Commission APIs and custom APIS and generating on-the-fly PDFs.',
           technologies: [
             {
               icon: { source: 'custom', icon: '/technologies/symfony-logo-alt' },
@@ -570,6 +648,7 @@ const experience: IExperience[] = [
           name: 'My Landlord Club',
           icon: { source: 'custom', icon: '/projects/mylandlordclub-logo' },
           description: 'Real-estate crowd-funding',
+          longDescription: 'Website audit for web-marketing, UI design and accessibility problematics',
           technologies: [],
           images: [
             {
@@ -610,10 +689,41 @@ const experience: IExperience[] = [
             link: 'https://www.linkedin.com/company/brayton-global/',
           },
         ],
+        accomplishments: [
+          '1800+ vessels are using Vemasys daily.',
+          'Vemasys was validated by Interreg (European Commission Danube modernization program)'
+        ]
       },
       role: {
-        description: 'I worked as a <b>Lead Web Developer</b>. My missions were to track progress against long and short-term goals, communicate with the project manager and the team, keep motivation up, and setup tools to help the team with their daily work. In addition, as a Developer, I enforced standards and code quality and developed components, forms, and user interfaces.',
+        description: 'I worked as a <b>Lead Web Developer</b>. My missions were communicate with the project manager and the team, keep motivation up, and setup tools to help the team with their daily work. In addition, as a Developer, I enforced standards and code quality and developed components, forms, and user interfaces.',
       },
+      realisations: [
+        {
+          title: 'Performance and modularity',
+          icon: faCogs,
+          description: 'Design and Develop a complex architecture with cache storage and modular architecture.'
+        },
+        {
+          title: 'Front-End',
+          icon: faPaintRoller,
+          description: 'Implement Front-End following mock-ups and solving ergonomic problems, Create elegant designs and easily maintainable code.'
+        },
+        {
+          title: 'Specifications',
+          icon: faComments,
+          description: 'Participate in specifications meetings with the Product Owner and Fleet owners.'
+        },
+        {
+          title: 'Lead to help',
+          icon: faClock,
+          description: 'Organize daily tasks of the team, track short-term and long term progress.'
+        },
+        {
+          title: 'Map',
+          icon: faMap,
+          description: 'Design and Develop a scalable map with layer server and 25k+ pointers.'
+        }
+      ],
       products: [
         {
           name: 'SkillMatrix',
@@ -633,7 +743,7 @@ const experience: IExperience[] = [
         {
           name: 'Vemasys',
           icon: { source: 'custom', icon: '/projects/vemasys-logo' },
-          description: 'Vessel Management System, Saas ERP that aims to revolutionize goods transportation. Fleet Management, Invoicing, Maintenance, Security... 1800+ vessels are using Vemasys daily.',
+          description: 'Vessel Management System, Saas ERP that aims to revolutionize goods transportation. Fleet Management, Invoicing, Maintenance, Security...',
           images: [
             {
               h: 901,

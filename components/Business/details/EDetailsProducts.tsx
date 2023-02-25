@@ -11,7 +11,10 @@ import IconCardH from "components/Utils/content/IconCardH";
 
 const EDetailsProducts: FC<EDetailsPart> = ({ details, common }) => (
   <div className="EDetailsProducts">
-    <PartWithTitle title="Products" options={{ color: common.color }}>
+    <PartWithTitle
+      title={(details.products || []).length > 1 ? "Products" : "Product"}
+      options={{ color: common.color }}
+    >
       {details.products.map((p) => (
         <div key={p.name}>
           <IconCardH

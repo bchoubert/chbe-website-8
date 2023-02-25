@@ -24,24 +24,28 @@ const EDetailsCompanyOrProject: FC<EDetailsPart> = ({ details, common }) => {
               __html: detailsCompanyOrProjects?.description,
             }}
           />
-          {(detailsCompanyOrProjects?.accomplishments || []).map((a) => (
-            <Pill
-              title={a}
-              textColor={colors.grey[1000]}
-              icon={{
-                source: "component",
-                icon: "star",
-              }}
-              iconColor={common.color}
-            />
-          ))}
-          {(detailsCompanyOrProjects?.links || []).map((l) => (
-            <Link passHref href={l.link} key={l.title}>
-              <a target="_blank">
-                <Pill {...l} textColor={common.color} />
-              </a>
-            </Link>
-          ))}
+          <div>
+            {(detailsCompanyOrProjects?.accomplishments || []).map((a) => (
+              <Pill
+                title={a}
+                textColor={colors.grey[1000]}
+                icon={{
+                  source: "component",
+                  icon: "star",
+                }}
+                iconColor={common.color}
+              />
+            ))}
+          </div>
+          <div>
+            {(detailsCompanyOrProjects?.links || []).map((l) => (
+              <Link passHref href={l.link} key={l.title}>
+                <a target="_blank">
+                  <Pill {...l} textColor={common.color} />
+                </a>
+              </Link>
+            ))}
+          </div>
           <div className="d_tech">
             {(
               (detailsCompanyOrProjects as IDetailsProject["project"])
@@ -55,7 +59,6 @@ const EDetailsCompanyOrProject: FC<EDetailsPart> = ({ details, common }) => {
               />
             ))}
           </div>
-
           {(
             (detailsCompanyOrProjects as IDetailsCompany["company"])
               ?.customers || []
