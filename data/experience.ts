@@ -378,9 +378,9 @@ const experience: IExperience[] = [
               path: '/images/companies/SK/gs_2.jpg',
             },
             {
-              h: 1267,
-              w: 2048,
-              path: '/images/companies/SK/gs_3.jpeg',
+              h: 886,
+              w: 1433,
+              path: '/images/companies/SK/gs_3.jpg',
             },
           ],
           link: 'https://www.sogelink.fr/geosnap',
@@ -505,7 +505,7 @@ const experience: IExperience[] = [
     title: 'Web Developer',
     company: 'VDS Consulting',
     icon: { source: 'custom', icon: '/organisms/vdsconsulting-logo' },
-    image: '/images/companies/VC/brand.png',
+    image: '/images/companies/VC/brand.jpg',
     color: '#EDCD40',
     light: '#fcf7e1',
     details: {
@@ -746,9 +746,9 @@ const experience: IExperience[] = [
           description: 'Vessel Management System, Saas ERP that aims to revolutionize goods transportation. Fleet Management, Invoicing, Maintenance, Security...',
           images: [
             {
-              h: 901,
-              w: 1600,
-              path: '/images/companies/BG/vms_1.png'
+              h: 630,
+              w: 1120,
+              path: '/images/companies/BG/vms_1.jpg'
             },
             {
               h: 884,
@@ -776,9 +776,9 @@ const experience: IExperience[] = [
               path: '/images/companies/BG/vms_6.png'
             },
             {
-              h: 1005,
-              w: 2000,
-              path: '/images/companies/BG/vms_7.png'
+              h: 703,
+              w: 1400,
+              path: '/images/companies/BG/vms_7.jpg'
             },
           ],
           technologies: [

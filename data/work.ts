@@ -5,7 +5,7 @@ import { IWork } from "types/business.types";
 const work: IWork[] = [
   {
     id: 'LO',
-    image: '/images/projects/LO/bootstrap.png',
+    image: '/images/projects/LO/bootstrap.jpg',
     title: 'LogTrack',
     shortDescription: 'Saas Transportation ERP',
     icon: { source: 'custom', icon: '/organisms/logtrack-logo' },
@@ -123,19 +123,19 @@ const work: IWork[] = [
             path: '/images/projects/LO/2.jpg',
           },
           {
-            h: 979,
-            w: 1920,
-            path: '/images/projects/LO/3.png',
+            h: 685,
+            w: 1344,
+            path: '/images/projects/LO/3.jpg',
           },
           {
-            h: 2475,
-            w: 3300,
-            path: '/images/projects/LO/4.png',
+            h: 1732,
+            w: 2310,
+            path: '/images/projects/LO/4.jpg',
           },
           {
-            h: 2475,
-            w: 3300,
-            path: '/images/projects/LO/5.png',
+            h: 1732,
+            w: 2310,
+            path: '/images/projects/LO/5.jpg',
           },
           {
             h: 979,
@@ -148,9 +148,9 @@ const work: IWork[] = [
             path: '/images/projects/LO/7.jpg',
           },
           {
-            h: 979,
-            w: 1920,
-            path: '/images/projects/LO/8.png',
+            h: 685,
+            w: 1344,
+            path: '/images/projects/LO/8.jpg',
           },
           {
             h: 828,
@@ -168,7 +168,7 @@ const work: IWork[] = [
   },
   {
     id: 'BCF',
-    image: '/images/projects/BCF/bootstrap.png',
+    image: '/images/projects/BCF/bootstrap.jpg',
     title: 'BC-Font',
     shortDescription: 'The Developer Font with 1,200+ icons',
     icon: { source: 'custom', icon: '/organisms/bcfont-logo' },
@@ -380,9 +380,9 @@ const work: IWork[] = [
             path: '/images/projects/ZB/4.png',
           },
           {
-            h: 589,
-            w: 884,
-            path: '/images/projects/ZB/5.png',
+            h: 412,
+            w: 618,
+            path: '/images/projects/ZB/5.jpg',
           },
           {
             h: 661,
@@ -400,7 +400,7 @@ const work: IWork[] = [
   },
   {
     id: 'VV',
-    image: '/images/projects/VV/bootstrap.png',
+    image: '/images/projects/VV/bootstrap.jpg',
     title: 'Velo\'V',
     shortDescription: 'BI over bike-share service',
     icon: { source: 'custom', icon: '/organisms/velov-logo' },
@@ -455,9 +455,9 @@ const work: IWork[] = [
         ],
         images: [
           {
-            h: 1080,
-            w: 1920,
-            path: '/images/projects/VV/1.png',
+            h: 756,
+            w: 1344,
+            path: '/images/projects/VV/1.jpg',
           },
           {
             h: 960,
@@ -490,9 +490,9 @@ const work: IWork[] = [
             path: '/images/projects/VV/7.png',
           },
           {
-            h: 979,
-            w: 1920,
-            path: '/images/projects/VV/8.png',
+            h: 685,
+            w: 1344,
+            path: '/images/projects/VV/8.jpg',
           },
           {
             h: 979,
@@ -588,9 +588,9 @@ const work: IWork[] = [
             path: '/images/projects/AD/3.jpg',
           },
           {
-            h: 960,
-            w: 1861,
-            path: '/images/projects/AD/4.png',
+            h: 672,
+            w: 1302,
+            path: '/images/projects/AD/4.jpg',
           },
           {
             h: 1080,
