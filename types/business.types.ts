@@ -31,6 +31,7 @@ export interface INetwork {
 export interface IProfile {
   title: string;
   headline: string;
+  resume: string;
 }
 
 export interface EDetailsPart {

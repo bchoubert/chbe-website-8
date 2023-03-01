@@ -15,6 +15,7 @@ import profile from "data/profile";
 import work from "data/work";
 
 import { ISection } from "types/common.types";
+import Icon from "components/Utils/content/Icon";
 
 export const config = {
   amp: true,
@@ -56,6 +57,13 @@ const Index: FC = () => (
                 Hi!
               </h1>
               <h2 className="sub">{profile.headline}</h2>
+              <a href={profile.resume} target="_blank" className="resume">
+                <Icon
+                  icon={{ source: "component", icon: "download" }}
+                  options={{ color: "#FFFFFF" }}
+                />
+                Download my Resume
+              </a>
             </div>
           </div>
           <div className="flx-i">
@@ -96,6 +104,16 @@ const Index: FC = () => (
       .sub {
         font-size: 1.2rem;
         font-weight: normal;
+      }
+      .resume {
+        margin-top: 1rem;
+        padding: 0.5rem;
+        background-color: #222222;
+        text-decoration: none;
+        color: #ffffff;
+        display: inline-flex;
+        align-items: center;
+        border-radius: 0.25rem;
       }
       .sections {
         width: 80%;
