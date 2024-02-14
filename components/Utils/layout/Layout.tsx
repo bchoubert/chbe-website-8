@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { FC, memo, ReactNode } from "react";
 
-import { colors, styles } from "assets";
+import { colors, mobileThreshold, styles } from "assets";
 
 import Footer from "components/Utils/layout/Footer";
 import Navbar from "components/Utils/layout/Navbar";
@@ -18,22 +18,6 @@ const Layout: FC<LayoutProps> = ({ children, color }) => {
     <>
       <Head>
         <title>{profile.title}</title>
-
-        <link rel="icon" type="image/png" href="/favicon.png" />
-
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        {/* eslint-disable-next-line @next/next/no-page-custom-font -- false positive, we can't have a _document file using amp - https://github.com/vercel/next.js/issues/26160 */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400&display=swap"
-          rel="stylesheet"
-        />
-
-        <script
-          async
-          custom-element="amp-youtube"
-          src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"
-        ></script>
       </Head>
       <Navbar color={color} />
       <div className="Wrapper">{children}</div>
@@ -92,6 +76,19 @@ const Layout: FC<LayoutProps> = ({ children, color }) => {
           top: -0.2em;
           font-size: 80%;
           color: ${colors.grey["600"]};
+        }
+        
+        .sectionCard {
+          width: calc(33.3% - 0.7rem);
+          display: block;
+          text-decoration: none;
+          color: inherit;
+        }
+
+        @media screen and (max-width: ${mobileThreshold}px) {
+          .sectionCard {
+            width: 100%;
+          }
         }
       `}</style>
     </>

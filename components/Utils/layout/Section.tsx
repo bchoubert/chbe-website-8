@@ -3,6 +3,7 @@ import { FC, memo } from "react";
 import IconWithText from "components/Utils/content/IconWithText";
 
 import { ISection } from "types/common.types";
+import { mobileThreshold } from "assets";
 
 const Section: FC<ISection> = ({ icon, title, caption, content }) => (
   <>
@@ -19,6 +20,7 @@ const Section: FC<ISection> = ({ icon, title, caption, content }) => (
       .root {
         margin-top: 2rem;
       }
+
       .content {
         margin-top: 0.5rem;
         display: flex;

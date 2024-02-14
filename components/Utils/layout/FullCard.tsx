@@ -26,7 +26,6 @@ const FullCard: FC<FullCardProps> = ({ image, color, children }) => (
       .FullCard {
         display: flex;
         flex-direction: row;
-        ${styles.br}
         background-color: ${color};
         padding-bottom: 5rem;
         overflow: hidden;

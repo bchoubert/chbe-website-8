@@ -1,9 +1,7 @@
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
-import { styles } from "assets";
 import Icon from "components/Utils/content/Icon";
 import PartWithTitle from "components/Utils/layout/PartWithTitle";
 import Pill from "components/Utils/content/Pill";
-import Link from "next/link";
 import { FC, memo } from "react";
 import { EDetailsPart } from "types/business.types";
 import IconCardH from "components/Utils/content/IconCardH";
@@ -23,15 +21,14 @@ const EDetailsProducts: FC<EDetailsPart> = ({ details, common }) => (
             caption={p.description}
             rightContent={
               p.link ? (
-                <Link passHref href={p.link}>
-                  <a
-                    className="d_link_icon"
-                    style={{ color: common.color }}
-                    target="_blank"
-                  >
-                    <Icon icon={{ source: "fa", icon: faExternalLinkAlt }} />
-                  </a>
-                </Link>
+                <a
+                  className="d_link_icon"
+                  style={{ color: common.color }}
+                  target="_blank"
+                  href={p.link}
+                >
+                  <Icon icon={{ source: "fa", icon: faExternalLinkAlt }} />
+                </a>
               ) : null
             }
             color={common.light}

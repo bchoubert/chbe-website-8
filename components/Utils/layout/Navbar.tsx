@@ -16,17 +16,15 @@ const Navbar: FC<NavbarProps> = ({ color }) => {
     <>
       <nav className="Navbar">
         <div className="wrapper">
-          <Link href="/#" passHref>
-            <a className="logo">
-              <amp-img
-                alt="home"
-                height="25"
-                width="25"
-                className="Icon"
-                fallback=""
-                src="/icons/bc.svg"
-              />
-            </a>
+          <Link href="/#" className="logo">
+            <amp-img
+              alt="home"
+              height="25"
+              width="25"
+              className="Icon"
+              fallback=""
+              src="/icons/bc.svg"
+            />
           </Link>
           <div className="networks">
             {networks.map((n) => (

@@ -1,9 +1,95 @@
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faArrowsToEye, faBrain, faBug, faCheckSquare, faClock, faCogs, faComments, faCube, faDatabase, faDownload, faExternalLinkAlt, faHospital, faLayerGroup, faMagnifyingGlassChart, faMap, faPaintBrush, faPaintRoller, faPalette, faRuler, faSquareCheck } from '@fortawesome/free-solid-svg-icons';
+import { faArrowsSplitUpAndLeft, faArrowsToEye, faBrain, faBug, faChartSimple, faCheckSquare, faClock, faCogs, faComments, faCube, faDatabase, faDownload, faExternalLinkAlt, faGraduationCap, faHospital, faLayerGroup, 
+  faMagnifyingGlassChart, faMap, faPaintBrush, faPaintRoller, faPalette, faRuler, faSearch, faSquareCheck, faWrench } from '@fortawesome/free-solid-svg-icons';
 import { IExperience } from 'types/business.types';
 
 
 const experience: IExperience[] = [
+  {
+    id: 'EC',
+    title: 'Web Developer',
+    company: 'European Commission',
+    icon: { source: 'custom', icon: '/organisms/european-commission-logo' },
+    image: '/images/companies/EC/brand.jpg',
+    color: '#004494',
+    light: '#bedcff',
+    details: {
+      company: {
+        isOrganization: true,
+        description: 'The <b>European Commission</b> proposes laws, makes sure EU laws are properly applied, and manages EU spending programmes.<br/>'
+          + '<b>Unit DIGIT.B.3</b> provides, promotes and supports <b>Trans-European Services</b>, i.e. systems with responsibilities distributed <b>across the Commission</b>, national administrations and other bodies such as agencies.<br/>'
+          + '<b>EU Provisioning</b> is a <b>business-critical ecosystem</b> of diverse solutions that <b>transform HR data into IT-usable entitlements</b>.',
+        links: [
+          {
+            title: 'Website',
+            icon: { source: 'fa', icon: faExternalLinkAlt },
+            link: 'https://commission.europa.eu/',
+          }, 
+        ],
+      },
+      role: {
+        description: 'As a <b>Web Developer Consultant</b>, I was in charge of <b>new features development</b> in the new tool, MSC.<br/>' +
+          'I participated in <b>design meetings, gathering feedbacks</b> to develop the best feature in terms of <b>needs, performance and error handling</b>.<br/><br/>' +
+          'I was also missioned to <b>train new recruits</b>, as well as <b>create tools using new technologies for better and faster developments</b>.',
+      },
+      realisations: [
+        {
+          title: 'Maintainability',
+          icon: faSearch,
+          description: 'Provide highly maintainable, tested and documented solutions',
+        },
+        {
+          title: 'Specific Tooling & Automation',
+          icon: faWrench,
+          description: 'Develop tools that automate the work of teams and gain performance',
+        },
+        {
+          title: 'Reporting',
+          icon: faChartSimple,
+          description: 'Multiple reporting tools, as well as checks and log analytics',
+        },
+        {
+          title: 'Workflows, Validation & Simulation',
+          icon: faArrowsSplitUpAndLeft,
+          description: 'Multi-step workflows, with provisioning simulation and validation',
+        },
+        {
+          title: 'Training and new technologies',
+          icon: faGraduationCap,
+          description: 'Onboard new members, and implement new testing and lifecycle technologies',
+        }
+      ],
+      products: [
+        {
+          name: 'MSC',
+          description: 'User Provisioning, Identity Access Management and Governance Administration',
+          longDescription: 'Product that permits Team Managers and other product maintainers to administrate users, rights and groups',
+          technologies: [
+            {
+              icon: { source: 'custom', icon: '/technologies/java-logo' },
+              title: 'Java Spring',
+            },
+            {
+              icon: { source: 'custom', icon: '/technologies/oracle-logo' },
+              title: 'Oracle PL/SQL',
+            },
+            {
+              icon: { source: 'custom', icon: '/technologies/angular-logo' },
+              title: 'Angular',
+            },
+            {
+              icon: { source: 'custom', icon: '/technologies/ngrx-logo' },
+              title: 'NGRX',
+            },
+            {
+              icon: { source: 'custom', icon: '/technologies/karma-logo' },
+              title: 'Karma',
+            },
+          ],
+        },
+      ],
+    },
+  },
   {
     id: 'AM',
     title: 'Web Developer & UI Reviewer',

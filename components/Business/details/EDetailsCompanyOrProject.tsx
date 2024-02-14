@@ -1,7 +1,6 @@
 import { colors, imageBorderRadius, mobileThreshold, styles } from "assets";
 import PartWithTitle from "components/Utils/layout/PartWithTitle";
 import Pill from "components/Utils/content/Pill";
-import Link from "next/link";
 import React, { FC, memo, useMemo } from "react";
 import { EDetailsPart } from "types/business.types";
 import { IDetailsCompany, IDetailsProject } from "types/details.types";
@@ -13,9 +12,19 @@ const EDetailsCompanyOrProject: FC<EDetailsPart> = ({ details, common }) => {
     [details]
   );
 
+  const title = useMemo(() => {
+    if (details.company) {
+      if (details.company.isOrganization) {
+        return 'Organization';
+      }
+      return 'Company';
+    }
+    return 'Project';
+  }, [details]);
+
   return (
     <PartWithTitle
-      title={details.company ? "Company" : "Project"}
+      title={title}
       options={{ color: common.color }}
     >
       <div>
@@ -39,11 +48,9 @@ const EDetailsCompanyOrProject: FC<EDetailsPart> = ({ details, common }) => {
         </div>
         <div>
           {(detailsCompanyOrProjects?.links || []).map((l) => (
-            <Link passHref href={l.link} key={l.title}>
-              <a target="_blank">
-                <Pill {...l} textColor={common.color} />
-              </a>
-            </Link>
+            <a key={l.title} href={l.link} target="_blank">
+              <Pill {...l} textColor={common.color} />
+            </a>
           ))}
         </div>
         <div className="d_tech">
@@ -70,11 +77,9 @@ const EDetailsCompanyOrProject: FC<EDetailsPart> = ({ details, common }) => {
             {(
               detailsCompanyOrProjects as IDetailsCompany["company"]
             )?.customers.map((customer) => (
-              <Link passHref href={customer.link} key={customer.title}>
-                <a target="_blank">
-                  <Pill {...customer} />
-                </a>
-              </Link>
+              <a key={customer.title} href={customer.link} target="_blank">
+                <Pill {...customer} />
+              </a>
             ))}
           </PartWithTitle>
         ) : null}

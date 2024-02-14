@@ -6,7 +6,7 @@ import { IIcon } from "types/common.types";
 import { styles } from "assets";
 
 interface IconCardHProps {
-  icon: IIcon;
+  icon?: IIcon;
   title: string;
   color: string;
   caption?: string;
@@ -23,7 +23,7 @@ const IconCardH: FC<IconCardHProps> = ({
   <>
     <div className="root">
       <div className="content">
-        <Icon icon={icon} options={{ wrapped: true, multiplicator: 2.2 }} />
+        {icon && <Icon icon={icon} options={{ wrapped: true, multiplicator: 2.2 }} />}
         <div>
           <h2 className="title">{title}</h2>
           {caption && <span className="caption">{caption}</span>}

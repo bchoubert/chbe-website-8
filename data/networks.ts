@@ -7,7 +7,7 @@ const networks: INetwork[] = [
     color: '#0077B5',
     icon: { source: 'custom', icon: '/networks/linkedin-logo-alt' },
     name: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/chbefr/',
+    link: 'https://www.linkedin.com/in/bchoubert/',
     newTab: true,
   },
   {

@@ -21,6 +21,7 @@ export type ISubDetails = {
 
 export interface IDetailsCompany {
   company?: {
+    isOrganization?: boolean;
     description: string;
     accomplishments?: string[];
     links?: ILink[];
@@ -56,7 +57,7 @@ export interface IDetailsRole {
 export interface IDetailsProducts {
   products?: {
     name: string;
-    icon: IIcon;
+    icon?: IIcon;
     description: string;
     longDescription?: string;
     images?: IImage[];
