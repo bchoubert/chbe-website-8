@@ -344,7 +344,7 @@ const work: IWork[] = [
     light: '#fef0e6',
     details: {
       project: {
-        description: 'Zest Bank is a fresh bank concept brand.',
+        description: 'Zest Bank is a fresh bank concept brand. <a href="https://www.designrush.com/best-designs/logo/legal-insurance" target="_blank">Check out the best Legal &amp; Insurance logo designs here!</a>',
         links: [
           {
             title: 'Dribbble',
