@@ -96,8 +96,8 @@ const experience: IExperience[] = [
     company: 'Amalia',
     icon: { source: 'custom', icon: '/organisms/amalia-logo' },
     image: '/images/companies/AM/brand.png',
-    color: '#FFD859',
-    light: '#FFF8E2',
+    color: '#0C84F2',
+    light: '#d6eafd',
     details: {
       company: {
         description: `<b>Amalia</b> is on a mission to inspire, enable, and reward <b>peak business performance</b>.${''
@@ -284,6 +284,26 @@ const experience: IExperience[] = [
               h: 321,
               w: 448,
               path: '/images/companies/AM/am_11.png',
+            },
+            {
+              h: 813,
+              w: 1507,
+              path: '/images/companies/AM/am_12.png',
+            },
+            {
+              h: 800,
+              w: 1200,
+              path: '/images/companies/AM/am_13.png',
+            },
+            {
+              h: 751,
+              w: 1080,
+              path: '/images/companies/AM/am_14.png',
+            },
+            {
+              h: 1162,
+              w: 1479,
+              path: '/images/companies/AM/am_15.png',
             },
           ],
           link: 'https://www.amalia.io/',
