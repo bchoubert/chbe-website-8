@@ -1,4 +1,3 @@
-
 export const colors = {
   grey: {
     1000: '#222222',

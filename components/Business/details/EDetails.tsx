@@ -1,15 +1,17 @@
-import { FC, memo, useMemo } from "react";
+import { FC, memo, useMemo } from 'react';
 
-import ESubDetails from "components/Business/details/subDetails/ESubDetails";
+import { imageBorderRadius, mobileThreshold } from 'assets';
+import { IBusinessCommon } from 'types/business.types';
 
-import { IBusinessCommon } from "types/business.types";
-import EDetailsCompanyOrProject from "./EDetailsCompanyOrProject";
-import EDetailsRole from "./EDetailsRole";
-import EDetailsProducts from "./EDetailsProducts";
-import ESubDetailsImage from "./subDetails/ESubDetailsImage";
-import { imageBorderRadius, mobileThreshold } from "assets";
-import EDetailsRealisations from "./EDetailsRealisationsFeatures";
-import EWorkImages from "../work/EWorkImages";
+import ESubDetails from 'components/Business/details/subDetails/ESubDetails';
+
+import EWorkImages from '../work/EWorkImages';
+
+import EDetailsCompanyOrProject from './EDetailsCompanyOrProject';
+import EDetailsProducts from './EDetailsProducts';
+import EDetailsRealisations from './EDetailsRealisationsFeatures';
+import EDetailsRole from './EDetailsRole';
+import ESubDetailsImage from './subDetails/ESubDetailsImage';
 
 interface EDetailsProps {
   object: IBusinessCommon;
@@ -26,7 +28,7 @@ const EDetails: FC<EDetailsProps> = ({ object }) => {
     <>
       <div className="EDetails">
         <div
-          className={details.illustration ? "EDetails--withIllustration" : ""}
+          className={details.illustration ? 'EDetails--withIllustration' : ''}
         >
           <div>
             {(details.company || details.project) && (

@@ -1,6 +1,6 @@
-import { FC, memo, ReactNode } from "react";
+import { FC, memo, ReactNode } from 'react';
 
-import { styles } from "assets";
+import { styles } from 'assets';
 
 interface FullCardProps {
   image: string;

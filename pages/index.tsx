@@ -1,21 +1,26 @@
-import { faBuilding, faSuitcase } from "@fortawesome/free-solid-svg-icons";
-import { FC, memo, ReactNode } from "react";
+import {
+  faAward, faBuilding, faSchool, faSuitcase,
+} from '@fortawesome/free-solid-svg-icons';
+import { FC, memo } from 'react';
 
-import { mobileThreshold } from "assets";
+import { mobileThreshold } from 'assets';
+import { ISection } from 'types/common.types';
 
-import EExperience from "components/Business/experience/EExperience";
-import EWork from "components/Business/work/EWork";
-import Layout from "components/Utils/layout/Layout";
-import ProfileImage from "components/Utils/content/ProfileImage";
-import Section from "components/Utils/layout/Section";
-import Semipage from "components/Utils/layout/Semipage";
+import ECertificate from 'components/Business/ECertificate';
+import EEducation from 'components/Business/EEducation';
+import EExperience from 'components/Business/experience/EExperience';
+import EWork from 'components/Business/work/EWork';
+import Icon from 'components/Utils/content/Icon';
+import ProfileImage from 'components/Utils/content/ProfileImage';
+import Layout from 'components/Utils/layout/Layout';
+import Section from 'components/Utils/layout/Section';
+import Semipage from 'components/Utils/layout/Semipage';
 
-import experience from "data/experience";
-import profile from "data/profile";
-import work from "data/work";
-
-import { ISection } from "types/common.types";
-import Icon from "components/Utils/content/Icon";
+import certificates from 'data/certificates';
+import educations from 'data/educations';
+import experience from 'data/experience';
+import profile from 'data/profile';
+import work from 'data/work';
 
 export const config = {
   amp: true,
@@ -23,18 +28,32 @@ export const config = {
 
 const sections: ISection[] = [
   {
-    title: "Work",
-    icon: { source: "fa", icon: faSuitcase },
-    caption: "Independent and Personal",
+    title: 'Work',
+    icon: { source: 'fa', icon: faSuitcase },
+    caption: 'Independent and Personal',
     content: work.map((w) => <EWork key={w.title} {...w} />),
   },
   {
-    title: "Experience",
-    icon: { source: "fa", icon: faBuilding },
-    caption: "Contract & Freelance",
+    title: 'Experience',
+    icon: { source: 'fa', icon: faBuilding },
+    caption: 'Contract & Freelance',
     content: experience.map((e) => (
       <EExperience key={`${e.title}${e.company}`} {...e} />
     )),
+  },
+  {
+    title: 'Certifications',
+    icon: { source: 'fa', icon: faAward },
+    caption: 'Certificates & Diplomas',
+    content: certificates.map((c) => <ECertificate key={c.id} {...c} />),
+    moreLink: 'https://drive.google.com/drive/folders/0B3eUGKZH1aIyVnlUWUpBMnQ5aFE?resourcekey=0-U-35opy4f0AQYRm8llam6A&usp=sharing',
+  },
+  {
+    title: 'Education',
+    icon: { source: 'fa', icon: faSchool },
+    caption: 'Learning',
+    content: educations.map((c) => <EEducation key={c.id} {...c} />),
+    moreLink: 'https://drive.google.com/drive/folders/0B3eUGKZH1aIyVnlUWUpBMnQ5aFE?resourcekey=0-U-35opy4f0AQYRm8llam6A&usp=sharing',
   },
 ];
 
@@ -59,8 +78,8 @@ const Index: FC = () => (
               <h2 className="sub">{profile.headline}</h2>
               <a href={profile.resume} target="_blank" className="resume">
                 <Icon
-                  icon={{ source: "component", icon: "download" }}
-                  options={{ color: "#FFFFFF" }}
+                  icon={{ source: 'component', icon: 'download' }}
+                  options={{ color: '#FFFFFF' }}
                 />
                 Download my Resume
               </a>

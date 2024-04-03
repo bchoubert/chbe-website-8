@@ -1,10 +1,9 @@
-import { FC, memo } from "react";
+import { FC, memo } from 'react';
 
-import { styles } from "assets";
+import { styles } from 'assets';
+import { IIcon } from 'types/common.types';
 
-import IconWithText from "components/Utils/content/IconWithText";
-
-import { IIcon } from "types/common.types";
+import IconWithText from 'components/Utils/content/IconWithText';
 
 interface CardProps {
   image: string;
@@ -14,7 +13,9 @@ interface CardProps {
   caption: string;
 }
 
-const Card: FC<CardProps> = ({ image, color, icon, title, caption }) => (
+const Card: FC<CardProps> = ({
+  image, color, icon, title, caption,
+}) => (
   <>
     <div className="Card">
       <div className="Image-wrapper">

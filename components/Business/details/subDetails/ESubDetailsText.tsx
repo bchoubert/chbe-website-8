@@ -1,5 +1,6 @@
-import { FC, memo } from "react";
-import { ISubDetailsText } from "types/details.types";
+import { FC, memo } from 'react';
+
+import { ISubDetailsText } from 'types/details.types';
 
 interface ESubDetailsTextProps {
   subDetail: ISubDetailsText;

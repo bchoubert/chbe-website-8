@@ -1,16 +1,19 @@
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
-import Icon from "components/Utils/content/Icon";
-import PartWithTitle from "components/Utils/layout/PartWithTitle";
-import Pill from "components/Utils/content/Pill";
-import { FC, memo } from "react";
-import { EDetailsPart } from "types/business.types";
-import IconCardH from "components/Utils/content/IconCardH";
-import EImageList from "../EImageList";
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import { FC, memo } from 'react';
+
+import { EDetailsPart } from 'types/business.types';
+
+import Icon from 'components/Utils/content/Icon';
+import IconCardH from 'components/Utils/content/IconCardH';
+import Pill from 'components/Utils/content/Pill';
+import PartWithTitle from 'components/Utils/layout/PartWithTitle';
+
+import EImageList from '../EImageList';
 
 const EDetailsProducts: FC<EDetailsPart> = ({ details, common }) => (
   <div className="EDetailsProducts">
     <PartWithTitle
-      title={(details.products || []).length > 1 ? "Products" : "Product"}
+      title={(details.products || []).length > 1 ? 'Products' : 'Product'}
       options={{ color: common.color }}
     >
       {details.products.map((p) => (
@@ -27,7 +30,7 @@ const EDetailsProducts: FC<EDetailsPart> = ({ details, common }) => (
                   target="_blank"
                   href={p.link}
                 >
-                  <Icon icon={{ source: "fa", icon: faExternalLinkAlt }} />
+                  <Icon icon={{ source: 'fa', icon: faExternalLinkAlt }} />
                 </a>
               ) : null
             }

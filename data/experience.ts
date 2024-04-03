@@ -1,8 +1,13 @@
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faArrowsSplitUpAndLeft, faArrowsToEye, faBrain, faBug, faChartSimple, faCheckSquare, faClock, faCogs, faComments, faCube, faDatabase, faDownload, faExternalLinkAlt, faGraduationCap, faHospital, faLayerGroup, 
-  faMagnifyingGlassChart, faMap, faPaintBrush, faPaintRoller, faPalette, faRuler, faSearch, faSquareCheck, faWrench } from '@fortawesome/free-solid-svg-icons';
-import { IExperience } from 'types/business.types';
+import {
+  faArrowsSplitUpAndLeft, faArrowsToEye, faBrain, faBug, faChartSimple,
+  faCheckSquare, faClock, faCogs, faComments, faCube, faDatabase, faDownload,
+  faExternalLinkAlt, faGraduationCap, faHospital, faLayerGroup,
+  faMagnifyingGlassChart, faMap, faPaintBrush, faPaintRoller,
+  faPalette, faRuler, faSearch, faSquareCheck, faWrench,
+} from '@fortawesome/free-solid-svg-icons';
 
+import { IExperience } from 'types/business.types';
 
 const experience: IExperience[] = [
   {
@@ -24,13 +29,13 @@ const experience: IExperience[] = [
             title: 'Website',
             icon: { source: 'fa', icon: faExternalLinkAlt },
             link: 'https://commission.europa.eu/',
-          }, 
+          },
         ],
       },
       role: {
-        description: 'As a <b>Web Developer Consultant</b>, I was in charge of <b>new features development</b> in the new tool, MSC.<br/>' +
-          'I participated in <b>design meetings, gathering feedbacks</b> to develop the best feature in terms of <b>needs, performance and error handling</b>.<br/><br/>' +
-          'I was also missioned to <b>train new recruits</b>, as well as <b>create tools using new technologies for better and faster developments</b>.',
+        description: 'As a <b>Web Developer Consultant</b>, I was in charge of <b>new features development</b> in the new tool, MSC.<br/>'
+          + 'I participated in <b>design meetings, gathering feedbacks</b> to develop the best feature in terms of <b>needs, performance and error handling</b>.<br/><br/>'
+          + 'I was also missioned to <b>train new recruits</b>, as well as <b>create tools using new technologies for better and faster developments</b>.',
       },
       realisations: [
         {
@@ -57,7 +62,7 @@ const experience: IExperience[] = [
           title: 'Training and new technologies',
           icon: faGraduationCap,
           description: 'Onboard new members, and implement new testing and lifecycle technologies',
-        }
+        },
       ],
       products: [
         {
@@ -101,10 +106,10 @@ const experience: IExperience[] = [
     details: {
       company: {
         description: `<b>Amalia</b> is on a mission to inspire, enable, and reward <b>peak business performance</b>.${''
-          } It helps companies simplify compensation & performance management along 3 axis: ${''
-          } <ul><li>ICM (<b>Incentive Compensation</b> Management, how to align sales rep behavior to the company's goals),</li> ${''
-          } <li>SPM (<b>Sales Performance</b> Management, tool that analyze and automatize sales rep processes),</li>${''
-          } <li>EPM (<b>Enterprise Performance</b> Management, tool to plan, buget, forecast and report the business performance).</li></ul>`,
+        } It helps companies simplify compensation & performance management along 3 axis: ${''
+        } <ul><li>ICM (<b>Incentive Compensation</b> Management, how to align sales rep behavior to the company's goals),</li> ${''
+        } <li>SPM (<b>Sales Performance</b> Management, tool that analyze and automatize sales rep processes),</li>${''
+        } <li>EPM (<b>Enterprise Performance</b> Management, tool to plan, buget, forecast and report the business performance).</li></ul>`,
         accomplishments: [
           'Amalia certifies $100+ millions in sales commissions annually.',
           'Amalia raised 4 million euros.',
@@ -126,44 +131,44 @@ const experience: IExperience[] = [
           {
             title: 'Mirakl',
             icon: { source: 'custom', icon: '/organisms/mirakl-logo' },
-            link: 'https://www.mirakl.com/'
+            link: 'https://www.mirakl.com/',
           },
           {
             title: 'Swile',
             icon: { source: 'custom', icon: '/organisms/swile-logo' },
-            link: 'https://www.swile.co/en'
+            link: 'https://www.swile.co/en',
           },
           {
             title: 'OpenClassrooms',
             icon: { source: 'custom', icon: '/organisms/openclassrooms-logo' },
-            link: 'https://openclassrooms.com/en/'
+            link: 'https://openclassrooms.com/en/',
           },
           {
             title: 'Yousign',
             icon: { source: 'custom', icon: '/organisms/yousign-logo' },
-            link: 'https://yousign.com/'
+            link: 'https://yousign.com/',
           },
           {
             title: 'Getronics',
             icon: { source: 'custom', icon: '/organisms/getronics-logo' },
-            link: 'https://www.getronics.com/'
+            link: 'https://www.getronics.com/',
           },
           {
             title: 'SudOuest',
-            link: 'https://www.sudouest.fr/'
+            link: 'https://www.sudouest.fr/',
           },
           {
             title: 'Qonto',
-            link: 'https://qonto.com/en'
-          }
-        ]
+            link: 'https://qonto.com/en',
+          },
+        ],
       },
       role: {
         description: `As a <b>Web Developer</b> & <b>UI Reviewer</b>, I was in charge of new feature development, participated in UI/UX reviews,${''
-          } designed complex technical solutions and mockups.<br/><br/>${''
-          }I was in charge of both <b>validating/enriching ticket specifications</b>, helping development team I was part of for a faster development, and <b>checking the realisations</b>.<br/><br/>${''
-          }I was also missioned to be the <b>Tests Referral</b>, ${''
-          } I increased code quality by providing standards and new test solutions. I implemented Testing Library tests, and animated workshops to train the whole team and around new testing technologies.`,
+        } designed complex technical solutions and mockups.<br/><br/>${''
+        }I was in charge of both <b>validating/enriching ticket specifications</b>, helping development team I was part of for a faster development, and <b>checking the realisations</b>.<br/><br/>${''
+        }I was also missioned to be the <b>Tests Referral</b>, ${''
+        } I increased code quality by providing standards and new test solutions. I implemented Testing Library tests, and animated workshops to train the whole team and around new testing technologies.`,
       },
       realisations: [
         {
@@ -184,13 +189,13 @@ const experience: IExperience[] = [
         {
           title: 'Design System',
           icon: faRuler,
-          description: 'Implement a well-documented, well tested design system, with Storybook. Mentor and train team members, providing materials, guidelines and meetings.'
+          description: 'Implement a well-documented, well tested design system, with Storybook. Mentor and train team members, providing materials, guidelines and meetings.',
         },
         {
           title: 'Tracing',
           icon: faArrowsToEye,
-          description: 'Develop a tool to let salesReps understand the full calculation of their commission.'
-        }
+          description: 'Develop a tool to let salesReps understand the full calculation of their commission.',
+        },
       ],
       products: [
         {
@@ -198,10 +203,10 @@ const experience: IExperience[] = [
           icon: { source: 'custom', icon: '/organisms/amalia-logo' },
           description: 'Real-time sales performance management Saas solution',
           longDescription: `Sales Representatives have a variable salary (<b>compensation</b>) depending on how many new contracts they permitted to sign for their company.${''
-            } It depends on the contract type, if it\'s a new contract or a renewal, upsell, their team achievements... Nowadays, companies must build their compensation plan to be <b>very attractive</b>,${''
-            } to encourage a better productivity, but must be aware to <b>limit their expenses</b> on these plans. ${''
-            }This problematic causes compensation plans to be <b>more and more complex</b>, implementing rampups, accelerators, adjustments, hold & release, KPIs, on-Target earning...<br/><br/>${''
-            }Amalia provides solutions to <b>design and analyze compensation plans</b>, and tools to manage data sources, overwrites, employee directory, goals, KPIs, comments, validation workflows...`,
+          } It depends on the contract type, if it's a new contract or a renewal, upsell, their team achievements... Nowadays, companies must build their compensation plan to be <b>very attractive</b>,${''
+          } to encourage a better productivity, but must be aware to <b>limit their expenses</b> on these plans. ${''
+          }This problematic causes compensation plans to be <b>more and more complex</b>, implementing rampups, accelerators, adjustments, hold & release, KPIs, on-Target earning...<br/><br/>${''
+          }Amalia provides solutions to <b>design and analyze compensation plans</b>, and tools to manage data sources, overwrites, employee directory, goals, KPIs, comments, validation workflows...`,
           technologies: [
             {
               icon: { source: 'custom', icon: '/technologies/nodejs-logo' },
@@ -307,7 +312,7 @@ const experience: IExperience[] = [
             },
           ],
           link: 'https://www.amalia.io/',
-        }
+        },
       ],
     },
   },
@@ -323,12 +328,12 @@ const experience: IExperience[] = [
       illustration: {
         h: 853,
         w: 853,
-        path: '/images/companies/SK/illustration.jpg'
+        path: '/images/companies/SK/illustration.jpg',
       },
       company: {
         description: '<b>Sogelink</b> supports all players in the <b>infrastructure and construction</b> ecosystem with <b>software, cloud and mobile solutions</b>.',
         accomplishments: [
-          'Sogelink provides solutions for more than 37k customers.'
+          'Sogelink provides solutions for more than 37k customers.',
         ],
         links: [
           {
@@ -346,17 +351,17 @@ const experience: IExperience[] = [
           {
             title: 'Colas',
             icon: { source: 'custom', icon: '/organisms/colas-logo' },
-            link: 'https://www.colas.com/en'
+            link: 'https://www.colas.com/en',
           },
           {
             title: 'Bouygues',
             icon: { source: 'custom', icon: '/organisms/bouygues-logo' },
-            link: 'https://www.bouygues-es.com/'
+            link: 'https://www.bouygues-es.com/',
           },
           {
             title: 'Eiffage',
             icon: { source: 'custom', icon: '/organisms/eiffage-logo' },
-            link: 'https://www.eiffage.com/'
+            link: 'https://www.eiffage.com/',
           },
           {
             title: 'Vinci',
@@ -366,7 +371,7 @@ const experience: IExperience[] = [
           {
             title: 'SNCF',
             icon: { source: 'custom', icon: '/organisms/sncf-logo' },
-            link: 'https://www.sncf.com/en'
+            link: 'https://www.sncf.com/en',
           },
           {
             title: 'Métropole de Lille',
@@ -377,8 +382,8 @@ const experience: IExperience[] = [
             title: 'Métropole de Toulouse',
             icon: { source: 'custom', icon: '/organisms/toulouse-logo' },
             link: 'https://www.toulouse-metropole.fr/',
-          }
-        ]
+          },
+        ],
       },
       role: {
         description: 'As a <b>UI Designer</b> & <b>R&D Full-Stack Web Developer</b>, I designed and developed may components and webpages, as well as developed POC related to 2D and 3D on the web.',
@@ -402,18 +407,18 @@ const experience: IExperience[] = [
         {
           title: 'GeoServer API',
           icon: faLayerGroup,
-          description: 'Use the GeoServer API to update PCRS and Geometry Layers in real-time.'
+          description: 'Use the GeoServer API to update PCRS and Geometry Layers in real-time.',
         },
         {
           title: '2D / 3D file viewers',
           icon: faCube,
-          description: 'Develop POCs related to 2D and 3D files visualization in web browsers (DAE, DXF, DWG).'
+          description: 'Develop POCs related to 2D and 3D files visualization in web browsers (DAE, DXF, DWG).',
         },
         {
           title: 'Scatter plots',
           icon: faMagnifyingGlassChart,
-          description: 'Optimize 3D scatter plots filter and transformation algorithms.'
-        }
+          description: 'Optimize 3D scatter plots filter and transformation algorithms.',
+        },
       ],
       products: [
         {
@@ -506,7 +511,7 @@ const experience: IExperience[] = [
       illustration: {
         h: 640,
         w: 640,
-        path: '/images/companies/MC/illustration.jpg'
+        path: '/images/companies/MC/illustration.jpg',
       },
       company: {
         description: '<b>Maicare Solutions</b> is a <b>health software creator company</b> that brings innovative solutions to hospitals and health professionals.',
@@ -526,9 +531,9 @@ const experience: IExperience[] = [
           {
             title: '80% of French hospitals',
             icon: { source: 'fa', icon: faHospital },
-            link: 'https://www.maincare.com/qui-sommes-nous/le-groupe-maincare-10-23.html'
-          }
-        ]
+            link: 'https://www.maincare.com/qui-sommes-nous/le-groupe-maincare-10-23.html',
+          },
+        ],
       },
       role: {
         description: 'I was a <b>Web Developer</b>, my goals were to develop a new prescription tool for general practitioners and maintain existing modules of the app.',
@@ -537,18 +542,18 @@ const experience: IExperience[] = [
         {
           title: 'Future Venues',
           icon: faClock,
-          description: 'Work on patient path and develop a module about planned future venues.'
+          description: 'Work on patient path and develop a module about planned future venues.',
         },
         {
           title: 'Form UX',
           icon: faSquareCheck,
-          description: 'Debate about form UX design with a surgeon, taking into account equipment, …'
+          description: 'Debate about form UX design with a surgeon, taking into account equipment, …',
         },
         {
           title: 'Component design & development',
           icon: faPaintBrush,
-          description: 'Design and Develop new functionalities, Participate in specifications meetings, Providing documentation about new components I develop and integrated.'
-        }
+          description: 'Design and Develop new functionalities, Participate in specifications meetings, Providing documentation about new components I develop and integrated.',
+        },
       ],
       products: [
         {
@@ -632,8 +637,8 @@ const experience: IExperience[] = [
         {
           title: 'Custom solution for custom needs',
           icon: faComments,
-          description: 'Meet with customers, Write Specifications, Design layouts and views.'
-        }
+          description: 'Meet with customers, Write Specifications, Design layouts and views.',
+        },
       ],
       products: [
         {
@@ -797,8 +802,8 @@ const experience: IExperience[] = [
         ],
         accomplishments: [
           '1800+ vessels are using Vemasys daily.',
-          'Vemasys was validated by Interreg (European Commission Danube modernization program)'
-        ]
+          'Vemasys was validated by Interreg (European Commission Danube modernization program)',
+        ],
       },
       role: {
         description: 'I worked as a <b>Lead Web Developer</b>. My missions were communicate with the project manager and the team, keep motivation up, and setup tools to help the team with their daily work. In addition, as a Developer, I enforced standards and code quality and developed components, forms, and user interfaces.',
@@ -807,28 +812,28 @@ const experience: IExperience[] = [
         {
           title: 'Performance and modularity',
           icon: faCogs,
-          description: 'Design and Develop a complex architecture with cache storage and modular architecture.'
+          description: 'Design and Develop a complex architecture with cache storage and modular architecture.',
         },
         {
           title: 'Front-End',
           icon: faPaintRoller,
-          description: 'Implement Front-End following mock-ups and solving ergonomic problems, Create elegant designs and easily maintainable code.'
+          description: 'Implement Front-End following mock-ups and solving ergonomic problems, Create elegant designs and easily maintainable code.',
         },
         {
           title: 'Specifications',
           icon: faComments,
-          description: 'Participate in specifications meetings with the Product Owner and Fleet owners.'
+          description: 'Participate in specifications meetings with the Product Owner and Fleet owners.',
         },
         {
           title: 'Lead to help',
           icon: faClock,
-          description: 'Organize daily tasks of the team, track short-term and long term progress.'
+          description: 'Organize daily tasks of the team, track short-term and long term progress.',
         },
         {
           title: 'Map',
           icon: faMap,
-          description: 'Design and Develop a scalable map with layer server and 25k+ pointers.'
-        }
+          description: 'Design and Develop a scalable map with layer server and 25k+ pointers.',
+        },
       ],
       products: [
         {
@@ -844,7 +849,7 @@ const experience: IExperience[] = [
               icon: { source: 'custom', icon: '/technologies/sass-logo' },
               title: 'Sass',
             },
-          ]
+          ],
         },
         {
           name: 'Vemasys',
@@ -854,37 +859,37 @@ const experience: IExperience[] = [
             {
               h: 630,
               w: 1120,
-              path: '/images/companies/BG/vms_1.jpg'
+              path: '/images/companies/BG/vms_1.jpg',
             },
             {
               h: 884,
               w: 1572,
-              path: '/images/companies/BG/vms_2.png'
+              path: '/images/companies/BG/vms_2.png',
             },
             {
               h: 666,
               w: 1278,
-              path: '/images/companies/BG/vms_3.png'
+              path: '/images/companies/BG/vms_3.png',
             },
             {
               h: 1082,
               w: 2048,
-              path: '/images/companies/BG/vms_4.png'
+              path: '/images/companies/BG/vms_4.png',
             },
             {
               h: 1078,
               w: 2048,
-              path: '/images/companies/BG/vms_5.png'
+              path: '/images/companies/BG/vms_5.png',
             },
             {
               h: 989,
               w: 2000,
-              path: '/images/companies/BG/vms_6.png'
+              path: '/images/companies/BG/vms_6.png',
             },
             {
               h: 703,
               w: 1400,
-              path: '/images/companies/BG/vms_7.jpg'
+              path: '/images/companies/BG/vms_7.jpg',
             },
           ],
           technologies: [
@@ -898,14 +903,14 @@ const experience: IExperience[] = [
             },
             {
               icon: { source: 'custom', icon: '/technologies/leaflet-logo' },
-              title: 'Leaflet'
+              title: 'Leaflet',
             },
 
             {
               icon: { source: 'custom', icon: '/technologies/bootstrap-logo' },
-              title: 'Bootstrap'
+              title: 'Bootstrap',
             },
-          ]
+          ],
         },
       ],
       missions: [
@@ -913,7 +918,7 @@ const experience: IExperience[] = [
           icon: { source: 'fa', icon: faBrain },
           description: 'Preventive Maintenance<br />Capture precise vessel GPS positions for drive assists and autonomous driving',
         },
-      ]
+      ],
     },
   },
 ];

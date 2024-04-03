@@ -1,6 +1,7 @@
-import { styles } from "assets";
-import { FC, memo } from "react";
-import { IImage } from "types/common.types";
+import { FC, memo } from 'react';
+
+import { styles } from 'assets';
+import { IImage } from 'types/common.types';
 
 const EImageList: FC<{ images: IImage[] }> = ({ images }) => (
   <>

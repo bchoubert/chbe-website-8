@@ -4,10 +4,10 @@
     "airbnb-typescript/base",
     "next/core-web-vitals"
   ],
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  },
   "rules": {
-    "no-restricted-imports": ["error", {
-      "patterns": [".*"]
-    }],
     "quotes": ["error", "single"],
     "import/order": ["error",
       {

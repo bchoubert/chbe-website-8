@@ -1,9 +1,10 @@
-import { FC, memo } from "react";
-import { IImage } from "types/common.types";
+import { FC, memo } from 'react';
+
+import { IImage } from 'types/common.types';
 
 interface ESubDetailImageProps {
   subDetail: IImage;
-  layout?: "fill";
+  layout?: 'fill';
 }
 
 const ESubDetailsImage: FC<ESubDetailImageProps> = ({ subDetail, layout }) => (

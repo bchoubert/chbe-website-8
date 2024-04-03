@@ -1,15 +1,14 @@
-import { FC, memo, ReactNode } from "react";
+import { FC, memo, ReactNode } from 'react';
 
-import Icon from "components/Utils/content/Icon";
+import { styles } from 'assets';
+import { IIcon } from 'types/common.types';
 
-import { IIcon } from "types/common.types";
-import { styles } from "assets";
+import Icon from 'components/Utils/content/Icon';
 
 interface IconCardVProps {
   icon: IIcon;
   title: string;
   color: string;
-  light: string;
   caption?: string;
   rightContent?: ReactNode;
 }
@@ -18,7 +17,6 @@ const IconCardV: FC<IconCardVProps> = ({
   icon,
   title,
   color,
-  light,
   caption,
   rightContent,
 }) => (
@@ -31,7 +29,7 @@ const IconCardV: FC<IconCardVProps> = ({
             options={{
               multiplicator: 1,
               wrapped: true,
-              color: "white",
+              color: 'white',
               wrapOptions: { color, padding: 6 },
             }}
           />

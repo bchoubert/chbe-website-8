@@ -1,5 +1,5 @@
-import { IIcon } from "./common.types";
-import { IDetails } from "./details.types";
+import { IIcon } from './common.types';
+import { IDetails } from './details.types';
 
 export interface IBusinessCommon {
   id: string;
@@ -18,6 +18,18 @@ export interface IExperience extends IBusinessCommon {
 export interface IWork extends IBusinessCommon {
   shortDescription: string;
 }
+
+export type ICertificate = Omit<IBusinessCommon, 'image' | 'details'> & {
+  organization: string;
+  year: string;
+  link: string;
+};
+
+export type IEducation = Omit<IBusinessCommon, 'image' | 'details'> & {
+  organization: string;
+  year: string;
+  link: string;
+};
 
 export interface INetwork {
   id: string;
