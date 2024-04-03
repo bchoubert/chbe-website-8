@@ -1,8 +1,8 @@
-import { FC, memo, ReactNode } from "react";
+import { FC, memo, ReactNode } from 'react';
 
-import Icon from "components/Utils/content/Icon";
+import { IIcon } from 'types/common.types';
 
-import { IIcon } from "types/common.types";
+import Icon from 'components/Utils/content/Icon';
 
 interface IconWithTextPropsOptions {
   isInline?: boolean;
@@ -43,11 +43,11 @@ const IconWithText: FC<IconWithTextProps> = ({
       .root {
         display: inline-block;
         ${options?.isWhiteBackground
-          ? `
+      ? `
         font-weight: normal;
         background-color: #ffffff;
         `
-          : ""}
+      : ''}
       }
       .title {
         margin-top: ${options?.isInline ? 0 : 0.5}rem;

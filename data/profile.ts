@@ -1,4 +1,4 @@
-import { IProfile } from "types/business.types";
+import { IProfile } from 'types/business.types';
 
 const profile: IProfile = {
   title: 'Bertrand Choubert\'s Portfolio',

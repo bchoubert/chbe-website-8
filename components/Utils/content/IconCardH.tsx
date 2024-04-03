@@ -1,9 +1,9 @@
-import { FC, memo, ReactNode } from "react";
+import { FC, memo, ReactNode } from 'react';
 
-import Icon from "components/Utils/content/Icon";
+import { styles } from 'assets';
+import { IIcon } from 'types/common.types';
 
-import { IIcon } from "types/common.types";
-import { styles } from "assets";
+import Icon from 'components/Utils/content/Icon';
 
 interface IconCardHProps {
   icon?: IIcon;

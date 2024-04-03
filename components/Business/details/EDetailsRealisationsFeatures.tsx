@@ -1,7 +1,9 @@
-import { colors } from "assets";
-import PartWithTitle from "components/Utils/layout/PartWithTitle";
-import { FC, memo, useMemo } from "react";
-import { EDetailsPart } from "types/business.types";
+import { FC, memo, useMemo } from 'react';
+
+import { colors } from 'assets';
+import { EDetailsPart } from 'types/business.types';
+
+import PartWithTitle from 'components/Utils/layout/PartWithTitle';
 
 const EDetailsRealisations: FC<EDetailsPart> = ({ details, common }) => {
   const [isFeature, content] = useMemo(() => {
@@ -17,7 +19,7 @@ const EDetailsRealisations: FC<EDetailsPart> = ({ details, common }) => {
   return (
     <>
       <PartWithTitle
-        title={isFeature ? "Features" : "Realisations"}
+        title={isFeature ? 'Features' : 'Realisations'}
         options={{ color: common.color }}
       >
         <div className="realisations">
@@ -27,7 +29,7 @@ const EDetailsRealisations: FC<EDetailsPart> = ({ details, common }) => {
               title={r.title}
               icon={r.icon}
               options={{
-                color: colors.grey["800"],
+                color: colors.grey['800'],
                 isSubtitle: true,
               }}
             >

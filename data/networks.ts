@@ -1,4 +1,5 @@
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 import { INetwork } from 'types/business.types';
 
 const networks: INetwork[] = [

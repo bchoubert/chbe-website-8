@@ -1,6 +1,6 @@
-import { FC, memo } from "react";
+import { FC, memo } from 'react';
 
-import { colors } from "assets";
+import { colors } from 'assets';
 
 const Footer: FC = () => (
   <>
@@ -17,7 +17,7 @@ const Footer: FC = () => (
         padding-top: 2rem;
         width: 100%;
         height: 3rem;
-        background-color: ${colors.grey["200"]};
+        background-color: ${colors.grey['200']};
       }
       .Footer-wrapper {
         width: 80%;

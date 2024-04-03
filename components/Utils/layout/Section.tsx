@@ -1,11 +1,16 @@
-import { FC, memo } from "react";
+import { faEye } from '@fortawesome/free-solid-svg-icons';
+import { FC, memo } from 'react';
 
-import IconWithText from "components/Utils/content/IconWithText";
+import { colors } from 'assets';
+import { ISection } from 'types/common.types';
 
-import { ISection } from "types/common.types";
-import { mobileThreshold } from "assets";
+import IconWithText from 'components/Utils/content/IconWithText';
 
-const Section: FC<ISection> = ({ icon, title, caption, content }) => (
+import Pill from '../content/Pill';
+
+const Section: FC<ISection> = ({
+  icon, title, caption, content, moreLink,
+}) => (
   <>
     <div className="root">
       <IconWithText
@@ -13,6 +18,19 @@ const Section: FC<ISection> = ({ icon, title, caption, content }) => (
         title={title}
         caption={caption}
         options={{ size: 1.4 }}
+        rightContent={moreLink ? (
+          <a target="_blank" href={moreLink} className="moreLink">
+            <Pill
+              title="See all"
+              textColor={colors.grey[1000]}
+              icon={{
+                source: 'fa',
+                icon: faEye,
+              }}
+              iconColor={colors.grey[800]}
+            />
+          </a>
+        ) : null}
       />
       <div className="content">{content}</div>
     </div>
@@ -26,6 +44,11 @@ const Section: FC<ISection> = ({ icon, title, caption, content }) => (
         display: flex;
         flex-flow: wrap;
         gap: 1rem;
+      }
+
+      .moreLink {
+        color: ${colors.grey['800']};
+        margin-left: 1rem;
       }
     `}</style>
   </>

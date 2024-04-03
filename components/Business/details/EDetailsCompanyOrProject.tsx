@@ -1,15 +1,16 @@
-import { colors, imageBorderRadius, mobileThreshold, styles } from "assets";
-import PartWithTitle from "components/Utils/layout/PartWithTitle";
-import Pill from "components/Utils/content/Pill";
-import React, { FC, memo, useMemo } from "react";
-import { EDetailsPart } from "types/business.types";
-import { IDetailsCompany, IDetailsProject } from "types/details.types";
-import EImageList from "../EImageList";
+import React, { FC, memo, useMemo } from 'react';
+
+import { colors } from 'assets';
+import { EDetailsPart } from 'types/business.types';
+import { IDetailsCompany, IDetailsProject } from 'types/details.types';
+
+import Pill from 'components/Utils/content/Pill';
+import PartWithTitle from 'components/Utils/layout/PartWithTitle';
 
 const EDetailsCompanyOrProject: FC<EDetailsPart> = ({ details, common }) => {
   const detailsCompanyOrProjects = useMemo(
     () => details.company || details.project,
-    [details]
+    [details],
   );
 
   const title = useMemo(() => {
@@ -36,11 +37,12 @@ const EDetailsCompanyOrProject: FC<EDetailsPart> = ({ details, common }) => {
         <div>
           {(detailsCompanyOrProjects?.accomplishments || []).map((a) => (
             <Pill
+              key={a}
               title={a}
               textColor={colors.grey[1000]}
               icon={{
-                source: "component",
-                icon: "star",
+                source: 'component',
+                icon: 'star',
               }}
               iconColor={common.color}
             />
@@ -55,7 +57,7 @@ const EDetailsCompanyOrProject: FC<EDetailsPart> = ({ details, common }) => {
         </div>
         <div className="d_tech">
           {(
-            (detailsCompanyOrProjects as IDetailsProject["project"])
+            (detailsCompanyOrProjects as IDetailsProject['project'])
               .technologies || []
           ).map((tech, i) => (
             <Pill
@@ -67,22 +69,22 @@ const EDetailsCompanyOrProject: FC<EDetailsPart> = ({ details, common }) => {
           ))}
         </div>
         {(
-          (detailsCompanyOrProjects as IDetailsCompany["company"])?.customers ||
-          []
+          (detailsCompanyOrProjects as IDetailsCompany['company'])?.customers
+          || []
         ).length > 0 ? (
           <PartWithTitle
             title="Main Customers"
             options={{ color: common.color, isSubtitle: true }}
           >
             {(
-              detailsCompanyOrProjects as IDetailsCompany["company"]
+              detailsCompanyOrProjects as IDetailsCompany['company']
             )?.customers.map((customer) => (
               <a key={customer.title} href={customer.link} target="_blank">
                 <Pill {...customer} />
               </a>
             ))}
           </PartWithTitle>
-        ) : null}
+          ) : null}
       </div>
     </PartWithTitle>
   );

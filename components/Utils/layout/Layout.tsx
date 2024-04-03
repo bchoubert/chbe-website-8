@@ -1,20 +1,19 @@
-import Head from "next/head";
-import { FC, memo, ReactNode } from "react";
+import Head from 'next/head';
+import { FC, memo, ReactNode } from 'react';
 
-import { colors, mobileThreshold, styles } from "assets";
+import { colors, mobileThreshold, styles } from 'assets';
 
-import Footer from "components/Utils/layout/Footer";
-import Navbar from "components/Utils/layout/Navbar";
+import Footer from 'components/Utils/layout/Footer';
+import Navbar from 'components/Utils/layout/Navbar';
 
-import profile from "data/profile";
+import profile from 'data/profile';
 
 interface LayoutProps {
   children: ReactNode;
   color?: string;
 }
 
-const Layout: FC<LayoutProps> = ({ children, color }) => {
-  return (
+const Layout: FC<LayoutProps> = ({ children, color }) => (
     <>
       <Head>
         <title>{profile.title}</title>
@@ -28,7 +27,7 @@ const Layout: FC<LayoutProps> = ({ children, color }) => {
         }
         body {
           font-family: "Noto Sans Display", sans-serif;
-          color: ${colors.grey["800"]};
+          color: ${colors.grey['800']};
         }
         html,
         body {
@@ -75,7 +74,7 @@ const Layout: FC<LayoutProps> = ({ children, color }) => {
           position: relative;
           top: -0.2em;
           font-size: 80%;
-          color: ${colors.grey["600"]};
+          color: ${colors.grey['600']};
         }
         
         .sectionCard {
@@ -92,7 +91,6 @@ const Layout: FC<LayoutProps> = ({ children, color }) => {
         }
       `}</style>
     </>
-  );
-};
+);
 
 export default memo(Layout);

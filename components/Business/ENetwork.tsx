@@ -1,15 +1,17 @@
-import { FC, memo } from "react";
+import { FC, memo } from 'react';
 
-import { colors } from "assets";
+import { colors } from 'assets';
+import { INetwork } from 'types/business.types';
 
-import Icon from "components/Utils/content/Icon";
-import { INetwork } from "types/business.types";
+import Icon from 'components/Utils/content/Icon';
 
-const ENetwork: FC<INetwork> = ({ link, newTab, name, icon }) => (
+const ENetwork: FC<INetwork> = ({
+  link, newTab, name, icon,
+}) => (
   <>
     <a
       href={link}
-      target={newTab ? "_blank" : undefined}
+      target={newTab ? '_blank' : undefined}
       title={name}
       className="network"
     >
@@ -17,7 +19,7 @@ const ENetwork: FC<INetwork> = ({ link, newTab, name, icon }) => (
     </a>
     <style jsx>{`
       .network {
-        color: ${colors.grey["800"]};
+        color: ${colors.grey['800']};
         align-self: center;
       }
     `}</style>

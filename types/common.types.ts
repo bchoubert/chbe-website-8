@@ -37,4 +37,5 @@ export interface ISection {
   title: string;
   caption: string;
   content: ReactNode;
+  moreLink?: string;
 }

@@ -1,6 +1,12 @@
-import { faDribbble, faGithub, faGooglePlay } from "@fortawesome/free-brands-svg-icons";
-import { faArrowsUpDown, faBicycle, faCalculator, faChartArea, faChartLine, faCrosshairs, faDrawPolygon, faExclamationTriangle, faFont, faGlobe, faList, faMapLocationDot, faPlane, faPlaneDeparture, faShapes, faSuitcase, faTruck, faUsers, faUserTag, faWallet, faWarehouse, faWindowMaximize, faWrench } from "@fortawesome/free-solid-svg-icons";
-import { IWork } from "types/business.types";
+import { faDribbble, faGithub, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
+import {
+  faArrowsUpDown, faBicycle, faCalculator, faChartArea, faChartLine, faCrosshairs,
+  faDrawPolygon, faExclamationTriangle, faFont, faGlobe, faList, faMapLocationDot,
+  faPlane, faPlaneDeparture, faShapes, faSuitcase, faTruck, faUsers, faUserTag,
+  faWallet, faWarehouse, faWindowMaximize, faWrench,
+} from '@fortawesome/free-solid-svg-icons';
+
+import { IWork } from 'types/business.types';
 
 const work: IWork[] = [
   {
@@ -15,23 +21,23 @@ const work: IWork[] = [
       illustration: {
         h: 536,
         w: 536,
-        path: '/images/projects/LO/illustration.jpg'
+        path: '/images/projects/LO/illustration.jpg',
       },
       features: [
         {
           title: 'Mechanic / Maintenance',
           icon: faWrench,
-          description: 'A full maintenance interface with 500+ available models.'
+          description: 'A full maintenance interface with 500+ available models.',
         },
         {
           title: 'Warehouses',
           icon: faWarehouse,
-          description: 'Manage your warehouses and their location.'
+          description: 'Manage your warehouses and their location.',
         },
         {
           title: 'Roles',
           icon: faUserTag,
-          description: 'Multi-role system, with requests for each role and company.'
+          description: 'Multi-role system, with requests for each role and company.',
         },
         {
           title: 'Employees',
@@ -62,12 +68,12 @@ const work: IWork[] = [
           title: 'Alerts',
           icon: faExclamationTriangle,
           description: 'Alerts and Notifications, in real-time',
-        }
+        },
       ],
       project: {
         description: `Your everyday logistics partner. LogTrack is an ERP and provides a set of pioneering functionalities for all related workers:<br/>${''
-          } Driver, Manager, Dispatcher, Insurer, Accountant, Mechanic...<br/>${''
-          } Built with the most modern technologies, LogTrack is a powerful, versatile and user-centered product.`,
+        } Driver, Manager, Dispatcher, Insurer, Accountant, Mechanic...<br/>${''
+        } Built with the most modern technologies, LogTrack is a powerful, versatile and user-centered product.`,
         links: [
           {
             title: 'GitHub',
@@ -162,8 +168,8 @@ const work: IWork[] = [
             w: 627,
             path: '/images/projects/LO/10.jpg',
           },
-        ]
-      }
+        ],
+      },
     },
   },
   {
@@ -206,7 +212,7 @@ const work: IWork[] = [
           {
             icon: { source: 'custom', icon: '/technologies/react-logo' },
             title: 'React',
-          }
+          },
         ],
         images: [
           {
@@ -229,30 +235,30 @@ const work: IWork[] = [
             w: 1920,
             path: '/images/projects/BCF/4.jpg',
           },
-        ]
+        ],
       },
       features: [
         {
           title: '1268 icons',
           icon: faShapes,
-          description: 'Technologies, Products, Brands...'
+          description: 'Technologies, Products, Brands...',
         },
         {
           title: 'Type, Logo, or Both!',
           icon: faFont,
-          description: 'Additional icons for different styles. Type are only texts, Logo are only images, Full contains both the logo and the text'
+          description: 'Additional icons for different styles. Type are only texts, Logo are only images, Full contains both the logo and the text',
         },
         {
           title: '27 categories',
           icon: faList,
-          description: 'Icons are sorted into 27 categories, including Analytics, Hardware, Recruitment'
+          description: 'Icons are sorted into 27 categories, including Analytics, Hardware, Recruitment',
         },
         {
           title: 'Website',
           icon: faWindowMaximize,
-          description: 'Website to list, filter and view icons'
-        }
-      ]
+          description: 'Website to list, filter and view icons',
+        },
+      ],
     },
   },
   {
@@ -295,7 +301,7 @@ const work: IWork[] = [
           {
             icon: { source: 'custom', icon: '/technologies/typescript-logo' },
             title: 'Typescript',
-          }
+          },
         ],
         images: [
           {
@@ -312,25 +318,25 @@ const work: IWork[] = [
             h: 1080,
             w: 1920,
             path: '/images/projects/CV/3.jpg',
-          }
-        ]
+          },
+        ],
       },
       features: [
         {
           title: 'Fetch prices',
           icon: faArrowsUpDown,
-          description: 'For each crypto, fetch current buy and sell prices, as well as volume and high and low values'
+          description: 'For each crypto, fetch current buy and sell prices, as well as volume and high and low values',
         },
         {
           title: 'Fetch historical values',
           icon: faChartLine,
-          description: 'See historical values, for one day, one week, one month, or one year frequency'
+          description: 'See historical values, for one day, one week, one month, or one year frequency',
         },
         {
           title: 'Add to your wallet',
           icon: faWallet,
-          description: 'Once added to your wallet, follow your total and each crypto statistics'
-        }
+          description: 'Once added to your wallet, follow your total and each crypto statistics',
+        },
       ],
     },
   },
@@ -394,9 +400,9 @@ const work: IWork[] = [
             w: 1920,
             path: '/images/projects/ZB/7.jpg',
           },
-        ]
+        ],
       },
-    }
+    },
   },
   {
     id: 'VV',
@@ -410,7 +416,7 @@ const work: IWork[] = [
       illustration: {
         h: 768,
         w: 768,
-        path: '/images/projects/VV/illustration.jpg'
+        path: '/images/projects/VV/illustration.jpg',
       },
       project: {
         description: 'This website is both the presentation of a BI project, related to the bike-sharing service analysis, and a real-time status of the network.',
@@ -433,25 +439,25 @@ const work: IWork[] = [
         ],
         technologies: [
           {
-            icon: { source: 'custom', icon: '/technologies/jquery-logo'},
-            title: 'jQuery'
+            icon: { source: 'custom', icon: '/technologies/jquery-logo' },
+            title: 'jQuery',
           },
           {
-            icon: { source: 'custom', icon: '/technologies/chartjs-logo'},
-            title: 'ChartJS'
+            icon: { source: 'custom', icon: '/technologies/chartjs-logo' },
+            title: 'ChartJS',
           },
           {
-            icon: { source: 'custom', icon: '/technologies/talend-logo'},
-            title: 'Talend ETL'
+            icon: { source: 'custom', icon: '/technologies/talend-logo' },
+            title: 'Talend ETL',
           },
           {
-            icon: { source: 'custom', icon: '/technologies/leaflet-logo'},
-            title: 'Leaflet'
+            icon: { source: 'custom', icon: '/technologies/leaflet-logo' },
+            title: 'Leaflet',
           },
           {
-            icon: { source: 'custom', icon: '/technologies/qliksense-logo'},
-            title: 'Qlik Sense'
-          }
+            icon: { source: 'custom', icon: '/technologies/qliksense-logo' },
+            title: 'Qlik Sense',
+          },
         ],
         images: [
           {
@@ -509,7 +515,7 @@ const work: IWork[] = [
             w: 1376,
             path: '/images/projects/VV/11.png',
           },
-        ]
+        ],
       },
       features: [
         {
@@ -525,9 +531,9 @@ const work: IWork[] = [
         {
           title: 'Past analysis',
           icon: faChartArea,
-          description: 'See how the network behaves during a month-long analysis with 5-min frequency, compared to availability, weather...'
-        }
-      ]
+          description: 'See how the network behaves during a month-long analysis with 5-min frequency, compared to availability, weather...',
+        },
+      ],
     },
   },
   {
@@ -555,20 +561,20 @@ const work: IWork[] = [
         ],
         technologies: [
           {
-            icon: { source: 'custom', icon: '/technologies/firebase-logo'},
-            title: 'Firebase Real-Time database'
+            icon: { source: 'custom', icon: '/technologies/firebase-logo' },
+            title: 'Firebase Real-Time database',
           },
           {
-            icon: { source: 'custom', icon: '/technologies/vuejs-logo'},
-            title: 'Vue'
+            icon: { source: 'custom', icon: '/technologies/vuejs-logo' },
+            title: 'Vue',
           },
           {
-            icon: { source: 'custom', icon: '/technologies/leaflet-logo'},
-            title: 'Leaflet'
+            icon: { source: 'custom', icon: '/technologies/leaflet-logo' },
+            title: 'Leaflet',
           },
           {
-            icon: { source: 'custom', icon: '/technologies/qgis-logo'},
-            title: 'QGis'
+            icon: { source: 'custom', icon: '/technologies/qgis-logo' },
+            title: 'QGis',
           },
         ],
         images: [
@@ -597,25 +603,25 @@ const work: IWork[] = [
             w: 1920,
             path: '/images/projects/AD/5.jpg',
           },
-        ]
+        ],
       },
       features: [
         {
           title: 'List airlines',
           icon: faPlane,
-          description: 'Fetch all airlines all around the world'
+          description: 'Fetch all airlines all around the world',
         },
         {
           title: 'Check routes',
           icon: faMapLocationDot,
-          description: 'See all routes that the airline operates'
+          description: 'See all routes that the airline operates',
         },
         {
           title: 'Explore airports',
           icon: faPlaneDeparture,
-          description: 'With a custom-built layer, explore all airports in the world'
-        }
-      ]
+          description: 'With a custom-built layer, explore all airports in the world',
+        },
+      ],
     },
   },
 ];

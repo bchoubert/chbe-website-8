@@ -1,5 +1,8 @@
-import { IconDefinition } from "@fortawesome/free-brands-svg-icons";
-import { ICustomer, IIcon, IImage, ILink, ITechnology } from "./common.types";
+import { IconDefinition } from '@fortawesome/free-brands-svg-icons';
+
+import {
+  ICustomer, IIcon, IImage, ILink, ITechnology,
+} from './common.types';
 
 export enum ISubDetailsType {
   text = 'text',
@@ -17,7 +20,7 @@ export type ISubDetails = {
   illustration?: IImage;
 };
 
-/////////////
+/// //////////
 
 export interface IDetailsCompany {
   company?: {
@@ -73,4 +76,5 @@ export interface IDetailsMissions {
   }[];
 }
 
-export type IDetails = IDetailsCompany & IDetailsProject & IDetailsRole & IDetailsProducts & IDetailsMissions & ISubDetails;
+export type IDetails = IDetailsCompany
+& IDetailsProject & IDetailsRole & IDetailsProducts & IDetailsMissions & ISubDetails;

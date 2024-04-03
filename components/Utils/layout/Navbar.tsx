@@ -1,18 +1,17 @@
-import Link from "next/link";
-import { FC, memo } from "react";
+import Link from 'next/link';
+import { FC, memo } from 'react';
 
-import { colors, mobileThreshold } from "assets";
+import { colors, mobileThreshold } from 'assets';
 
-import ENetwork from "components/Business/ENetwork";
+import ENetwork from 'components/Business/ENetwork';
 
-import networks from "data/networks";
+import networks from 'data/networks';
 
 interface NavbarProps {
   color?: string;
 }
 
-const Navbar: FC<NavbarProps> = ({ color }) => {
-  return (
+const Navbar: FC<NavbarProps> = ({ color }) => (
     <>
       <nav className="Navbar">
         <div className="wrapper">
@@ -38,7 +37,7 @@ const Navbar: FC<NavbarProps> = ({ color }) => {
           width: calc(100% - 3rem);
           padding: 0 1.5rem;
           height: 4rem;
-          background-color: ${color || colors.grey["0"]};
+          background-color: ${color || colors.grey['0']};
           position: fixed;
           display: flex;
           align-items: center;
@@ -75,7 +74,6 @@ const Navbar: FC<NavbarProps> = ({ color }) => {
         }
       `}</style>
     </>
-  );
-};
+);
 
 export default memo(Navbar);

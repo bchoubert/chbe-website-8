@@ -1,8 +1,9 @@
-import Link from "next/link";
-import { FC, memo } from "react";
+import Link from 'next/link';
+import { FC, memo } from 'react';
 
-import Card from "components/Utils/layout/Card";
-import { IWork } from "types/business.types";
+import { IWork } from 'types/business.types';
+
+import Card from 'components/Utils/layout/Card';
 
 const EWork: FC<IWork> = (work) => (
   <>

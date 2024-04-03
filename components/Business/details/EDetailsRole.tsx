@@ -1,6 +1,8 @@
-import PartWithTitle from "components/Utils/layout/PartWithTitle";
-import { FC, memo } from "react";
-import { EDetailsPart } from "types/business.types";
+import { FC, memo } from 'react';
+
+import { EDetailsPart } from 'types/business.types';
+
+import PartWithTitle from 'components/Utils/layout/PartWithTitle';
 
 const EDetailsRole: FC<EDetailsPart> = ({ details, common }) => (
   <PartWithTitle title="My role" options={{ color: common.color }}>

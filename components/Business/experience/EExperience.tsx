@@ -1,8 +1,9 @@
-import { FC, memo } from "react";
-import Link from "next/link";
+import Link from 'next/link';
+import { FC, memo } from 'react';
 
-import Card from "components/Utils/layout/Card";
-import { IExperience } from "types/business.types";
+import { IExperience } from 'types/business.types';
+
+import Card from 'components/Utils/layout/Card';
 
 const EEexperience: FC<IExperience> = (exp) => (
   <>

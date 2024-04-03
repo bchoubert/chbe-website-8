@@ -1,14 +1,15 @@
-import FullCard from "components/Utils/layout/FullCard";
-import IconWithText from "components/Utils/content/IconWithText";
-import { FC, memo } from "react";
-import { IExperience } from "types/business.types";
+import { FC, memo } from 'react';
+
+import { IExperience } from 'types/business.types';
+
+import IconWithText from 'components/Utils/content/IconWithText';
+import FullCard from 'components/Utils/layout/FullCard';
 
 interface EExperienceHeadlineProps {
   object: IExperience;
 }
 
-const EExperienceHeadline: FC<EExperienceHeadlineProps> = ({ object }) => {
-  return (
+const EExperienceHeadline: FC<EExperienceHeadlineProps> = ({ object }) => (
     <FullCard image={object.image} color={object.light}>
       <div>
         <h2>{object.title}</h2>
@@ -22,7 +23,6 @@ const EExperienceHeadline: FC<EExperienceHeadlineProps> = ({ object }) => {
         />
       </div>
     </FullCard>
-  );
-};
+);
 
 export default memo(EExperienceHeadline);

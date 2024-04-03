@@ -1,10 +1,9 @@
-import { FC, memo } from "react";
+import { FC, memo } from 'react';
 
-import { colors, styles } from "assets";
+import { colors, styles } from 'assets';
+import { IIcon } from 'types/common.types';
 
-import Icon from "components/Utils/content/Icon";
-
-import { IIcon } from "types/common.types";
+import Icon from 'components/Utils/content/Icon';
 
 interface IPillProps {
   light?: string;
@@ -14,11 +13,13 @@ interface IPillProps {
   icon?: IIcon;
 }
 
-const Pill: FC<IPillProps> = ({ light, textColor, iconColor, title, icon }) => (
+const Pill: FC<IPillProps> = ({
+  light, textColor, iconColor, title, icon,
+}) => (
   <>
     <div className="Pill">
       <div
-        className={`Pill-wrapper ${textColor ? "" : "Pill-wrapper--opacity"}`}
+        className={`Pill-wrapper ${textColor ? '' : 'Pill-wrapper--opacity'}`}
       >
         {icon && <Icon icon={icon} options={{ color: iconColor }} />}
         <div dangerouslySetInnerHTML={{ __html: title }} />
@@ -30,8 +31,8 @@ const Pill: FC<IPillProps> = ({ light, textColor, iconColor, title, icon }) => (
         padding: 0.2em 0.5em;
         display: inline-block;
         ${styles.br}
-        background-color: ${light || colors.grey["200"]};
-        color: ${textColor || "#666666"};
+        background-color: ${light || colors.grey['200']};
+        color: ${textColor || '#666666'};
       }
       .Pill-wrapper {
         display: flex;

@@ -1,14 +1,15 @@
-import FullCard from "components/Utils/layout/FullCard";
-import IconWithText from "components/Utils/content/IconWithText";
-import { FC, memo } from "react";
-import { IWork } from "types/business.types";
+import { FC, memo } from 'react';
+
+import { IWork } from 'types/business.types';
+
+import IconWithText from 'components/Utils/content/IconWithText';
+import FullCard from 'components/Utils/layout/FullCard';
 
 interface EWorkHeadlineProps {
   object: IWork;
 }
 
-const EWorkHeadline: FC<EWorkHeadlineProps> = ({ object }) => {
-  return (
+const EWorkHeadline: FC<EWorkHeadlineProps> = ({ object }) => (
     <FullCard image={object.image} color={object.light}>
       <div>
         <h3 className="workTitle">
@@ -24,7 +25,6 @@ const EWorkHeadline: FC<EWorkHeadlineProps> = ({ object }) => {
         <h4 className="shortDescription">{object.shortDescription}</h4>
       </div>
     </FullCard>
-  );
-};
+);
 
 export default memo(EWorkHeadline);
