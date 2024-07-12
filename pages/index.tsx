@@ -1,7 +1,7 @@
 import {
   faAward, faBuilding, faSchool, faSuitcase,
 } from '@fortawesome/free-solid-svg-icons';
-import { FC, memo } from 'react';
+import { FC, memo, Fragment } from 'react';
 
 import { mobileThreshold } from 'assets';
 import { ISection } from 'types/common.types';
@@ -76,6 +76,12 @@ const Index: FC = () => (
                 Hi!
               </h1>
               <h2 className="sub">{profile.headline}</h2>
+              <h3 className="subs">
+              {profile.subheadlines.map((sh) => (
+                <Fragment key={sh}>{sh}<br /></Fragment>
+              ))}
+              </h3>
+              <h3></h3>
               <a href={profile.resume} target="_blank" className="resume">
                 <Icon
                   icon={{ source: 'component', icon: 'download' }}
@@ -100,9 +106,10 @@ const Index: FC = () => (
       .flx {
         display: flex;
         height: 100%;
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
         flex-direction: row;
-        padding: 2rem;
+        padding: 2rem 0;
         box-sizing: border-box;
       }
       .flx-i {
@@ -124,6 +131,11 @@ const Index: FC = () => (
         font-size: 1.2rem;
         font-weight: normal;
       }
+      .subs {
+        font-size: 1rem;
+        margin-top: 1rem;
+        font-weight: normal;
+      }
       .resume {
         margin-top: 1rem;
         padding: 0.5rem;
@@ -141,6 +153,7 @@ const Index: FC = () => (
       }
       @media screen and (max-width: ${mobileThreshold}px) {
         .flx {
+          width: 90%;
           flex-direction: column-reverse;
         }
         .sections {
