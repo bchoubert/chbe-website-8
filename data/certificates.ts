@@ -2,6 +2,16 @@ import { ICertificate } from 'types/business.types';
 
 const certificates: ICertificate[] = [
   {
+    id: 'WEBAIM',
+    title: 'Web Accessibility Training',
+    color: '#BF1722',
+    light: '#f9cfd2',
+    icon: { source: 'custom', icon: '/organisms/webaim-logo' },
+    organization: 'Web AIM - Utah State University',
+    year: '2024',
+    link: 'https://drive.google.com/drive/folders/1hqYx6e7hjLMy3De5zWjqCx1blAkyjnQk',
+  },
+  {
     id: 'ITIL',
     title: 'ITIL 4 Foundation',
     color: '#8F63E5',
@@ -12,6 +22,36 @@ const certificates: ICertificate[] = [
     link: 'https://drive.google.com/drive/folders/1hOVcNz5yagM2daf61-gx9eQflP5DZ9AE',
   },
   {
+    id: 'CISSP',
+    title: 'CISSP \'19',
+    color: '#468145',
+    light: '#dbebda',
+    icon: { source: 'custom', icon: '/organisms/cissp-full' },
+    organization: 'Alison.com',
+    year: '2024',
+    link: 'https://drive.google.com/drive/folders/1u0ro4jZhZrEUPyTaJL7vccRwOc9zzvJr',
+  },
+  {
+    id: 'DSC',
+    title: 'UI/UX Design Course',
+    color: '#00CE79',
+    light: '#c8ffe8',
+    icon: { source: 'custom', icon: '/organisms/design-course-logo' },
+    organization: 'Design Course',
+    year: '2024',
+    link: 'https://drive.google.com/drive/folders/1jzHoQKTxmklJA0_3leCcXsDuSDgqlZOA',
+  },
+  {
+    id: 'UXC',
+    title: 'UI/UX',
+    color: '#000000',
+    light: '#d1d1d1',
+    icon: { source: 'custom', icon: '/organisms/uxcel-logo' },
+    organization: 'Uxcel',
+    year: '2024',
+    link: 'https://app.uxcel.com/ux/bchoubert',
+  },
+  {
     id: 'Google',
     title: 'Mobile Web Specialist',
     color: '#4081ED',
@@ -20,16 +60,6 @@ const certificates: ICertificate[] = [
     organization: 'Google',
     year: '2020',
     link: 'https://drive.google.com/drive/folders/1xSwFfMiSSnX22DUM402W-4FgpFuGvOU3',
-  },
-  {
-    id: 'Scrimba',
-    title: 'UI Design',
-    color: '#C1B4F8',
-    light: '#f4f1fe',
-    icon: { source: 'custom', icon: '/organisms/scrimba-logo' },
-    organization: 'Scrimba',
-    year: '2020',
-    link: 'https://drive.google.com/drive/folders/1L0plRWEL-PpzOxKVEtpNukSBOTpfCo_W',
   },
 ];
 

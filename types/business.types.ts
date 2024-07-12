@@ -43,6 +43,7 @@ export interface INetwork {
 export interface IProfile {
   title: string;
   headline: string;
+  subheadlines: string[];
   resume: string;
 }
 
