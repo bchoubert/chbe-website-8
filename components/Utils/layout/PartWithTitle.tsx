@@ -9,6 +9,7 @@ import IconWithText from '../content/IconWithText';
 
 interface IPartiWithTitlePropsOptions {
   color: string;
+  iconColor?: string;
   backgroundColor?: string;
   isSubtitle?: boolean;
   padding?: number;
@@ -34,7 +35,7 @@ const PartWithTitle: FC<IPartiWithTitleProps> = ({
         {icon ? (
           <IconWithText
             title={title}
-            icon={{ source: 'fa', icon }}
+            icon={{ source: 'fa', icon, iconColor: options?.iconColor }}
             options={{ isInline: true }}
           />
         ) : (
@@ -42,7 +43,7 @@ const PartWithTitle: FC<IPartiWithTitleProps> = ({
         )}
       </>
     ),
-    [title, icon],
+    [title, icon, options?.iconColor],
   );
 
   return (

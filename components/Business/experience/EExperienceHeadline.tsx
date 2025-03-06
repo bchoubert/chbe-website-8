@@ -3,6 +3,7 @@ import { FC, memo } from 'react';
 import { IExperience } from 'types/business.types';
 
 import IconWithText from 'components/Utils/content/IconWithText';
+import WhiteEncapsulation from 'components/Utils/content/WhiteEncapsulation';
 import FullCard from 'components/Utils/layout/FullCard';
 
 interface EExperienceHeadlineProps {
@@ -10,9 +11,10 @@ interface EExperienceHeadlineProps {
 }
 
 const EExperienceHeadline: FC<EExperienceHeadlineProps> = ({ object }) => (
-    <FullCard image={object.image} color={object.light}>
-      <div>
-        <h2>{object.title}</h2>
+  <FullCard image={object.image} color={object.light}>
+    <div>
+      <h2>{object.title}</h2>
+      <WhiteEncapsulation>
         <IconWithText
           icon={object.icon}
           title={object.company}
@@ -21,8 +23,9 @@ const EExperienceHeadline: FC<EExperienceHeadlineProps> = ({ object }) => (
             size: 1.3,
           }}
         />
-      </div>
-    </FullCard>
+      </WhiteEncapsulation>
+    </div>
+  </FullCard>
 );
 
 export default memo(EExperienceHeadline);
