@@ -1,4 +1,4 @@
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faAccessibleIcon, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import {
   faArrowsSplitUpAndLeft, faArrowsToEye, faBrain, faBug, faChartSimple,
   faCheckSquare, faClock, faCogs, faComments, faCube, faDatabase, faDownload,
@@ -10,6 +10,78 @@ import {
 import { IExperience } from 'types/business.types';
 
 const experience: IExperience[] = [
+  {
+    id: 'BN',
+    title: 'Full-Stack Developer',
+    company: 'BnL - National Library of Luxembourg',
+    icon: { source: 'custom', icon: '/organisms/bnl-logo' },
+    image: '/images/companies/BN/brand.png',
+    color: '#006DA1',
+    light: '#c0ebff',
+    details: {
+      company: {
+        isOrganization: true,
+        description: 'The <b>National Library</b> collects, catalogues and preserves all analogue and digital publications published in Luxembourg and any works published abroad that relate to the Grand Duchy.<br />'
+          + 'It is the country’s leading academic, research and cultural heritage library. In order to meet the requirements of its users, about three-quarters of its printed collections come from other countries and they cover different fields of knowledge.',
+        links: [
+          {
+            title: 'Website',
+            icon: { source: 'fa', icon: faExternalLinkAlt },
+            link: 'https://bnl.public.lu/en.html',
+          },
+        ],
+      },
+      role: {
+        description: 'As a <b>Full-Stack Developer</b>, I aim to maintain current solution, as well as develop new solutions and features : User Accessibility is key.<br />'
+          + 'Data Formats, like MARC21 and Mets/Alto are used accross all the BnL projects.',
+      },
+      realisations: [
+        {
+          title: 'Accessibility',
+          icon: faAccessibleIcon,
+          description: 'Provide highly accessible websites for the public that matches State\'s requirements',
+        },
+        {
+          title: 'Design',
+          icon: faPalette,
+          description: 'Design and update websites according to the BnL design guidelines, organizing meetings with the communication teams and reviewing with management',
+        },
+      ],
+      products: [
+        {
+          name: 'eLuxemburgensia',
+          icon: { source: 'custom', icon: '/organisms/bnl-logo' },
+          description: 'Provides historical press and documents to thousands daily users.',
+          longDescription: 'eLuxemburgensia, along with its selection, advanced search and viewer, permits users and professionals to fetch historical press as well as books, posters, manuscripts. With OCR, the original text is automatically available and translated.',
+          technologies: [
+            {
+              icon: { source: 'custom', icon: '/technologies/java-logo' },
+              title: 'Java Spring',
+            },
+            {
+              icon: { source: 'custom', icon: '/technologies/typescript-logo' },
+              title: 'TypeScript',
+            },
+            {
+              icon: { source: 'custom', icon: '/technologies/nuxt-logo' },
+              title: 'Nuxt / Vue',
+            },
+            {
+              icon: { source: 'custom', icon: '/technologies/figma-logo' },
+              title: 'Figma',
+            },
+          ],
+          images: [
+            {
+              h: 944,
+              w: 1918,
+              path: '/images/companies/BN/elux.png',
+            },
+          ],
+        },
+      ],
+    },
+  },
   {
     id: 'EC',
     title: 'Web Developer',

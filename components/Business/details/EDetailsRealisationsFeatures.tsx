@@ -20,7 +20,7 @@ const EDetailsRealisations: FC<EDetailsPart> = ({ details, common }) => {
     <>
       <PartWithTitle
         title={isFeature ? 'Features' : 'Realisations'}
-        options={{ color: common.color }}
+        options={{ color: common.color, iconColor: common.color }}
       >
         <div className="realisations">
           {content.map((r) => (
